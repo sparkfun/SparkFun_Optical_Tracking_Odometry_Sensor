@@ -6757,6 +6757,11 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U$23" library="output" package="#_IO10#0" value="" x="19.05" y="1.524" smashed="yes" rot="MR90"/>
 <element name="U$32" library="output" package="#_IO9#0" value="" x="16.51" y="1.524" smashed="yes" rot="MR90"/>
+<element name="R7" library="SparkFun-Resistors" package="0603" value="100k" x="10.16" y="23.495" smashed="yes">
+<attribute name="NAME" x="10.16" y="24.257" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-07828" x="10.16" y="23.495" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.16" y="22.733" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -6855,6 +6860,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="12.7" y="3.81" extent="1-16" drill="0.3048"/>
 <via x="12.7" y="5.842" extent="1-16" drill="0.3048"/>
 <via x="10.3124" y="18.034" extent="1-16" drill="0.3048"/>
+<contactref element="R7" pad="1"/>
 </signal>
 <signal name="1.8V">
 <contactref element="U1" pad="12"/>
@@ -7137,6 +7143,10 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <via x="13.335" y="20.32" extent="1-16" drill="0.3048"/>
 <wire x1="13.335" y1="20.32" x2="13.335" y2="20.955" width="0.254" layer="16"/>
 <wire x1="13.335" y1="20.955" x2="12.7" y2="21.59" width="0.254" layer="16"/>
+<contactref element="R7" pad="2"/>
+<wire x1="11.01" y1="23.495" x2="12.7" y2="23.495" width="0.254" layer="1"/>
+<via x="12.7" y="23.495" extent="1-16" drill="0.35"/>
+<wire x1="12.7" y1="23.495" x2="12.7" y2="21.59" width="0.254" layer="16"/>
 </signal>
 <signal name="PAA_!RST!">
 <contactref element="U1" pad="2"/>
