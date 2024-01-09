@@ -6343,6 +6343,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2" y1="1.8" x2="-2" y2="1.55" width="0.1524" layer="51"/>
 <wire x1="-2.3" y1="2.1" x2="-2" y2="1.8" width="0.1524" layer="51" curve="-90"/>
 <wire x1="-2" y1="1.55" x2="-2.3" y2="1.25" width="0.1524" layer="51" curve="-90"/>
+<wire x1="0" y1="0" x2="2.5" y2="0" width="0.1524" layer="51"/>
+<wire x1="2.5" y1="0" x2="1.992" y2="0.5" width="0.1524" layer="51"/>
+<wire x1="2.5" y1="0" x2="2" y2="-0.5" width="0.1524" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="2.5" width="0.1524" layer="51"/>
+<wire x1="0" y1="2.5" x2="-0.5" y2="1.992" width="0.1524" layer="51"/>
+<wire x1="0" y1="2.5" x2="0.5" y2="1.992" width="0.1524" layer="51"/>
+<text x="2" y="-1" size="1" layer="51" font="vector" ratio="15" align="center">X</text>
+<text x="-1" y="2" size="1" layer="51" font="vector" ratio="15" align="center">Y</text>
 </package>
 </packages>
 </library>
