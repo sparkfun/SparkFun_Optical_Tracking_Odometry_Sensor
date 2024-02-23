@@ -18,7 +18,7 @@ Repository Contents
 
 Documentation
 --------------
-* **[Library]()** - Arduino library for the Qwiic OLED Display (0.91", 128x32).
+* **[Library]()** - Arduino library for the SparkFun Optical Tracking Odometry Sensor.
 * **[Hookup Guide](https://docs.sparkfun.com/SparkFun_Optical_Tracking_Odometry_Sensor/)** - Basic hookup guide for the SparkFun Optical Tracking Odometry Sensor.
 
 
