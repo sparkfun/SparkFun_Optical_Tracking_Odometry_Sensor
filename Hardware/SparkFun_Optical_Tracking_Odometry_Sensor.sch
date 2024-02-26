@@ -26835,8 +26835,8 @@ Switches electrical signals</description>
 <part name="SUPPLY17" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R7" library="SparkFun-Resistors" deviceset="100KOHM" device="-0603-1/10W-1%" value="100k"/>
 <part name="GND25" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R8" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
-<part name="SUPPLY26" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
+<part name="GND26" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="C14" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -27016,15 +27016,15 @@ voltage range:
 <attribute name="NAME" x="90.424" y="13.081" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="90.424" y="8.001" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C2" gate="G$1" x="17.78" y="129.54" smashed="yes">
-<attribute name="NAME" x="19.304" y="132.461" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="19.304" y="127.381" size="1.778" layer="96" font="vector"/>
+<instance part="C2" gate="G$1" x="12.7" y="129.54" smashed="yes">
+<attribute name="NAME" x="9.144" y="132.461" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="12.319" y="123.444" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="SUPPLY13" gate="G$1" x="17.78" y="137.16" smashed="yes">
-<attribute name="VALUE" x="17.78" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY13" gate="G$1" x="12.7" y="137.16" smashed="yes">
+<attribute name="VALUE" x="12.7" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
-<instance part="GND10" gate="1" x="17.78" y="121.92" smashed="yes">
-<attribute name="VALUE" x="17.78" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND10" gate="1" x="12.7" y="121.92" smashed="yes">
+<attribute name="VALUE" x="12.7" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
 <instance part="C3" gate="G$1" x="25.4" y="76.2" smashed="yes">
 <attribute name="NAME" x="26.924" y="79.121" size="1.778" layer="95" font="vector"/>
@@ -27190,15 +27190,15 @@ voltage range:
 <attribute name="NAME" x="84.836" y="165.1" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="87.884" y="165.1" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
 </instance>
-<instance part="C5" gate="G$1" x="7.62" y="129.54" smashed="yes">
-<attribute name="NAME" x="9.144" y="132.461" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="9.144" y="127.381" size="1.778" layer="96" font="vector"/>
+<instance part="C5" gate="G$1" x="5.08" y="129.54" smashed="yes">
+<attribute name="NAME" x="1.524" y="132.461" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="4.699" y="123.444" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
-<instance part="GND13" gate="1" x="7.62" y="121.92" smashed="yes">
-<attribute name="VALUE" x="7.62" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
+<instance part="GND13" gate="1" x="5.08" y="121.92" smashed="yes">
+<attribute name="VALUE" x="5.08" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY17" gate="G$1" x="7.62" y="137.16" smashed="yes">
-<attribute name="VALUE" x="7.62" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="SUPPLY17" gate="G$1" x="5.08" y="137.16" smashed="yes">
+<attribute name="VALUE" x="5.08" y="139.954" size="1.778" layer="96" font="vector" align="bottom-center"/>
 </instance>
 <instance part="R7" gate="G$1" x="27.94" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="26.416" y="132.08" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -27207,12 +27207,12 @@ voltage range:
 <instance part="GND25" gate="1" x="27.94" y="121.92" smashed="yes">
 <attribute name="VALUE" x="27.94" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="R8" gate="G$1" x="27.94" y="160.02" smashed="yes" rot="R90">
-<attribute name="NAME" x="26.416" y="160.02" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="29.464" y="160.02" size="1.778" layer="96" font="vector" rot="R90" align="top-center"/>
+<instance part="GND26" gate="1" x="20.32" y="121.92" smashed="yes">
+<attribute name="VALUE" x="20.32" y="121.666" size="1.778" layer="96" font="vector" align="top-center"/>
 </instance>
-<instance part="SUPPLY26" gate="G$1" x="27.94" y="167.64" smashed="yes">
-<attribute name="VALUE" x="27.94" y="170.434" size="1.778" layer="96" font="vector" align="bottom-center"/>
+<instance part="C14" gate="G$1" x="20.32" y="129.54" smashed="yes">
+<attribute name="NAME" x="16.002" y="132.461" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="19.939" y="123.444" size="1.778" layer="96" font="vector" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -27282,7 +27282,7 @@ voltage range:
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="124.46" x2="17.78" y2="127" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="124.46" x2="12.7" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
@@ -27352,7 +27352,7 @@ voltage range:
 <segment>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="7.62" y1="124.46" x2="7.62" y2="127" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="124.46" x2="5.08" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND25" gate="1" pin="GND"/>
@@ -27363,6 +27363,11 @@ voltage range:
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="134.62" y1="78.74" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND26" gate="1" pin="GND"/>
+<wire x1="20.32" y1="124.46" x2="20.32" y2="127" width="0.1524" layer="91"/>
+<pinref part="C14" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
@@ -27436,7 +27441,7 @@ voltage range:
 <segment>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="137.16" x2="17.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="137.16" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
@@ -27479,12 +27484,7 @@ voltage range:
 <segment>
 <pinref part="SUPPLY17" gate="G$1" pin="3.3V"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="137.16" x2="7.62" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="SUPPLY26" gate="G$1" pin="3.3V"/>
-<wire x1="27.94" y1="165.1" x2="27.94" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="137.16" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="PWR" gate="G$1" pin="2"/>
@@ -27638,12 +27638,12 @@ voltage range:
 <net name="STM_!RST!" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PF2/!RST!"/>
-<wire x1="43.18" y1="152.4" x2="27.94" y2="152.4" width="0.1524" layer="91"/>
-<label x="25.4" y="152.4" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="27.94" y1="152.4" x2="25.4" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="154.94" x2="27.94" y2="152.4" width="0.1524" layer="91"/>
-<junction x="27.94" y="152.4"/>
+<wire x1="43.18" y1="152.4" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
+<label x="17.78" y="152.4" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="20.32" y1="152.4" x2="17.78" y2="152.4" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="134.62" x2="20.32" y2="152.4" width="0.1524" layer="91"/>
+<junction x="20.32" y="152.4"/>
+<pinref part="C14" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="6"/>
@@ -27654,8 +27654,8 @@ voltage range:
 <net name="STM_SWDIO" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="PA13/SWDIO"/>
-<wire x1="43.18" y1="149.86" x2="25.4" y2="149.86" width="0.1524" layer="91"/>
-<label x="25.4" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="43.18" y1="149.86" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
+<label x="17.78" y="149.86" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="2"/>
@@ -27667,9 +27667,9 @@ voltage range:
 <segment>
 <pinref part="U3" gate="G$1" pin="PA14/SWCLK/BOOT0"/>
 <wire x1="43.18" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
-<label x="25.4" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<label x="17.78" y="147.32" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="147.32" x2="25.4" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="147.32" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="137.16" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
 <junction x="27.94" y="147.32"/>
 </segment>
