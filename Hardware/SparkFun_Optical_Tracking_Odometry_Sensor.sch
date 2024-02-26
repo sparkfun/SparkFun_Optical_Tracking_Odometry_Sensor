@@ -26858,10 +26858,10 @@ Switches electrical signals</description>
 <wire x1="101.6" y1="111.76" x2="0" y2="111.76" width="0.2032" layer="97" style="longdash"/>
 <wire x1="187.96" y1="139.7" x2="187.96" y2="185.42" width="0.2032" layer="97" style="longdash"/>
 <text x="124.46" y="99.06" size="2.54" layer="94" font="vector" align="center">Power LED</text>
-<text x="50.8" y="55.88" size="2.54" layer="94" font="vector" align="center">Optical Tracking Sensor - PAA5160</text>
+<text x="53.34" y="55.88" size="2.54" layer="94" font="vector" align="center">Optical Tracking Sensor - PAA5160E1-Q</text>
 <text x="50.8" y="106.68" size="2.54" layer="94" font="vector" align="center">6-DoF IMU - LSM6DSO</text>
-<text x="50.8" y="180.34" size="2.54" layer="94" font="vector" align="center">Microcontroller - STM32C0</text>
-<text x="144.78" y="180.34" size="2.54" layer="94" font="vector" align="center">PAA5160 Power Switch and Regulator - RT9080</text>
+<text x="50.8" y="180.34" size="2.54" layer="94" font="vector" align="center">Microcontroller - STM32C011F6U6</text>
+<text x="144.78" y="180.34" size="2.54" layer="94" font="vector" align="center">PAA5160 Power Control and Regulator - RT9080</text>
 <text x="218.44" y="93.98" size="2.54" layer="94" font="vector" align="center">Debug Test Points</text>
 <text x="167.64" y="134.62" size="2.54" layer="94" font="vector" align="center">Qwiic Connectors</text>
 <wire x1="101.6" y1="60.96" x2="101.6" y2="0" width="0.2032" layer="97" style="longdash"/>
@@ -26876,7 +26876,7 @@ remove power LED</text>
 <wire x1="187.96" y1="99.06" x2="187.96" y2="60.96" width="0.2032" layer="97" style="longdash"/>
 <wire x1="187.96" y1="99.06" x2="248.92" y2="99.06" width="0.2032" layer="97" style="longdash"/>
 <wire x1="101.6" y1="104.14" x2="147.32" y2="104.14" width="0.2032" layer="97" style="longdash"/>
-<text x="218.44" y="180.34" size="2.54" layer="94" font="vector" align="center">Laser Power Switch</text>
+<text x="218.44" y="180.34" size="2.54" layer="94" font="vector" align="center">Laser Power Control</text>
 <text x="157.48" y="144.78" size="1.778" layer="97" font="vector" align="center">V_in max: 5.5V
 I_out max: 600mA</text>
 <text x="63.5" y="165.1" size="1.778" layer="97" font="vector" align="center">VDD range:
