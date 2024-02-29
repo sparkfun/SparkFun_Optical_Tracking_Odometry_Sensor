@@ -6,7 +6,7 @@ icon: material/book-open-page-variant
 <div class="grid cards desc" markdown>
 
 -    <a href="https://www.sparkfun.com/products/24904">
-    **SparkFun Optical Tracking Odometry Sensor**<br>
+    **SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)**<br>
     **SKU:** SEN-24904
 
     ---
@@ -31,8 +31,8 @@ To follow along with this tutorial, you will need the following materials. You m
     <tr>
         <td>
             <a href="https://www.sparkfun.com/products/24904">
-                <center><img src="" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Optical Tracking Odometry Sensor"></center>
-                <h3 class="title">SparkFun Optical Tracking Odometry Sensor</h3>
+                <center><img src="" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)"></center>
+                <h3 class="title">SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)</h3>
             </a>
             SEN-24904
         </td>
@@ -104,7 +104,7 @@ As a more professionally oriented product, we will skip over the more fundamenta
 </div>
 </center>
 
-The SparkFun Optical Tracking Odometry Sensor takes advantage of the [Qwiic connect system](https://www.sparkfun.com/qwiic). We recommend familiarizing yourself with the **Logic Levels** and **I<sup>2</sup>C** tutorials.  Click on the banner above to learn more about [Qwiic products](https://www.sparkfun.com/qwiic).
+The SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) takes advantage of the [Qwiic connect system](https://www.sparkfun.com/qwiic). We recommend familiarizing yourself with the **Logic Levels** and **I<sup>2</sup>C** tutorials.  Click on the banner above to learn more about [Qwiic products](https://www.sparkfun.com/qwiic).
 
 <center>
     <iframe width="600" height="327" src="https://www.youtube.com/embed/x0RDEHqFIF8" title="SparkFun's Qwiic Connect System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

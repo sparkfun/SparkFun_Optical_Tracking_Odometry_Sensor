@@ -6,7 +6,7 @@ icon: material/cog
 
 ## STM32CO
 
-The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memories (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I2Cs, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
+The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memories (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I2C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
 
 <!--
 <figure markdown>
@@ -19,10 +19,16 @@ The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-b
 
 The Red LED indicator lights when power is provided to the board. 
 
+<!--
+<figure markdown>
+[![Power LED(assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+<figcaption markdown>Power LED</figcaption>
+</figure>
+-->
 
 ## Qwiic Connectors
 
-The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor provide power and I<sup>2</sup>C connectivity simultaneously. <!--The default I<sup>2</sup>C address is . -->
+The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. <!--The default I<sup>2</sup>C address is . -->
 
 <!--
 <figure markdown>
@@ -61,16 +67,23 @@ The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axi
 </figure>
 -->
 
+## GPIO
+
+The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. 
+
+
 
 
 ## Debugging Test Points
 
-We've broken out test points for serial wire debugging. They are located here: 
+We've broken out test points for serial wire debugging if you wish to access flash memory or directly program the board. They are located here: 
 
-Standard arrangement of testpoints
-hookup a jlink and use to access flash memory, program, add breakpoints, etc
-
-
+<!--
+<figure markdown>
+[![Debugging Test Points](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+<figcaption markdown>Debugging Test Points</figcaption>
+</figure>
+-->
 
 
 ## Jumpers
@@ -85,12 +98,10 @@ hookup a jlink and use to access flash memory, program, add breakpoints, etc
 
 ### Power Jumper
 
-If you are concerned about power consumption, need to run dark, or just really don't like LEDs, cut the jumper highlighted below to disconnect power from the Red LED on the front of the board. 
-
-
+If you are concerned about power consumption, need to run dark, or just really don't like LEDs, cut the jumper highlighted below to disconnect power from the red LED on the front of the board. 
 
 <figure markdown>
-[![Power Jumper](assets/img/24409_SoilMoistureSensor_I2CJumper.jpg){ width="200" }](assets/img/24409_SoilMoistureSensor_I2CJumper.jpg "Click to enlarge")
+[![Power Jumper](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
 <figcaption markdown>Power Jumper</figcaption>
 </figure>
 
@@ -100,7 +111,7 @@ If you are concerned about power consumption, need to run dark, or just really d
 If you choose to use one or more Qwiic breakouts in your project, it is important to note that this board comes equipped with pull-up resistors on the clock and data pins. If you are daisy-chaining multiple Qwiic devices, you will want to cut this jumper; if multiple sensors are connected to the bus with the pull-up resistors enabled, the parallel equivalent resistance will create too strong of a pull-up for the bus to operate correctly. As a general rule of thumb, disable all but one pair of pull-up resistors if multiple devices are connected to the bus. To disable the pull up resistors, use an X-acto knife to cut the joints between the jumper pads highlighted below.
 
 <figure markdown>
-[![I2C Jumper](assets/img/24409_SoilMoistureSensor_I2CJumper.jpg){ width="200" }](assets/img/24409_SoilMoistureSensor_I2CJumper.jpg "Click to enlarge")
+[![I2C Jumper](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
 <figcaption markdown>I<sup>2</sup>C Jumper</figcaption>
 </figure>
 
@@ -109,7 +120,7 @@ If you choose to use one or more Qwiic breakouts in your project, it is importan
 The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
 
 <figure markdown>
-[![Board measures 0.9" by 2.4"](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ width="200" }](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png "Click to enlarge")
+[![Board measures 0.9" by 2.4"](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ width="600" }](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png "Click to enlarge")
 <figcaption markdown>SparkFun Soil Moisture Sensor Board Dimensions</figcaption>
 </figure>
 
