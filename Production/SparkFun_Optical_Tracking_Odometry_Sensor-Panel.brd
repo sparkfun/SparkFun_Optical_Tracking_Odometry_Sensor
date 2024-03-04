@@ -9603,7 +9603,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U3" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="12.7" y="17.78" smashed="yes">
 <attribute name="NAME" x="12.7" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="12.7" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="12.7" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="12.7" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U4" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="7.62" y="10.16" smashed="yes">
@@ -9832,7 +9832,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U7" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="38.608" y="17.78" smashed="yes">
 <attribute name="NAME" x="38.608" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="38.608" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="38.608" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="38.608" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U8" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="33.528" y="10.16" smashed="yes">
@@ -10061,7 +10061,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U11" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="64.516" y="17.78" smashed="yes">
 <attribute name="NAME" x="64.516" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="64.516" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="64.516" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="64.516" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U12" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="59.436" y="10.16" smashed="yes">
@@ -10290,7 +10290,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U15" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="90.424" y="17.78" smashed="yes">
 <attribute name="NAME" x="90.424" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="90.424" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="90.424" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="90.424" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U16" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="85.344" y="10.16" smashed="yes">
@@ -10519,7 +10519,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U19" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="116.332" y="17.78" smashed="yes">
 <attribute name="NAME" x="116.332" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="116.332" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="116.332" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="116.332" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U20" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="111.252" y="10.16" smashed="yes">
@@ -10748,7 +10748,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U23" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="142.24" y="17.78" smashed="yes">
 <attribute name="NAME" x="142.24" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="142.24" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="142.24" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="142.24" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U24" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="137.16" y="10.16" smashed="yes">
@@ -10977,7 +10977,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U27" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="12.7" y="43.688" smashed="yes">
 <attribute name="NAME" x="12.7" y="46.188" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="12.7" y="43.688" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="12.7" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="12.7" y="41.188" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U28" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="7.62" y="36.068" smashed="yes">
@@ -11206,7 +11206,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U31" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="38.608" y="43.688" smashed="yes">
 <attribute name="NAME" x="38.608" y="46.188" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="38.608" y="43.688" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="38.608" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="38.608" y="41.188" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U32" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="33.528" y="36.068" smashed="yes">
@@ -11435,7 +11435,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U35" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="64.516" y="43.688" smashed="yes">
 <attribute name="NAME" x="64.516" y="46.188" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="64.516" y="43.688" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="64.516" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="64.516" y="41.188" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U36" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="59.436" y="36.068" smashed="yes">
@@ -11664,7 +11664,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U39" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="90.424" y="43.688" smashed="yes">
 <attribute name="NAME" x="90.424" y="46.188" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="90.424" y="43.688" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="90.424" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="90.424" y="41.188" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U40" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="85.344" y="36.068" smashed="yes">
@@ -11893,7 +11893,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U43" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="116.332" y="43.688" smashed="yes">
 <attribute name="NAME" x="116.332" y="46.188" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="116.332" y="43.688" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="116.332" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="116.332" y="41.188" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U44" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="111.252" y="36.068" smashed="yes">
@@ -12122,7 +12122,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U47" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="142.24" y="43.688" smashed="yes">
 <attribute name="NAME" x="142.24" y="46.188" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="142.24" y="43.688" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="142.24" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="142.24" y="41.188" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U48" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="137.16" y="36.068" smashed="yes">
@@ -12351,7 +12351,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U51" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="12.7" y="69.596" smashed="yes">
 <attribute name="NAME" x="12.7" y="72.096" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="12.7" y="69.596" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="12.7" y="69.596" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="12.7" y="67.096" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U52" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="7.62" y="61.976" smashed="yes">
@@ -12580,7 +12580,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U55" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="38.608" y="69.596" smashed="yes">
 <attribute name="NAME" x="38.608" y="72.096" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="38.608" y="69.596" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="38.608" y="69.596" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="38.608" y="67.096" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U56" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="33.528" y="61.976" smashed="yes">
@@ -12809,7 +12809,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U59" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="64.516" y="69.596" smashed="yes">
 <attribute name="NAME" x="64.516" y="72.096" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="64.516" y="69.596" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="64.516" y="69.596" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="64.516" y="67.096" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U60" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="59.436" y="61.976" smashed="yes">
@@ -13038,7 +13038,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U63" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="90.424" y="69.596" smashed="yes">
 <attribute name="NAME" x="90.424" y="72.096" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="90.424" y="69.596" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="90.424" y="69.596" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="90.424" y="67.096" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U64" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="85.344" y="61.976" smashed="yes">
@@ -13267,7 +13267,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U67" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="116.332" y="69.596" smashed="yes">
 <attribute name="NAME" x="116.332" y="72.096" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="116.332" y="69.596" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="116.332" y="69.596" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="116.332" y="67.096" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U68" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="111.252" y="61.976" smashed="yes">
@@ -13496,7 +13496,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U71" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="142.24" y="69.596" smashed="yes">
 <attribute name="NAME" x="142.24" y="72.096" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="142.24" y="69.596" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="142.24" y="69.596" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="142.24" y="67.096" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U72" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="137.16" y="61.976" smashed="yes">
@@ -13725,7 +13725,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U75" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="12.7" y="95.504" smashed="yes">
 <attribute name="NAME" x="12.7" y="98.004" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="12.7" y="95.504" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="12.7" y="95.504" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="12.7" y="93.004" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U76" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="7.62" y="87.884" smashed="yes">
@@ -13954,7 +13954,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U79" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="38.608" y="95.504" smashed="yes">
 <attribute name="NAME" x="38.608" y="98.004" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="38.608" y="95.504" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="38.608" y="95.504" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="38.608" y="93.004" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U80" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="33.528" y="87.884" smashed="yes">
@@ -14183,7 +14183,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U83" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="64.516" y="95.504" smashed="yes">
 <attribute name="NAME" x="64.516" y="98.004" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="64.516" y="95.504" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="64.516" y="95.504" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="64.516" y="93.004" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U84" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="59.436" y="87.884" smashed="yes">
@@ -14412,7 +14412,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U87" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="90.424" y="95.504" smashed="yes">
 <attribute name="NAME" x="90.424" y="98.004" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="90.424" y="95.504" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="90.424" y="95.504" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="90.424" y="93.004" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U88" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="85.344" y="87.884" smashed="yes">
@@ -14641,7 +14641,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U91" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="116.332" y="95.504" smashed="yes">
 <attribute name="NAME" x="116.332" y="98.004" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="116.332" y="95.504" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="116.332" y="95.504" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="116.332" y="93.004" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U92" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="111.252" y="87.884" smashed="yes">
@@ -14870,7 +14870,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U95" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="142.24" y="95.504" smashed="yes">
 <attribute name="NAME" x="142.24" y="98.004" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="142.24" y="95.504" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="142.24" y="95.504" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="142.24" y="93.004" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U96" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="137.16" y="87.884" smashed="yes">

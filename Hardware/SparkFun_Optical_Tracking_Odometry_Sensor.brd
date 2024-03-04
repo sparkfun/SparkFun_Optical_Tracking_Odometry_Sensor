@@ -6590,7 +6590,7 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 </element>
 <element name="U3" library="Optical_Tracking_Odometry_Sensor" package="STM32C011F6U6" value="STM32C011F6U6" x="12.7" y="17.78" smashed="yes">
 <attribute name="NAME" x="12.7" y="20.28" size="0.6096" layer="25" font="vector" ratio="20" align="center"/>
-<attribute name="PROD_ID" value="IC21321" x="12.7" y="17.78" size="1.778" layer="27" display="off"/>
+<attribute name="PROD_ID" value="IC-21321" x="12.7" y="17.78" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="12.7" y="15.28" size="0.6096" layer="27" font="vector" ratio="20" align="center"/>
 </element>
 <element name="U4" library="SparkFun-IC-Power" package="SOT23-5" value="RT9080-18GJ5" x="7.62" y="10.16" smashed="yes">
@@ -7379,10 +7379,10 @@ These are the free and generally easy to produce 2-layer PCB design rules. You c
 <approved hash="23,1,ddb7efc9ece9de97"/>
 <approved hash="5,1,2825aae1854f93dd"/>
 <approved hash="19,16,6bb9d67ad25e62f5"/>
-<approved hash="19,16,2e27c66e9f4a15e8"/>
-<approved hash="19,16,3a587a2ded44bf94"/>
 <approved hash="19,16,28782b883fbc3c4c"/>
-<approved hash="19,16,87ada03b2a26d698"/>
+<approved hash="19,16,aa994b6907123dca"/>
+<approved hash="19,16,acc7f4d91daa275f"/>
+<approved hash="19,16,2dc5da83dda03843"/>
 </errors>
 </board>
 </drawing>

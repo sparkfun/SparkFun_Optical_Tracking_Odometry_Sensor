@@ -26685,7 +26685,7 @@ Switches electrical signals</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC21321"/>
+<attribute name="PROD_ID" value="IC-21321"/>
 </technology>
 </technologies>
 </device>
