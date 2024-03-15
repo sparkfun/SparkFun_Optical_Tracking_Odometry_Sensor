@@ -39,7 +39,7 @@ The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E
 
 ## Optical Tracking Sensor - PAA5160
 
-The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical tracking error rate of 3~5% within a working range of 10mm to 27mm. With an 850nm class 1 laser a resolution of 20,000 DPI and a frame rate of 20,000 fps, it is ideal for surfaces like concrete, epoxy, laminated wood, or glossy/semi-glossy flooring. That said, dark or diffuse surfaces are more challenging, so these specs may vary based on the surfaces that are being used. More information can be found in the [datasheet](assets/documentation/PAA5160_Datasheet_General.pdf)
+The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical tracking error rate of 3~5% within a working range of 10mm to 27mm. With an 850nm class 1 laser a resolution of 20,000 DPI and a frame rate of 20,000 fps, it is ideal for surfaces like concrete, epoxy, laminated wood, or glossy/semi-glossy flooring. That said, dark or diffuse surfaces are more challenging, so these specs may vary based on the surfaces that are being used. More information can be found in the [datasheet](assets/documentation/PAA5160_Datasheet_General.pdf).
 
 !!! warning
 	The laser on this module is a Class 1, 850nm laser. Please use appropriate caution. 
@@ -98,7 +98,7 @@ We've broken out test points for serial wire debugging if you wish to access fla
 
 ### Power Jumper
 
-If you are concerned about power consumption, need to run dark, or just really don't like LEDs, cut the jumper highlighted below to disconnect power from the red LED on the front of the board. 
+If you are concerned about power consumption, need to run dark, or just really don't like LEDs, cut the jumper highlighted below to disconnect power from the LED on the front of the board. 
 
 <figure markdown>
 [![Power Jumper](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
@@ -121,11 +121,11 @@ The board dimensions are illustrated in the drawing below; the listed measuremen
 
 <figure markdown>
 [![Board measures 0.9" by 2.4"](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ width="600" }](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png "Click to enlarge")
-<figcaption markdown>SparkFun Soil Moisture Sensor Board Dimensions</figcaption>
+<figcaption markdown>SparkFun Optical Tracking Odometry Sensor Board Dimensions</figcaption>
 </figure>
 
 ??? tip "Need more measurements?"
-	For more information about the board's dimensions, users can download the [Eagle files](assets/board_files/24409_SparkFun-Qwiic-Soil-Moisture-Sensor_EagleFiles.zip). These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
+	For more information about the board's dimensions, users can download the [Eagle files](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_EagleFiles.zip). These files can be opened in Eagle and additional measurements can be made with the dimensions tool.
 
 	??? info ":octicons-download-16:{ .heart } Eagle - Free Download!"
 		Eagle is a [CAD]("computer-aided design") program for electronics that is free to use for hobbyists and students. However, it does require an account registration to utilize the software.
