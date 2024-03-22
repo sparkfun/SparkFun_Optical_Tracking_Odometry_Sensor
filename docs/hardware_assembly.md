@@ -11,5 +11,5 @@ Using the Qwiic system, assembling the hardware is simple. Connect the SparkFun 
 </figure>
 
 
-
-Reminder - peel off yellow kapton tape
+!!! attention
+	Reminder - make sure you peel off the yellow kapton tape before using this! 

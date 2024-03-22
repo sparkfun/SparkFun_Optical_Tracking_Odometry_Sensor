@@ -17,7 +17,7 @@ The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-b
 
 ## Power
 
-The Red LED indicator lights when power is provided to the board. 
+The LED indicator lights when power is provided to the board. 
 
 <!--
 <figure markdown>
@@ -44,7 +44,7 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 !!! warning
 	The laser on this module is a Class 1, 850nm laser. Please use appropriate caution. 
 	<figure markdown>
-	[![Board and Port selected](assets/img/laserbeams.gif){ width="400" }](assets/img/laserbeams.gif "Click to enlarge")
+	[![Dr. Evil using air quotes to say "freaking laser beams"](assets/img/laserbeams.gif){ width="400" }](assets/img/laserbeams.gif "Click to enlarge")
 	<figcaption markdown>*Lasers...*</figcaption>
 	</figure>
 
@@ -54,6 +54,11 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 <figcaption markdown>Optical Tracking Sensor - PAA5160</figcaption>
 </figure>
 -->
+
+!!! attention
+	FIRST Tech users should note that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it just can't track the foam surface at all really.
+
+
 
 
 ## 6-DOF IMU Accelerometer
@@ -71,7 +76,12 @@ The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axi
 
 The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. 
 
-
+<!--
+<figure markdown>
+[![GPIO pins are highlighted](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+<figcaption markdown>LSM6DSO 6-DOF IMU Accelerometer</figcaption>
+</figure>
+-->
 
 
 ## Debugging Test Points

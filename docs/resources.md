@@ -7,4 +7,5 @@ For more resources related to the SparkFun SparkFun Optical Tracking Odometry Se
 * [Schematic](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_Schematic.pdf) (PDF)
 * [Eagle Files](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_EagleFiles.zip) (ZIP)
 * [Board Dimensions](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png) (PDF)
-* [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_Soil_Moisture_Sensor-Qwiic)
+* [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor)
+* [Arduino Library GitHub Repository](https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library)
