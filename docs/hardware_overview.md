@@ -74,7 +74,7 @@ The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axi
 
 ## GPIO
 
-The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. 
+The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. In normal operation, IO9 acts as a "data ready" interrupt, so a user could use that to synchronize measurements if needed. 
 
 <!--
 <figure markdown>
