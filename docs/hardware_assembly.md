@@ -3,8 +3,7 @@ icon: fontawesome/solid/screwdriver-wrench
 ---
 
 
-The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor. We've designed a few 3D printing models you can use, but you may need to design your own mount for this board, depending on your use case. 
-
+The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor. We've designed a few 3D printing models you can use, but you may need to design your own mount for this board, depending on your use case. Accurate readings really require that the sensor is mounted correctly; attempting to move the sensor by hand can work, but tracking accuracy will suffer.
 
 
 <figure markdown>
@@ -14,10 +13,7 @@ The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a r
 
 
 !!! attention
-	Reminder - make sure you peel off the yellow kapton tape before using this! 
+	Reminder - make sure you peel off the yellow kapton tape! 
 
 
 
-
-
-the sensor really needs to be rigidly mounted to a robot chassis, and oriented flat to the floor. I'm planning on providing a couple 3D printable mount designs that folks can use, but they may need to design their own mount. Also emphasize that the examples really require the sensor to be mounted correctly; attempting to move the sensor by hand can work, but tracking accuracy may be terrible.
