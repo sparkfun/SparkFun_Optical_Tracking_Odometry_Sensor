@@ -77,7 +77,7 @@ This example shows how to set the offset for the sensor relative to the center o
     Note that as of firmware version 1.0, these values will be lost after a power cycle, so you will need to set them each time you power up the sensor. 
 
 
-To find Example 4, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example4_SetOffsetAndPositione**:
+To find Example 4, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example4_SetOffsetAndPosition**:
 
 
 <figure markdown>

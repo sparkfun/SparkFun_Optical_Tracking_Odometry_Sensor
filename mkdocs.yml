@@ -131,6 +131,7 @@ theme:
       terminal: octicons/terminal-16
       serial: fontawesome/solid/display
       hot: material/fire-alert
+      first-tech: simple/first
       # Permalink icon
       link: octicons/link-16
 
@@ -256,6 +257,8 @@ nav:
     - Software Setup: software_setup_and_programming.md
     - Examples: 
       - Arduino Examples: examples.md
+#     - Python Examples: 
+#     - FIRST Tech Challenge: 
   - Resources: resources.md
   - Support:
     - Troubleshooting: troubleshooting.md

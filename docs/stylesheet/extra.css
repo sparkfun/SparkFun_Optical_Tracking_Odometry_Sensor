@@ -181,7 +181,21 @@
           mask-image: var(--md-admonition-icon--hot);
 }
 
-
+/* FIRST-Tech ========================================================================== */
+.md-typeset .admonition.first-tech,
+.md-typeset details.first-tech {
+  border-color: #0066B3;
+}
+.md-typeset .first-tech > .admonition-title,
+.md-typeset .first-tech > summary {
+  background-color: rgba(0, 92, 95, 0.1);
+}
+.md-typeset .first-tech > .admonition-title::before,
+.md-typeset .first-tech > summary::before {
+  background-color: #0066B3;
+  -webkit-mask-image: var(--md-admonition-icon--first-tech);
+          mask-image: var(--md-admonition-icon--first-tech);
+}
 
 /* ================================================================================== */
 /* Header Permalinks                                                                  */

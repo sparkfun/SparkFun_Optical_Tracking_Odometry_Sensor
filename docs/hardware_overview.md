@@ -6,7 +6,7 @@ icon: material/cog
 
 ## STM32CO
 
-The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memories (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I2C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
+The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memory (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I<sup>2</sup>C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
 
 <!--
 <figure markdown>
@@ -55,8 +55,11 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 </figure>
 -->
 
-!!! attention
-	FIRST Tech users should note that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it just can't track the foam surface at all really.
+!!! first-tech "FIRST Tech Challenge"
+
+	[![FIRST Tech Logo](assets/img/FIRSTTech_IconVert_RGB.jpg){ align="left" width="100"}](assets/img/FIRSTTech_IconVert_RGB.jpg "Click to enlarge")
+
+	FIRST Tech Challenge: Note here that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it can't track the foam surface at all.
 
 
 
@@ -74,7 +77,7 @@ The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axi
 
 ## GPIO
 
-The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. In normal operation, IO9 acts as a "data ready" interrupt, so a user could use that to synchronize measurements if needed. 
+The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. In normal operation, IO9 acts as a "data ready" interrupt; this pin could be used to synchronize measurements if needed. 
 
 <!--
 <figure markdown>
@@ -130,7 +133,7 @@ If you choose to use one or more Qwiic breakouts in your project, it is importan
 The board dimensions are illustrated in the drawing below; the listed measurements are in inches.
 
 <figure markdown>
-[![Board measures 0.9" by 2.4"](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ width="600" }](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png "Click to enlarge")
+[![Board measures 1" by 1"](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ width="600" }](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png "Click to enlarge")
 <figcaption markdown>SparkFun Optical Tracking Odometry Sensor Board Dimensions</figcaption>
 </figure>
 

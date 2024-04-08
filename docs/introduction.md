@@ -15,7 +15,7 @@ icon: material/book-open-page-variant
     ![Product Thumbnail]()
     </figure></a>
     
--     
+-   The SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) is an all-in-one, Qwiic enabled tracking sensor that allows you to accurately drive your XRP or other robotics with minimal space and setup requirements.
 
     <center>
     [Purchase from SparkFun :fontawesome-solid-cart-plus:{ .heart }](https://www.sparkfun.com/products/24904){ .md-button .md-button--primary }
