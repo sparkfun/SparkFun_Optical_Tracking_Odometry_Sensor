@@ -26528,22 +26528,22 @@ Switches electrical signals</description>
 <wire x1="1.7" y1="1.7" x2="1.7" y2="1.3" width="0.1524" layer="21"/>
 </package>
 <package name="PAA5160E1-Q">
-<smd name="1" x="-2.635" y="2.1" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="2" x="-2.635" y="1.5" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="3" x="-2.635" y="0.9" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="4" x="-2.635" y="0.3" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="5" x="-2.635" y="-0.3" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="6" x="-2.635" y="-0.9" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="7" x="-2.635" y="-1.5" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="8" x="-2.635" y="-2.1" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="9" x="2.635" y="-2.1" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="10" x="2.635" y="-1.5" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="11" x="2.635" y="-0.9" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="12" x="2.635" y="-0.3" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="13" x="2.635" y="0.3" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="14" x="2.635" y="0.9" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="15" x="2.635" y="1.5" dx="0.73" dy="0.35" layer="1" cream="no"/>
-<smd name="16" x="2.635" y="2.1" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="1" x="-2.735" y="2.275" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="2" x="-2.735" y="1.625" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="3" x="-2.735" y="0.975" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="4" x="-2.735" y="0.325" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="5" x="-2.735" y="-0.325" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="6" x="-2.735" y="-0.975" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="7" x="-2.735" y="-1.625" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="8" x="-2.735" y="-2.275" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="9" x="2.735" y="-2.275" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="10" x="2.735" y="-1.625" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="11" x="2.735" y="-0.975" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="12" x="2.735" y="-0.325" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="13" x="2.735" y="0.325" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="14" x="2.735" y="0.975" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="15" x="2.735" y="1.625" dx="0.73" dy="0.35" layer="1" cream="no"/>
+<smd name="16" x="2.735" y="2.275" dx="0.73" dy="0.35" layer="1" cream="no"/>
 <smd name="17" x="0" y="0" dx="2" dy="2" layer="1" cream="no"/>
 <wire x1="-3" y1="3" x2="-3" y2="2.1" width="0.1524" layer="51"/>
 <wire x1="-3" y1="2.1" x2="-3" y2="1.25" width="0.1524" layer="51"/>
@@ -26553,24 +26553,24 @@ Switches electrical signals</description>
 <wire x1="3" y1="3" x2="-3" y2="3" width="0.1524" layer="51"/>
 <circle x="-3.6" y="3.6" radius="0.1" width="0.2" layer="21"/>
 <rectangle x1="-0.5" y1="-0.5" x2="0.5" y2="0.5" layer="31"/>
-<rectangle x1="-2.95" y1="1.975" x2="-2.32" y2="2.225" layer="31"/>
-<rectangle x1="-2.95" y1="1.375" x2="-2.32" y2="1.625" layer="31"/>
-<rectangle x1="-2.95" y1="0.775" x2="-2.32" y2="1.025" layer="31"/>
-<rectangle x1="-2.95" y1="0.175" x2="-2.32" y2="0.425" layer="31"/>
-<rectangle x1="-2.95" y1="-0.425" x2="-2.32" y2="-0.175" layer="31"/>
-<rectangle x1="-2.95" y1="-1.025" x2="-2.32" y2="-0.775" layer="31"/>
-<rectangle x1="-2.95" y1="-1.625" x2="-2.32" y2="-1.375" layer="31"/>
-<rectangle x1="-2.95" y1="-2.225" x2="-2.32" y2="-1.975" layer="31"/>
-<rectangle x1="2.32" y1="-2.225" x2="2.95" y2="-1.975" layer="31"/>
-<rectangle x1="2.32" y1="-1.625" x2="2.95" y2="-1.375" layer="31"/>
-<rectangle x1="2.32" y1="-1.025" x2="2.95" y2="-0.775" layer="31"/>
-<rectangle x1="2.32" y1="-0.425" x2="2.95" y2="-0.175" layer="31"/>
-<rectangle x1="2.32" y1="0.175" x2="2.95" y2="0.425" layer="31"/>
-<rectangle x1="2.32" y1="0.775" x2="2.95" y2="1.025" layer="31"/>
-<rectangle x1="2.32" y1="1.375" x2="2.95" y2="1.625" layer="31"/>
-<rectangle x1="2.32" y1="1.975" x2="2.95" y2="2.225" layer="31"/>
-<text x="0" y="4" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
-<text x="0" y="-4" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
+<rectangle x1="-3.05" y1="2.15" x2="-2.42" y2="2.4" layer="31"/>
+<rectangle x1="-3.05" y1="1.5" x2="-2.42" y2="1.75" layer="31"/>
+<rectangle x1="-3.05" y1="0.85" x2="-2.42" y2="1.1" layer="31"/>
+<rectangle x1="-3.05" y1="0.2" x2="-2.42" y2="0.45" layer="31"/>
+<rectangle x1="-3.05" y1="-0.45" x2="-2.42" y2="-0.2" layer="31"/>
+<rectangle x1="-3.05" y1="-1.075" x2="-2.42" y2="-0.825" layer="31"/>
+<rectangle x1="-3.05" y1="-1.75" x2="-2.42" y2="-1.5" layer="31"/>
+<rectangle x1="-3.05" y1="-2.4" x2="-2.42" y2="-2.15" layer="31"/>
+<rectangle x1="2.42" y1="-2.4" x2="3.05" y2="-2.15" layer="31"/>
+<rectangle x1="2.42" y1="-1.75" x2="3.05" y2="-1.5" layer="31"/>
+<rectangle x1="2.42" y1="-1.1" x2="3.05" y2="-0.85" layer="31"/>
+<rectangle x1="2.42" y1="-0.45" x2="3.05" y2="-0.2" layer="31"/>
+<rectangle x1="2.42" y1="0.2" x2="3.05" y2="0.45" layer="31"/>
+<rectangle x1="2.42" y1="0.85" x2="3.05" y2="1.1" layer="31"/>
+<rectangle x1="2.42" y1="1.5" x2="3.05" y2="1.75" layer="31"/>
+<rectangle x1="2.42" y1="2.15" x2="3.05" y2="2.4" layer="31"/>
+<text x="0" y="3.5" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
+<text x="0" y="-3.5" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
 <wire x1="-3.2" y1="3.2" x2="-2.7" y2="3.2" width="0.1524" layer="21"/>
 <wire x1="3.2" y1="3.2" x2="2.7" y2="3.2" width="0.1524" layer="21"/>
 <wire x1="3.2" y1="3.2" x2="3.2" y2="2.7" width="0.1524" layer="21"/>
@@ -26736,7 +26736,7 @@ Switches electrical signals</description>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="">
 <attribute name="DESIGNER" value="Dryw Wade"/>
-<attribute name="REV" value="v10"/>
+<attribute name="REV" value="v11"/>
 </part>
 <part name="U1" library="Optical_Tracking_Odometry_Sensor" deviceset="PAA5160E1-Q" device=""/>
 <part name="U2" library="SparkFun-Sensors" deviceset="LSM6DSO" device="" value="LSM6DS0"/>
@@ -26985,9 +26985,9 @@ voltage range:
 <instance part="FD2" gate="G$1" x="246.38" y="30.48" smashed="yes"/>
 <instance part="FD3" gate="G$1" x="243.84" y="30.48" smashed="yes"/>
 <instance part="FD4" gate="G$1" x="243.84" y="33.02" smashed="yes"/>
-<instance part="D1" gate="G$1" x="134.62" y="81.28" smashed="yes" rot="R180">
-<attribute name="NAME" x="138.049" y="85.852" size="1.778" layer="95" font="vector" rot="R270"/>
-<attribute name="VALUE" x="132.715" y="85.852" size="1.778" layer="96" font="vector" rot="R270" align="top-left"/>
+<instance part="D1" gate="G$1" x="134.62" y="83.82" smashed="yes">
+<attribute name="NAME" x="131.191" y="79.248" size="1.778" layer="95" font="vector" rot="R90"/>
+<attribute name="VALUE" x="136.525" y="79.248" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
 <instance part="R1" gate="G$1" x="124.46" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="122.936" y="83.82" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center"/>
@@ -27360,14 +27360,14 @@ voltage range:
 <wire x1="27.94" y1="124.46" x2="27.94" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="134.62" y1="78.74" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="20.32" y1="124.46" x2="20.32" y2="127" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="134.62" y1="76.2" x2="134.62" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1.8V" class="0">
@@ -27894,9 +27894,9 @@ voltage range:
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="124.46" y1="88.9" x2="124.46" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="124.46" y1="91.44" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="91.44" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="134.62" y1="86.36" x2="134.62" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
