@@ -4,7 +4,7 @@ This first example just does some basic measurements to make sure everything is 
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 1](assets/img/Arduino_Example_1_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_1_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 1](assets/img/Arduino_Example_1_Menu.jpg){ width="600" }](assets/img/Arduino_Example_1_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 1</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ To find Example 2, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 2](assets/img/Arduino_Example_2_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_2_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 2](assets/img/Arduino_Example_2_Menu.jpg){ width="600" }](assets/img/Arduino_Example_2_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 2</figcaption>
 </figure>
 
@@ -49,7 +49,7 @@ To find Example 3, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 3](assets/img/Arduino_Example_3_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_3_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 3](assets/img/Arduino_Example_3_Menu.jpg){ width="600" }](assets/img/Arduino_Example_3_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 3</figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ To find Example 4, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 4](assets/img/Arduino_Example_4_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_4_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 4](assets/img/Arduino_Example_4_Menu.jpg){ width="600" }](assets/img/Arduino_Example_4_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 4</figcaption>
 </figure>
 
@@ -100,7 +100,7 @@ To find Example 5, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 5](assets/img/Arduino_Example_5_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_5_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 5](assets/img/Arduino_Example_5_Menu.jpg){ width="600" }](assets/img/Arduino_Example_5_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 5</figcaption>
 </figure>
 
@@ -128,7 +128,7 @@ To find Example 6, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 6](assets/img/Arduino_Example_6_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_6_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 6](assets/img/Arduino_Example_6_Menu.jpg){ width="600" }](assets/img/Arduino_Example_6_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 6</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ To find Example 7, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 7](assets/img/Arduino_Example_7_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_7_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 7](assets/img/Arduino_Example_7_Menu.jpg){ width="600" }](assets/img/Arduino_Example_7_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 7</figcaption>
 </figure>
 
@@ -176,7 +176,7 @@ To find Example 8, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **E
 
 
 <figure markdown>
-[![Optical Tracking Odometry Sensor Arduino Example 8](assets/img/Arduino_Example_8_Menu.jpg){ width="90%" }](assets/img/Arduino_Example_8_Menu.jpg "Click to enlarge")
+[![Optical Tracking Odometry Sensor Arduino Example 8](assets/img/Arduino_Example_8_Menu.jpg){ width="600" }](assets/img/Arduino_Example_8_Menu.jpg "Click to enlarge")
 <figcaption markdown>Finding Example 8</figcaption>
 </figure>
 
