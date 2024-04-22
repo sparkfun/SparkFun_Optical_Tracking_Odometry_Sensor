@@ -26894,6 +26894,7 @@ I_out max: 600mA</text>
 <text x="236.22" y="114.3" size="1.778" layer="97" font="vector" align="center">Required input
 voltage range:
 2.8V - 3.3V</text>
+<text x="63.5" y="116.84" size="1.778" layer="97" font="vector" align="center">Default I2C address: 0x17</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0" smashed="yes"/>
