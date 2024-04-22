@@ -13,11 +13,13 @@ We've written a library to get you started with the SparkFun Optical Tracking Od
 	[SparkFun Optical Tracking Odometry Sensor Arduino Library GitHub](https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary }
 </center>
 
-## Python
 
 
 
 <!--
+## Python
+
+
 Arduino library
 
 
