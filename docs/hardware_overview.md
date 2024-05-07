@@ -15,27 +15,6 @@ The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-b
 </figure>
 -->
 
-## Power
-
-The LED indicator lights when power is provided to the board. 
-
-<!--
-<figure markdown>
-[![Power LED(assets/img/){ width="200" }](assets/img/ "Click to enlarge")
-<figcaption markdown>Power LED</figcaption>
-</figure>
--->
-
-## Qwiic Connectors
-
-The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. <!--The default I<sup>2</sup>C address is . -->
-
-<!--
-<figure markdown>
-[![Qwiic Connectors](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
-<figcaption markdown>Qwiic Connectors</figcaption>
-</figure>
--->
 
 ## Optical Tracking Sensor - PAA5160
 
@@ -72,6 +51,29 @@ The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axi
 <figure markdown>
 [![LSM6DSO 6-DOF IMU Accelerometer](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
 <figcaption markdown>LSM6DSO 6-DOF IMU Accelerometer</figcaption>
+</figure>
+-->
+
+
+## Power
+
+The LED indicator lights when power is provided to the board. 
+
+<!--
+<figure markdown>
+[![Power LED(assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+<figcaption markdown>Power LED</figcaption>
+</figure>
+-->
+
+## Qwiic Connectors
+
+The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. The default I<sup>2</sup>C address is 0x17.
+
+<!--
+<figure markdown>
+[![Qwiic Connectors](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+<figcaption markdown>Qwiic Connectors</figcaption>
 </figure>
 -->
 
