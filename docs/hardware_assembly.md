@@ -16,17 +16,32 @@ You can access these designs here:
 
 	Accurate readings require that the sensor is mounted correctly; attempting to move the sensor by hand may work, but tracking accuracy will suffer.
 
+The image below shows the 3D mounted clip with the Optical Tracking Sensor attached to an XRP: 
 
 <figure markdown>
-[![Qwiic Cable connecting Optical Tracking Sensor to RedBoard](assets/img/Soil_Moisture_Sensor_Hookup_Guide_Update-02.jpg){ width="600" }](assets/img/Soil_Moisture_Sensor_Hookup_Guide_Update-02.jpg "Click to enlarge")
-<figcaption markdown>Qwiic Cable connecting Soil Moisture Sensor to RedBoard</figcaption>
+[![Optical Tracking Sensor Mounted to the Underside of the XRP](assets/img/SEN-24904-Action-9-Highlighted.jpg){ width="600" }](assets/img/SEN-24904-Action-9-Highlighted.jpg "Click to enlarge")
+<figcaption markdown>Optical Tracking Sensor Mounted to the XRP</figcaption>
 </figure>
+
+Here is the underside of the XRP with the Optical Tracking Sensor attached via the mounting clip: 
+
+<figure markdown>
+[![Optical Tracking Sensor Mounted to the Underside of the XRP](assets/img/SEN-24904-Action-12-Highlighted.jpg){ width="600" }](assets/img/SEN-24904-Action-12-Highlighted.jpg "Click to enlarge")
+<figcaption markdown>Optical Tracking Sensor Mounted to the XRP</figcaption>
+</figure>
+
+
 
 
 !!! attention
 
 	Reminder - make sure you peel off the yellow kapton tape! 
 
+
+<figure markdown>
+[![Peel off the Kapton tape!](assets/img/SEN-24904-Action-4.jpg){ width="600" }](assets/img/SEN-24904-Action-4.jpg "Click to enlarge")
+<figcaption markdown>Peel off the Kapton tape before use</figcaption>
+</figure>
 
 The height that the sensor needs to be mounted will be dependent on the surface being read. Glossy surfaces are ideal; running a calibration will determine the necessary height. 
 

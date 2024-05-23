@@ -14,6 +14,8 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	```
 	--8<-- ""
 	```
+<!-- >https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example1_BasicReadings/Example1_BasicReadings.ino
+-->
 
 Make sure you've selected the correct board and port in the Tools menu and then hit the upload button. Once the code has finished uploading, go ahead and open a [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics). You should see something similar to the following.  
 
@@ -42,7 +44,12 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	```
 	--8<-- ""
 	```
+<!-- 
 
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example2_SetUnits/Example2_SetUnits.ino
+
+
+-->
 Notice the following code snippet - this is the section of code that allows you to choose your units: 
 
 <figure markdown>
@@ -80,6 +87,29 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	--8<-- ""
 	```
 
+<!--
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example3_Calibration/Example3_Calibration.ino
+-->
+
+Calibrating your bot requires you to move it around a bit. First, set both scalars to 1.0, then calibrate the angular scalar, then the linear scalar. 
+
+To calibrate the angular scalar, spin the robot by multiple rotations (eg. 10) to get a precise error, then set the scalar to the inverse of the error. Remember that the angle wraps from -180 to 180 degrees, so for example, if after 10 rotations counterclockwise(positive rotation), the sensor reports -15 degrees, the required scalar would be 3600/3585 = 1.004. 
+
+<figure markdown>
+[![Rotating the Optical Tracking Odometry Sensor](assets/img/SEN-24904-XRP-Rotation.jpg){ width="600" }](assets/img/SEN-24904-XRP-Rotation.jpg "Click to enlarge")
+<figcaption markdown>Rotating the Optical Tracking Odometry Sensor</figcaption>
+</figure>
+
+
+To calibrate the linear scalar, move the robot a known distance and measure the error; do this multiple times at multiple speeds to get an average, then set the linear scalar to the inverse of the error. For example, if you move the robot 100 inches and the sensor reports 103 inches, set the linear scalar to 100/103 = 0.971. 
+
+
+<figure markdown>
+[![Moving the Optical Tracking Odometry Sensor](assets/img/SEN-24904-XRP-Distance.jpg){ width="600" }](assets/img/SEN-24904-XRP-Distance.jpg "Click to enlarge")
+<figcaption markdown>Moving the Optical Tracking Odometry Sensor</figcaption>
+</figure>
+
+
 
 
 ###Example 4: SetOffsetAndPosition 
@@ -107,8 +137,20 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	```
 	--8<-- ""
 	```
+<!--
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example4_SetOffsetAndPosition/Example4_SetOffsetAndPosition.ino
+-->
+
+If the sensor is mounted 5 inches to the left (negative X) and 10 inches forward (positive Y) of the center of the robot, and mounted 90 degrees clockwise (negative rotation) from the robot's orientation, the offset would be {-5, 10, -90}. These can be any value, even the angle can be tweaked slightly to compensate for imperfect mounting (eg. 1.3 degrees).
+
+<figure markdown>
+[![The X, Y, and Angular Offset of the Optical Tracking Sensor](assets/img/SEN-24904-XRP-XY-Offset.jpg){ width="600" }](assets/img/SEN-24904-XRP-XY-Offset.jpg "Click to enlarge")
+<figcaption markdown>The X, Y, and Angular Offset of the Optical Tracking Sensor</figcaption>
+</figure>
 
 
+
+<!--
 ###Example 5: VelocityAndAcceleration
 
 This example prints out the velocity and acceleration of the bot as it moves. 
@@ -130,6 +172,9 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	```
 	--8<-- ""
 	```
+
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example5_VelocityAndAcceleration/Example5_VelocityAndAcceleration.ino
+
 
 
 ###Example 6: StandardDeviation
@@ -159,6 +204,8 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	--8<-- ""
 	```
 
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example6_StandardDeviation/Example6_StandardDeviation.ino
+
 
 
 
@@ -181,6 +228,8 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	```
 	--8<-- ""
 	```
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example7_GetVersion/Example7_GetVersion.ino
+
 
 Make sure you've selected the correct board and port in the Tools menu and then hit the upload button. Once the code has finished uploading, go ahead and open a [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics). You should see something similar to the following: 
 
@@ -211,5 +260,9 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 	```
 	--8<-- ""
 	```
+<!--
+https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example8_SelfTest/Example8_SelfTest.ino
+-->
+
 
 

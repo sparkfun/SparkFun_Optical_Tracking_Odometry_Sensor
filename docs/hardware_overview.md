@@ -8,12 +8,12 @@ icon: material/cog
 
 The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memory (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I<sup>2</sup>C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
 
-<!--
+
 <figure markdown>
-[![STM32 Processor](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![STM32 Processor](assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg "Click to enlarge")
 <figcaption markdown>STM32 Processor</figcaption>
 </figure>
--->
+
 
 
 ## Optical Tracking Sensor - PAA5160
@@ -27,12 +27,12 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 	<figcaption markdown>*Lasers...*</figcaption>
 	</figure>
 
-<!--
+
 <figure markdown>
-[![Optical Tracking Sensor - PAA5160](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![Optical Tracking Sensor - PAA5160](assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg "Click to enlarge")
 <figcaption markdown>Optical Tracking Sensor - PAA5160</figcaption>
 </figure>
--->
+
 
 !!! first-tech "FIRST Tech Challenge"
 
@@ -47,58 +47,54 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 
 The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axis digital gyroscope featuring a full-scale acceleration range of ±2/±4/±8/±16 g and an angular rate range of ±125/±250/±500/±1000/±2000 dps. For more information, refer to the [datasheet](assets/documentation/lsm6dso.pdf). 
 
-<!--
+
 <figure markdown>
-[![LSM6DSO 6-DOF IMU Accelerometer](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![LSM6DSO 6-DOF IMU Accelerometer](assets/img/24904-Optical-Tracking-Odometry-Sensor_LSM6DS0.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_LSM6DS0.jpg "Click to enlarge")
 <figcaption markdown>LSM6DSO 6-DOF IMU Accelerometer</figcaption>
 </figure>
--->
-
 
 ## Power
 
 The LED indicator lights when power is provided to the board. 
 
-<!--
+
 <figure markdown>
-[![Power LED(assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![Power LED](assets/img/24904-Optical-Tracking-Odometry-Sensor_PowerLED.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_PowerLED.jpg "Click to enlarge")
 <figcaption markdown>Power LED</figcaption>
 </figure>
--->
+
 
 ## Qwiic Connectors
 
 The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. The default I<sup>2</sup>C address is 0x17.
 
-<!--
+
 <figure markdown>
-[![Qwiic Connectors](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![Qwiic Connectors](assets/img/24904-Optical-Tracking-Odometry-Sensor_QwiicConnex.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_QwiicConnex.jpg "Click to enlarge")
 <figcaption markdown>Qwiic Connectors</figcaption>
 </figure>
--->
+
 
 ## GPIO
 
 The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. In normal operation, IO9 acts as a "data ready" interrupt; this pin could be used to synchronize measurements if needed. 
 
-<!--
 <figure markdown>
-[![GPIO pins are highlighted](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
-<figcaption markdown>LSM6DSO 6-DOF IMU Accelerometer</figcaption>
+[![GPIO pins are highlighted](assets/img/24904-Optical-Tracking-Odometry-Sensor_GPIO.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_GPIO.jpg "Click to enlarge")
+<figcaption markdown>GPIO</figcaption>
 </figure>
--->
+
 
 
 ## Debugging Test Points
 
 We've broken out test points for serial wire debugging if you wish to access flash memory or directly program the board. They are located here: 
 
-<!--
+
 <figure markdown>
-[![Debugging Test Points](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![Debugging Test Points](assets/img/24904-Optical-Tracking-Odometry-Sensor_DbgTestPoints.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_DbgTestPoints.jpg "Click to enlarge")
 <figcaption markdown>Debugging Test Points</figcaption>
 </figure>
--->
 
 
 ## Jumpers
@@ -116,7 +112,7 @@ We've broken out test points for serial wire debugging if you wish to access fla
 If you are concerned about power consumption, need to run dark, or just really don't like LEDs, cut the jumper highlighted below to disconnect power from the LED on the front of the board. 
 
 <figure markdown>
-[![Power Jumper](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![Power Jumper](assets/img/24904-Optical-Tracking-Odometry-Sensor_LEDJumper.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_LEDJumper.jpg "Click to enlarge")
 <figcaption markdown>Power Jumper</figcaption>
 </figure>
 
@@ -126,7 +122,7 @@ If you are concerned about power consumption, need to run dark, or just really d
 If you choose to use one or more Qwiic breakouts in your project, it is important to note that this board comes equipped with pull-up resistors on the clock and data pins. If you are daisy-chaining multiple Qwiic devices, you will want to cut this jumper; if multiple sensors are connected to the bus with the pull-up resistors enabled, the parallel equivalent resistance will create too strong of a pull-up for the bus to operate correctly. As a general rule of thumb, disable all but one pair of pull-up resistors if multiple devices are connected to the bus. To disable the pull up resistors, use an X-acto knife to cut the joints between the jumper pads highlighted below.
 
 <figure markdown>
-[![I2C Jumper](assets/img/){ width="200" }](assets/img/ "Click to enlarge")
+[![I2C Jumper](assets/img/24904-Optical-Tracking-Odometry-Sensor_I2CJumper.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_I2CJumper.jpg "Click to enlarge")
 <figcaption markdown>I<sup>2</sup>C Jumper</figcaption>
 </figure>
 
