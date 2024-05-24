@@ -2,6 +2,14 @@
 icon: simple/arduino
 ---
 
+!!! attention
+
+	All of the examples require the user to enter a key into the serial monitor before the example starts, which triggers the IMU calibration. 
+
+!!! attention
+
+	The IMU on the Optical Tracking Odometry Sensor includes a gyroscope and accelerometer, which could have an offset. The OTOS performs a quick calibration when it powers up, but it is recommended to perform a more thorough calibration at the start of all your programs. 
+
 ###Example 1: Basic Readings
 
 This first example just does some basic measurements to make sure everything is hooked up correctly. To find Example 1, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example1_BasicReadings**:
@@ -69,10 +77,17 @@ Make sure you've selected the correct board and port in the Tools menu and then 
 <figcaption markdown>Example 2 Output</figcaption>
 </figure>
 
+Feel free to move the sensor around to see how the coordinates change!
+
 
 ###Example 3: Calibration
 
-The IMU on the Optical Tracking Odometry Sensor includes a gyroscope and accelerometer, which could have an offset. The OTOS performs a quick calibration when it powers up, but it is recommended to perform a more thorough calibration at the start of all your programs. 
+!!! warning
+
+	As of firmware version 1.0, these calibration values will be lost after a power cycle, so you will need to set them each time you power up the sensor.
+
+
+The data from the OTOS will likely have minor scaling errors that can be calibrated out. This is especially important for the angular scalar, because an incorrect angle measurement causes the linear measurements to be rotated by the wrong angle in the firmware, which can lead to very inaccurate tracking!
 
 To find Example 3, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example3_Calibration**:
 
@@ -118,11 +133,13 @@ To calibrate the linear scalar, move the robot a known distance and measure the 
 
 ###Example 4: SetOffsetAndPosition 
 
-This example shows how to set the offset for the sensor relative to the center of the robot. The units default to inches and degrees, but if you want to use different units, make sure you specify them before setting the offset.
+This example shows how to set the offset for the sensor relative to the center of the robot. The units default to inches and degrees, but if you want to use different units, make sure you specify them before setting the offset. Without setting the offset, the OTOS will report the coordinates of itself. If the offset is set, the OTOS will instead report the coordinates of the center of your robot.
+
+Note that the OTOS typically starts tracking from the origin, but if your robot starts at some other location, or you have another source of location information from another sensor that's more accurate, you can send the current location to the OTOS and it will continue tracking from there.
 
 !!! warning 
 
-    Note that as of firmware version 1.0, these values will be lost after a power cycle, so you will need to set them each time you power up the sensor. 
+    As of firmware version 1.0, these values will be lost after a power cycle, so you will need to set them each time you power up the sensor. 
 
 
 To find Example 4, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example4_SetOffsetAndPosition**:
@@ -151,6 +168,9 @@ If the sensor is mounted 5 inches to the left (negative X) and 10 inches forward
 [![The X, Y, and Angular Offset of the Optical Tracking Sensor](assets/img/SEN-24904-XRP-XY-Offset.jpg){ width="600" }](assets/img/SEN-24904-XRP-XY-Offset.jpg "Click to enlarge")
 <figcaption markdown>The X, Y, and Angular Offset of the Optical Tracking Sensor</figcaption>
 </figure>
+
+
+
 
 
 
