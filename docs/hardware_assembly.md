@@ -3,7 +3,7 @@ icon: fontawesome/solid/screwdriver-wrench
 ---
 
 
-The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor in order to get accurate data. If you don't already have a mount, we've designed a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. 
+The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor in order to get accurate data. If you don't already have a mount, there are a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. 
 
 The height that the sensor needs to be mounted will be dependent on the surface being read. If you have a shiny or glossy surface, you should be able to mount the sensor anywhere in the range of 10mm to 27mm, measured from the front face of the optical sensor. If you have a darker or more diffuse surface, you may need to mount the sensor at the low-end of that range. You'll need to test to determine what height works for your surface.
 
