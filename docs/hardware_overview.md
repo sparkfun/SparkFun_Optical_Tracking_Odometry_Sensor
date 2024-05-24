@@ -7,6 +7,12 @@ icon: material/cog
 
 The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical tracking error rate of 3~5% within a working range of 10mm to 27mm. With an 850nm class 1 laser a resolution of 20,000 DPI and a frame rate of 20,000 fps, it is ideal for surfaces like concrete, epoxy, laminated wood, or glossy/semi-glossy flooring. That said, dark or diffuse surfaces are more challenging, so these specs may vary based on the surfaces that are being used. More information can be found in the [datasheet](assets/documentation/PAA5160_Datasheet_General.pdf).
 
+
+<figure markdown>
+[![Optical Tracking Sensor - PAA5160](assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg "Click to enlarge")
+<figcaption markdown>Optical Tracking Sensor - PAA5160</figcaption>
+</figure>
+
 !!! warning
 	The laser on this module is a Class 1, 850nm laser. Please use appropriate caution. 
 	<figure markdown>
@@ -14,18 +20,6 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 	<figcaption markdown>*Lasers...*</figcaption>
 	</figure>
 
-
-<figure markdown>
-[![Optical Tracking Sensor - PAA5160](assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg "Click to enlarge")
-<figcaption markdown>Optical Tracking Sensor - PAA5160</figcaption>
-</figure>
-
-
-!!! first-tech "FIRST Tech Challenge"
-
-	[![FIRST Tech Logo](assets/img/FIRSTTech_IconVert_RGB.jpg){ align="left" width="100"}](assets/img/FIRSTTech_IconVert_RGB.jpg "Click to enlarge")
-
-	FIRST Tech Challenge: Note here that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it can't track the foam surface at all.
 
 
 ## LSM6DSO IMU Accelerometer

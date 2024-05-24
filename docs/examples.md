@@ -1,3 +1,7 @@
+---
+icon: simple/arduino
+---
+
 ###Example 1: Basic Readings
 
 This first example just does some basic measurements to make sure everything is hooked up correctly. To find Example 1, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example1_BasicReadings**:

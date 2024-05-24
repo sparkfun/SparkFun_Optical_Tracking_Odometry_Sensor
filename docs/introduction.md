@@ -15,7 +15,8 @@ icon: material/book-open-page-variant
     ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg)
     </figure></a>
     
--   The SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) is an all-in-one, Qwiic enabled tracking sensor that allows you to accurately drive your XRP or other robotics with minimal space and setup requirements.
+-   The SparkFun Qwiic Optical Tracking Odometry Sensor empowers you to elevate your robot's navigation capabilities with exceptional precision and streamlined integration. This compact, all-in-one sensor leverages the power of the PAA5160E1 chip from PixArt Imaging Inc., delivering accurate dual-axis motion data across various hard floor surfaces. But that's not all! This sensor boasts a powerful built-in 6-axis Inertial Measurement Unit (IMU) and an onboard microcontroller that performs real-time sensor fusion and tracking algorithms.
+
 
     <center>
     [Purchase from SparkFun :fontawesome-solid-cart-plus:{ .heart }](https://www.sparkfun.com/products/24904){ .md-button .md-button--primary }
@@ -37,11 +38,11 @@ To follow along with this tutorial, you will need the following materials. You m
             SEN-24904
         </td>
         <td>
-            <a href=" https://www.sparkfun.com/products/17259">
-                <center><img src="https://cdn.sparkfun.com/r/455-455/assets/parts/1/6/2/4/6/17259-Flexible_Qwiic_Cable_-_100mm-01.jpg" style="width:140px; height:140px; object-fit:contain;" alt="USB micro-B Cable - 6 Foot" height="140"></center>
-                <h3 class="title">Flexible Qwiic Cable - 100mm</h3>
+            <a href="https://www.sparkfun.com/products/25596">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/2/6/1/5/1/CAB-25596-Flexible-Qwiic-to-STEMMA-Cable-Feature.jpg" style="width:140px; height:140px; object-fit:contain;" alt="Flexible Qwiic to STEMMA Cable - 500mm" height="140"></center>
+                <h3 class="title">Flexible Qwiic to STEMMA Cable - 500mm</h3>
             </a>
-            PRT-17259
+            CAB-25596
         </td>
         <td>
             <a href="https://www.sparkfun.com/products/10215">

@@ -25,7 +25,6 @@ In addition, instructions for the FTC mounts are available here:
 
 
 
-
 The image below shows the 3D mounted clip with the Optical Tracking Sensor attached to an FTC Bot: 
 
 <figure markdown>
@@ -33,12 +32,20 @@ The image below shows the 3D mounted clip with the Optical Tracking Sensor attac
 <figcaption markdown>Optical Tracking Sensor Mounted to the FTC Bot</figcaption>
 </figure>
 
+!!! first-tech "FIRST Tech Challenge"
+
+	[![FIRST Tech Logo](assets/img/FIRSTTech_IconVert_RGB.jpg){ align="left" width="100"}](assets/img/FIRSTTech_IconVert_RGB.jpg "Click to enlarge")
+
+	FIRST Tech Challenge: Note here that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it can't track the foam surface at all.
+
+
 Here is the underside of the FTC Bot with the Optical Tracking Sensor attached via the mounting clip: 
 
 <figure markdown>
 [![Optical Tracking Sensor Mounted to the Underside of the FTC Bot](assets/img/SEN-24904-Action-21-Highlighted.jpg){ width="600" }](assets/img/SEN-24904-Action-21-Highlighted.jpg "Click to enlarge")
 <figcaption markdown>Optical Tracking Sensor Mounted to the FTC Bot</figcaption>
 </figure>
+
 
 
 !!! attention
@@ -51,11 +58,3 @@ Here is the underside of the FTC Bot with the Optical Tracking Sensor attached v
 <figcaption markdown>Peel off the Kapton tape before use</figcaption>
 </figure>
 
-
-<!--
-!!! first-tech "FIRST Tech Challenge"
-
-	[![FIRST Tech Logo](assets/img/FIRSTTech_IconVert_RGB.jpg){ align="left" width="100"}](assets/img/FIRSTTech_IconVert_RGB.jpg "Click to enlarge")
-
-	FIRST Tech Challenge: Note here that we are using the foam surface typical of FIRST Tech Challenge competitions and the sensor is mounted at 10mm from the surface.
--->
