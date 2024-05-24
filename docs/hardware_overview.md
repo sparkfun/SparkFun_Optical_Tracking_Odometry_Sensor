@@ -3,19 +3,6 @@ icon: material/cog
 ---
 
 
-
-## STM32CO
-
-The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memory (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I<sup>2</sup>C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
-
-
-<figure markdown>
-[![STM32 Processor](assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg "Click to enlarge")
-<figcaption markdown>STM32 Processor</figcaption>
-</figure>
-
-
-
 ## Optical Tracking Sensor - PAA5160
 
 The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical tracking error rate of 3~5% within a working range of 10mm to 27mm. With an 850nm class 1 laser a resolution of 20,000 DPI and a frame rate of 20,000 fps, it is ideal for surfaces like concrete, epoxy, laminated wood, or glossy/semi-glossy flooring. That said, dark or diffuse surfaces are more challenging, so these specs may vary based on the surfaces that are being used. More information can be found in the [datasheet](assets/documentation/PAA5160_Datasheet_General.pdf).
@@ -41,9 +28,7 @@ The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical
 	FIRST Tech Challenge: Note here that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it can't track the foam surface at all.
 
 
-
-
-## 6-DOF IMU Accelerometer
+## LSM6DSO IMU Accelerometer
 
 The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axis digital gyroscope featuring a full-scale acceleration range of ±2/±4/±8/±16 g and an angular rate range of ±125/±250/±500/±1000/±2000 dps. For more information, refer to the [datasheet](assets/documentation/lsm6dso.pdf). 
 
@@ -52,6 +37,18 @@ The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axi
 [![LSM6DSO 6-DOF IMU Accelerometer](assets/img/24904-Optical-Tracking-Odometry-Sensor_LSM6DS0.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_LSM6DS0.jpg "Click to enlarge")
 <figcaption markdown>LSM6DSO 6-DOF IMU Accelerometer</figcaption>
 </figure>
+
+
+## STM32CO
+
+The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memory (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I<sup>2</sup>C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the [datasheet](assets/documentation/stm32c011d6-3082107.pdf).
+
+
+<figure markdown>
+[![STM32 Processor](assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg){ width="400" }](assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg "Click to enlarge")
+<figcaption markdown>STM32 Processor</figcaption>
+</figure>
+
 
 ## Power
 

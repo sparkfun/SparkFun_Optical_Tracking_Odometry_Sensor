@@ -14,6 +14,9 @@ icon: fontawesome/solid/scroll
 # Hardware Assembly
 --8<-- "./docs/hardware_assembly.md:5"
 
+# Hardware Assembly - FTC
+--8<-- "./docs/hardware_assembly_FTC.md:5"
+
 ## Software Setup
 --8<-- "./docs/software_setup_and_programming.md:5"
 

@@ -253,7 +253,9 @@ nav:
   - Hookup Guide:
     - Introduction: introduction.md
     - Hardware Overview: hardware_overview.md
-    - Hardware Assembly: hardware_assembly.md
+    - Hardware Assembly: 
+      - XRP: hardware_assembly.md
+      - FTC: hardware_assembly_FTC.md
     - Software Setup: software_setup_and_programming.md
     - Examples: 
       - Arduino Examples: examples.md

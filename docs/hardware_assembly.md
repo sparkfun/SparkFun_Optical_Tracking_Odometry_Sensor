@@ -3,14 +3,15 @@ icon: fontawesome/solid/screwdriver-wrench
 ---
 
 
-The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor. If you don't already have a chassis, we've designed a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. 
+The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor in order to get accurate data. If you don't already have a mount, we've designed a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. 
 
-You can access these designs here: 
+The height that the sensor needs to be mounted will be dependent on the surface being read. If you have a shiny or glossy surface, you should be able to mount the sensor anywhere in the range of 10mm to 27mm, measured from the front face of the optical sensor. If you have a darker or more diffuse surface, you may need to mount the sensor at the low-end of that range. You'll need to test to determine what height works for your surface.
+
+You can access the XRP mount on Printables:  
 
 <center>
-[:octicons-download-16:{ .heart } Download 3D Mounting Designs](./../Hardware/SparkFun_Optical_Tracking_Odometry_Sensor.brd){ .md-button .md-button--primary }
+	[XRP Mount on Printables](https://www.printables.com/model/872179-odometry-clip-for-xrp){ .md-button .md-button--primary target="_blank" }
 </center>
-
 
 !!! warning
 
@@ -31,8 +32,6 @@ Here is the underside of the XRP with the Optical Tracking Sensor attached via t
 </figure>
 
 
-
-
 !!! attention
 
 	Reminder - make sure you peel off the yellow kapton tape! 
@@ -42,11 +41,3 @@ Here is the underside of the XRP with the Optical Tracking Sensor attached via t
 [![Peel off the Kapton tape!](assets/img/SEN-24904-Action-4.jpg){ width="600" }](assets/img/SEN-24904-Action-4.jpg "Click to enlarge")
 <figcaption markdown>Peel off the Kapton tape before use</figcaption>
 </figure>
-
-The height that the sensor needs to be mounted will be dependent on the surface being read. Glossy surfaces are ideal; running a calibration will determine the necessary height. 
-
-!!! first-tech "FIRST Tech Challenge"
-
-	[![FIRST Tech Logo](assets/img/FIRSTTech_IconVert_RGB.jpg){ align="left" width="100"}](assets/img/FIRSTTech_IconVert_RGB.jpg "Click to enlarge")
-
-	FIRST Tech Challenge: Note here that we are using the foam surface typical of FIRST Tech Challenge competitions and the sensor is mounted at 10mm from the surface.
