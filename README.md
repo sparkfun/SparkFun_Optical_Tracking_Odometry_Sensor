@@ -1,11 +1,11 @@
 # SparkFun Optical Tracking Odometry Sensor
 ========================================
 
-[![SparkFun Optical Tracking Odometry Sensor]()](https://www.sparkfun.com/products/24904)
+[![SparkFun Optical Tracking Odometry Sensor](https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg)](https://www.sparkfun.com/products/24904)
 
 [*SparkFun Optical Tracking Odometry Sensor [SEN-24904]*](https://www.sparkfun.com/products/24904)
 
-The SparkFun Optical Tracking Odometry Sensor is awesome. Buy it. 
+The SparkFun Qwiic Optical Tracking Odometry Sensor empowers you to elevate your robot's navigation capabilities with exceptional precision and streamlined integration. This compact, all-in-one sensor leverages the power of the PAA5160E1 chip from PixArt Imaging Inc., delivering accurate dual-axis motion data across various hard floor surfaces. But that's not all! This sensor boasts a powerful built-in 6-axis Inertial Measurement Unit (IMU) and an onboard microcontroller that performs real-time sensor fusion and tracking algorithms.
 
 
 Repository Contents
