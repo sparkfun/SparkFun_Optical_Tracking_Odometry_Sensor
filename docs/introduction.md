@@ -66,17 +66,9 @@ To follow along with this tutorial, you will need the following materials. You m
 
 ## Suggested Reading
 
-As a more professionally oriented product, we will skip over the more fundamental tutorials (i.e. [**Ohm's Law**](https://learn.sparkfun.com/tutorials/voltage-current-resistance-and-ohms-law) and [**What is Electricity?**](https://learn.sparkfun.com/tutorials/what-is-electricity)). However, below are a few tutorials that may help users familiarize themselves with various aspects of the board.
+Below are a few tutorials that may help users familiarize themselves with various aspects of the board.
 
 <div class="grid cards hide col-4" markdown align="center">
-
--   <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">
-    <figure markdown>
-    ![How to Solder: Through-Hole Soldering](https://cdn.sparkfun.com/assets/learn_tutorials/5/Soldering_Action-01.jpg)
-    </figure>
-    </a>
-    <a href="https://learn.sparkfun.com/tutorials/how-to-solder-through-hole-soldering">**How to Solder: Through-Hole Soldering**
-    </a>
 
 -   <a href="https://learn.sparkfun.com/tutorials/82">
     <figure markdown>

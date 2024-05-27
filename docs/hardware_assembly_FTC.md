@@ -47,6 +47,14 @@ Here is the underside of the FTC Bot with the Optical Tracking Sensor attached v
 </figure>
 
 
+Using the [Flexible Qwiic to STEMMA Cable - 500mm](https://www.sparkfun.com/products/25596), you'll need to attach the sensor via the I<sup>2</sup>C panel on the back of the Bot like so:
+
+<figure markdown>
+[![I2C connection location](assets/img/SEN-24904-Action-24-Highlighted.jpg){ width="600" }](assets/img/SEN-24904-Action-24-Highlighted.jpg "Click to enlarge")
+<figcaption markdown>I<sup>2</sup>C connection location</figcaption>
+</figure>
+
+
 
 !!! attention
 

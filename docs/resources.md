@@ -9,3 +9,4 @@ For more resources related to the SparkFun SparkFun Optical Tracking Odometry Se
 * [Board Dimensions(PNG)](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ target="_blank" }
 * [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor){ target="_blank" }
 * [Arduino Library GitHub Repository](https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library){ target="_blank" }
+* [XRP Info Page](https://www.sparkfun.com/xrp){ target="_blank" }
