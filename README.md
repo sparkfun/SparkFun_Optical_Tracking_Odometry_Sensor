@@ -1,7 +1,7 @@
 # SparkFun Optical Tracking Odometry Sensor
 ========================================
 
-[![SparkFun Optical Tracking Odometry Sensor](https://cdn.sparkfun.com/r/600-600/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg)](https://www.sparkfun.com/products/24904)
+[![SparkFun Optical Tracking Odometry Sensor](https://cdn.sparkfun.com/r/400-400/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg)](https://www.sparkfun.com/products/24904)
 
 [*SparkFun Optical Tracking Odometry Sensor [SEN-24904]*](https://www.sparkfun.com/products/24904)
 
