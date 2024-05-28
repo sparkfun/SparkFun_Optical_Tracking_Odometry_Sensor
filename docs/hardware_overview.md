@@ -57,7 +57,7 @@ The LED indicator lights when power is provided to the board.
 
 ## Qwiic Connectors
 
-The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. The default I<sup>2</sup>C address is 0x17.
+The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. The I<sup>2</sup>C address is 0x17.
 
 
 <figure markdown>
