@@ -77,7 +77,7 @@ Make sure you've selected the correct board and port in the Tools menu and then 
 <figcaption markdown>Example 2 Output</figcaption>
 </figure>
 
-Feel free to move the sensor around to see how the coordinates change!
+Move the sensor around to see how the coordinates change!
 
 
 <figure markdown>
