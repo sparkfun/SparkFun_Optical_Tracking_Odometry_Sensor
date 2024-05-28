@@ -170,7 +170,7 @@ If the sensor is mounted 5 inches to the left (negative X) and 10 inches forward
 </figure>
 
 
-
+These four examples cover the basics - there are more examples to explore in the library! 
 
 
 

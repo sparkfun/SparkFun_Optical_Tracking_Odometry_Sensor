@@ -18,7 +18,7 @@ icon: fontawesome/solid/scroll
 --8<-- "./docs/hardware_assembly_FTC.md:5"
 
 ## Software Setup
---8<-- "./docs/software_setup_and_programming.md:5"
+--8<-- "./docs/software_setup-Arduino.md:5"
 
 # Troubleshooting Tips
 --8<-- "./docs/troubleshooting.md:5"

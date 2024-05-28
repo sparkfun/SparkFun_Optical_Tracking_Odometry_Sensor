@@ -256,7 +256,10 @@ nav:
     - Hardware Assembly: 
       - XRP: hardware_assembly.md
       - FTC: hardware_assembly_FTC.md
-    - Software Setup: software_setup_and_programming.md
+    - Software Setup: 
+      - Arduino: software_setup-Arduino.md
+#      - Python: software_setup-Python.md
+#     - FIRST Tech Challenge: 
     - Examples: 
       - Arduino Examples: examples.md
 #     - Python Examples: 
