@@ -1,0 +1,6 @@
+Debug
+Release/*
+!Release/*.hex
+
+.vscode
+.settings
