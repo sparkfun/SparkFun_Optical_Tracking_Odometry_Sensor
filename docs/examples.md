@@ -80,6 +80,11 @@ Make sure you've selected the correct board and port in the Tools menu and then 
 Feel free to move the sensor around to see how the coordinates change!
 
 
+<figure markdown>
+[![Coordinate Changes](assets/img/SEN-24904-Action-GIF-1.gif){ width="600" }](assets/img/SEN-24904-Action-GIF-1.gif "Click to enlarge")
+<figcaption markdown>Coordinate Changes</figcaption>
+</figure>
+
 ###Example 3: Calibration
 
 !!! warning
