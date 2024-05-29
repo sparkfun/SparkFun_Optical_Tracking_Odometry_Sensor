@@ -20,7 +20,7 @@ The FTC mounts are available on Onshape:
 In addition, instructions for the FTC mounts are available here:
 
 <center>
-	[Instructions for FTC mounts]( https://docs.google.com/document/d/1Lvl2MDyql5VbqD7VTcGUG2xGibc90_Fd-FUR2ew7Pfw/edit){ .md-button .md-button--primary target="_blank" }
+	[Instructions for FTC mounts]( https://docs.google.com/document/d/14oHPdummdtDlF2BijsM5kqbD6MTwzaQFkbJ2jo99SUI/edit){ .md-button .md-button--primary target="_blank" }
 </center>
 
 
