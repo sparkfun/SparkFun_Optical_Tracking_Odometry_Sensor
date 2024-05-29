@@ -36,6 +36,9 @@ Make sure you've selected the correct board and port in the Tools menu and then 
 <figcaption markdown>Example 1 Output</figcaption>
 </figure>
 
+Move the sensor around to see how the coordinates change!
+
+
 ###Example 2: SetUnits
 
 This example sets the desired units for linear and angular measurements. Can be either meters or inches for linear, and radians or degrees for angular. If not set, the default is inches and degrees. Note that this setting is not stored in the sensor, it's part of the library, so you need to set at the start of all your programs.
@@ -77,13 +80,6 @@ Make sure you've selected the correct board and port in the Tools menu and then 
 <figcaption markdown>Example 2 Output</figcaption>
 </figure>
 
-Move the sensor around to see how the coordinates change!
-
-
-<figure markdown>
-[![Coordinate Changes](assets/img/SEN-24904-Action-GIF-1.gif){ width="600" }](assets/img/SEN-24904-Action-GIF-1.gif "Click to enlarge")
-<figcaption markdown>Coordinate Changes</figcaption>
-</figure>
 
 ###Example 3: Calibration
 
@@ -114,6 +110,8 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 <!--
 https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example3_Calibration/Example3_Calibration.ino
 -->
+
+Make sure you've selected the correct board and port in the Tools menu and then hit the upload button. Once the code has finished uploading, go ahead and open a [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics).
 
 Calibrating your bot requires you to move it around a bit. First, set both scalars to 1.0, then calibrate the angular scalar, then the linear scalar. 
 
