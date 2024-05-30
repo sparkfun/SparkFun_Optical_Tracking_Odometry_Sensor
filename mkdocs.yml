@@ -258,8 +258,8 @@ nav:
       - FTC: hardware_assembly_FTC.md
     - Software Setup: 
       - Arduino: software_setup-Arduino.md
-#      - Python: software_setup-Python.md
-#     - FIRST Tech Challenge: 
+      - Python - Coming Soon: software_setup-Python.md
+      - FIRST Tech Challenge - Coming Soon: software_setup-FTC.md
     - Examples: 
       - Arduino Examples: examples.md
 #     - Python Examples: 

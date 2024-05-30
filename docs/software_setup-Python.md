@@ -3,14 +3,10 @@ icon: simple/python
 ---
 
 ## Python
+We are actively working on the Python package, but if you wish to find the files, they are here: 
 
-!!! attention
-	If this is your first time using Arduino, please review our tutorial on [installing the Arduino IDE](https://learn.sparkfun.com/tutorials/installing-arduino-ide). If you have not previously installed an Arduino library, please check out our [installation guide](https://learn.sparkfun.com/tutorials/installing-an-arduino-library).
-
-We've written a library to get you started with the SparkFun Optical Tracking Odometry Sensor. You can obtain this library through the Arduino Library Manager by searching for "Odometry" and installing the latest version from SparkFun. If you prefer downloading libraries manually, you can grab them from the GitHub Repository.
 
 <center>
-	[SparkFun Optical Tracking Odometry Sensor Arduino Library GitHub](https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary }
+	[SparkFun Optical Tracking Odometry Sensor Python Package GitHub](https://github.com/sparkfun/Qwiic_OTOS_Py/archive/refs/heads/master.zip){ .md-button .md-button--primary }
 </center>
-
 
