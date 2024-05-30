@@ -24,6 +24,21 @@ icon: material/book-open-page-variant
 
 </div>
 
+<div style="text-align: center">
+  <table>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WcCNC8wExUc?si=TiFzZ-B61BXpmXQT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+
+
+
+
 ## Required Materials
 
 To follow along with this tutorial, you will need the following materials. You may not need everything though depending on what you have. Add it to your cart, read through the guide, and adjust the cart as necessary.
@@ -45,12 +60,29 @@ To follow along with this tutorial, you will need the following materials. You m
             CAB-25596
         </td>
         <td>
+            <a href="https://www.sparkfun.com/products/14427">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/1/2/4/5/3/14427-Qwiic_Cable_-_100mm-01.jpg" style="width:140px; height:140px; object-fit:contain;" alt="Qwiic Cable - 100mm" >
+                </center>
+                <h3 class="title">Qwiic Cable - 100mmc</h3>
+            </a>
+           PRT-14427
+        </td>        <td>
             <a href="https://www.sparkfun.com/products/10215">
                 <center><img src="https://cdn.sparkfun.com/r/455-455/assets/parts/4/5/5/8/10215-01.jpg" style="width:140px; height:140px; object-fit:contain;" alt="USB micro-B Cable - 6 Foot" >
                 </center>
                 <h3 class="title">USB micro-B Cable - 6 Foot</h3>
             </a>
             CAB-10215
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://www.sparkfun.com/products/22230">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/2/2/1/9/1/XRP_Robot-02.jpg" style="width:140px; height:140px; object-fit:contain;" alt="Experiential Robotics Platform (XRP) Kit - Beta" >
+                </center>
+                <h3 class="title">Experiential Robotics Platform (XRP) Kit - Beta</h3>
+            </a>
+            KIT-22230
         </td>
         <td>
             <a href="https://www.sparkfun.com/products/15123">

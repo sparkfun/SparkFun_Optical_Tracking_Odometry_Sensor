@@ -7,7 +7,8 @@ For more resources related to the SparkFun SparkFun Optical Tracking Odometry Se
 * [Schematic (PDF)](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_Schematic.pdf){ target="_blank" }
 * [Eagle Files (ZIP)](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_EagleFiles.zip){ target="_blank" }
 * [Board Dimensions(PNG)](assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png){ target="_blank" }
-* [Hardware GitHub Respository](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor){ target="_blank" }
+* [Hardware GitHub Repository](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor){ target="_blank" }
+* [Optical Tracking Odometry Sensor Register Map (PDF)](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/blob/main/Firmware/OTOS_Register_Map.pdf)
 
 Libraries/Packages: 
 
