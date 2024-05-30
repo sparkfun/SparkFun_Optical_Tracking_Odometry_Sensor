@@ -24,10 +24,9 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 
 ??? "Example 1 Arduino Code"
 	```
-	--8<-- ""
+	--8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/main/examples/Example1_BasicReadings/Example1_BasicReadings.ino"
 	```
-<!-- >https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example1_BasicReadings/Example1_BasicReadings.ino
--->
+
 
 Make sure you've selected the correct board and port in the Tools menu and then hit the upload button. Once the code has finished uploading, go ahead and open a [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics). You should see something similar to the following.  
 
@@ -57,14 +56,9 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 
 ??? "Example 2 Arduino Code"
 	```
-	--8<-- ""
+	--8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/main/examples/Example2_SetUnits/Example2_SetUnits.ino"
 	```
-<!-- 
 
-https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example2_SetUnits/Example2_SetUnits.ino
-
-
--->
 Notice the following code snippet - this is the section of code that allows you to choose your units: 
 
 <figure markdown>
@@ -88,7 +82,7 @@ Make sure you've selected the correct board and port in the Tools menu and then 
 	As of firmware version 1.0, these calibration values will be lost after a power cycle, so you will need to set them each time you power up the sensor.
 
 
-The data from the OTOS will likely have minor scaling errors that can be calibrated out. This is especially important for the angular scalar, because an incorrect angle measurement causes the linear measurements to be rotated by the wrong angle in the firmware, which can lead to very inaccurate tracking!
+The data from the OTOS will likely have minor scaling errors that can be calibrated out. This is especially important for the angular scalar, because an incorrect angle measurement causes the linear measurements to be rotated by the wrong angle in the firmware, which can lead to very inaccurate tracking.
 
 To find Example 3, go to **File** > **Examples** > **SparkFun Qwiic OTOS** > **Example3_Calibration**:
 
@@ -104,12 +98,10 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 
 ??? "Example 3 Arduino Code"
 	```
-	--8<-- ""
+	--8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/main/examples/Example3_Calibration/Example3_Calibration.ino"
 	```
 
-<!--
-https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example3_Calibration/Example3_Calibration.ino
--->
+
 
 Make sure you've selected the correct board and port in the Tools menu and then hit the upload button. Once the code has finished uploading, go ahead and open a [Serial Monitor](https://learn.sparkfun.com/tutorials/terminal-basics).
 
@@ -159,11 +151,9 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 
 ??? "Example 4 Arduino Code"
 	```
-	--8<-- ""
+	--8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/main/examples/Example4_SetOffsetAndPosition/Example4_SetOffsetAndPosition.ino"
 	```
-<!--
-https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/v1.0.0/examples/Example4_SetOffsetAndPosition/Example4_SetOffsetAndPosition.ino
--->
+
 
 If the sensor is mounted 5 inches to the left (negative X) and 10 inches forward (positive Y) of the center of the robot, and mounted 90 degrees clockwise (negative rotation) from the robot's orientation, the offset would be {-5, 10, -90}. These can be any value, even the angle can be tweaked slightly to compensate for imperfect mounting (eg. 1.3 degrees).
 

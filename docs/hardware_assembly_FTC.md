@@ -8,7 +8,13 @@ icon: first
 
 The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor in order to get accurate data. If you don't already have a mount, there are a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. 
 
-Accurate readings require that the sensor is mounted correctly; attempting to move the sensor by hand may work, but tracking accuracy will suffer. Note here that we are using the foam surface typical of FIRST Tech Challenge competitions and the sensor is mounted at 10mm from the surface.
+ Note here that we are using the foam surface typical of FIRST Tech Challenge competitions and the sensor is mounted at 10mm from the surface.
+ 
+!!! warning
+
+	Accurate readings require that the sensor is mounted correctly; attempting to move the sensor by hand may work, but tracking accuracy will suffer.
+	
+	
 
 
 The FTC mounts are available on Onshape: 
