@@ -12,7 +12,7 @@ The recommended update procedure is to use the [STM32CubeProgrammer](https://www
 * A USB to serial adapter, such as the [SparkFun Serial Basic Breakout](https://www.sparkfun.com/products/15096)
 * [Jumper wires](https://www.sparkfun.com/products/12795) to connect the serial adapter to the OTOS
 * Download the [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) and install it onto your computer
-* Download the latest .hex file from the [releases tab](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/releases)
+* Download the latest .hex file [from the releases tab](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/releases) or [from the main branch](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/tree/main/Firmware/Release)
 
 ### Procedure
 
