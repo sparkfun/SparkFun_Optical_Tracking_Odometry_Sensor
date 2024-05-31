@@ -15,7 +15,7 @@ We've written a library to get you started with the SparkFun Optical Tracking Od
 In addition to the library provided here, we have written a Python script that allows you to visualize the XRP in real time. Download via the button below. 
 
 <center>
-	[XRP Visualization Script](https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/blob/main/docs/assets/SparkFun_OTOS_XRP_Visualization.zip){ .md-button .md-button--primary }
+	[XRP Visualization Script](assets/SparkFun_OTOS_XRP_Visualization.zip){ .md-button .md-button--primary }
 </center>
 
 
