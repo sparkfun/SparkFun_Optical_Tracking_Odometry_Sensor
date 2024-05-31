@@ -8,14 +8,14 @@ icon: simple/arduino
 We've written a library to get you started with the SparkFun Optical Tracking Odometry Sensor. You can obtain this library through the Arduino Library Manager by searching for "Odometry" and installing the latest version from SparkFun. If you prefer downloading libraries manually, you can grab them from the GitHub Repository.
 
 <center>
-	[SparkFun Optical Tracking Odometry Sensor Arduino Library GitHub](https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary download }
+	[SparkFun Optical Tracking Odometry Sensor Arduino Library GitHub](https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary }
 </center>
 
 
 In addition to the library provided here, we have written a Python script that allows you to visualize the XRP in real time. Download via the button below. 
 
 <center>
-	[XRP Visualization Script](assets/SparkFun_OTOS_XRP_Visualization.zip){ .md-button .md-button--primary }
+	[XRP Visualization Script](assets/SparkFun_OTOS_XRP_Visualization.zip){ .md-button .md-button--primary download }
 </center>
 
 
