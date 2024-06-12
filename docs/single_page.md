@@ -21,7 +21,7 @@ icon: fontawesome/solid/scroll
 --8<-- "./docs/software_setup-Arduino.md:5"
 
 # Software Setup - Python
---8<-- "./docs/software_setup-Python:5"
+--8<-- "./docs/software_setup-Python.md:5"
 
 # Software Setup - FIRST Tech Challenge Java
 --8<-- "./docs/software_setup-FTC.md:5"
