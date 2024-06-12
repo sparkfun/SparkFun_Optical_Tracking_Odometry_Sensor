@@ -15,7 +15,6 @@ copyright:
 edit_uri: blob/main/docs/
 
 
-
 # Configuration for webpage theme
 theme:
   # Theme: https://squidfunk.github.io/mkdocs-material/
@@ -258,8 +257,8 @@ nav:
       - FTC: hardware_assembly_FTC.md
     - Software Setup: 
       - Arduino: software_setup-Arduino.md
-      - Python - Coming Soon: software_setup-Python.md
-      - FIRST Tech Challenge - Coming Soon: software_setup-FTC.md
+      - Python: software_setup-Python.md
+      - FIRST Tech Challenge Java: software_setup-FTC.md
     - Examples: 
       - Arduino Examples: examples.md
 #     - Python Examples: 
@@ -267,5 +266,5 @@ nav:
   - Resources: resources.md
   - Support:
     - Troubleshooting: troubleshooting.md
-    - Submit Issues: github/file_issue.md
-    - Contribute: github/contribute.md
+    - Submit Issues: file_issue.md
+    - Contribute: contribute.md
