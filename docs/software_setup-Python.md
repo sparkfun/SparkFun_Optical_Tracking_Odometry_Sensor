@@ -34,7 +34,7 @@ pip install sparkfun-qwiic-otos
 
 
 
-If you prefer downloading the code to build and install the package manually, you can grab them from the GitHub Repository.
+If you prefer downloading the code to build and install the package manually, you can grab them from the [GitHub Repository](https://github.com/sparkfun/Qwiic_Py).
 
 <center>
 	[SparkFun Optical Tracking Odometry Sensor Python Package GitHub](https://github.com/sparkfun/Qwiic_OTOS_Py/archive/refs/heads/master.zip){ .md-button .md-button--primary }
