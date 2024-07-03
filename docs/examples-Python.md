@@ -15,6 +15,10 @@ icon: simple/python
 This first example just does some basic measurements to make sure everything is hooked up correctly. 
 
 
+Navigate to the qwiic_otos\examples directory in your Python installation (ex: mine is at c:\Python\Lib\site-packages\qwiic\drivers\)
+
+
+
 <figure markdown>
 [![Optical Tracking Odometry Sensor Python Example 1](assets/img/){ width="600" }](assets/img/ "Click to enlarge")
 <figcaption markdown>Finding Example 1</figcaption>
@@ -151,7 +155,7 @@ Alternatively, you can expand the link below and copy and paste the code into a 
 
 ??? "Example 4 Arduino Code"
 	```
-	--8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/main/examples/Example4_SetOffsetAndPosition/Example4_SetOffsetAndPosition.ino"
+	--8<-- "https://raw.githubusercontent.com/sparkfun/Qwiic_OTOS_Py/master/examples/qwiic_otos_ex4_set_offsets_and_position.py"
 	```
 
 
