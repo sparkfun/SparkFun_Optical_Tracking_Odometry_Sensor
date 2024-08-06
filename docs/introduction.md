@@ -12,7 +12,7 @@ icon: material/book-open-page-variant
     ---
 
     <figure markdown>
-    ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg)
+    ![Product Thumbnail](https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature_1.jpg)
     </figure></a>
     
 -   The SparkFun Qwiic Optical Tracking Odometry Sensor empowers you to elevate your robot's navigation capabilities with exceptional precision and streamlined integration. This compact, all-in-one sensor leverages the power of the PAA5160E1 chip from PixArt Imaging Inc., delivering accurate dual-axis motion data across various hard floor surfaces. But that's not all! This sensor boasts a powerful built-in 6-axis Inertial Measurement Unit (IMU) and an onboard microcontroller that performs real-time sensor fusion and tracking algorithms.
