@@ -258,11 +258,11 @@ nav:
     - Software Setup: 
       - Arduino: software_setup-Arduino.md
       - Python: software_setup-Python.md
-      - FIRST Tech Challenge Java: software_setup-FTC.md
+      - FIRST Tech Challenge: software_setup-FTC.md
     - Examples: 
       - Arduino Examples: examples.md
-#     - Python Examples: 
-#     - FIRST Tech Challenge: 
+      - Python Examples: examples_xrp.md
+      #- FIRST Tech Challenge: examples_ftc.md
   - Resources: resources.md
   - Support:
     - Troubleshooting: troubleshooting.md
