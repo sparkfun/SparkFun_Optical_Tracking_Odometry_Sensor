@@ -47,7 +47,7 @@ To follow along with this tutorial, you will need the following materials. You m
     <tr>
         <td>
             <a href="https://www.sparkfun.com/products/24904">
-                <center><img src="https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)"></center>
+                <center><img src="https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature_1.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)"></center>
                 <h3 class="title">SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)</h3>
             </a>
             SEN-24904
