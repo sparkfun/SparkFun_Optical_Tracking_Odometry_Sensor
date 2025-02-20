@@ -1,7 +1,7 @@
 SparkFun Optical Tracking Odometry Sensor
 ========================================
 
-<center><img src="https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature.jpg" width="600" height="600" alt="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)"></center>
+![SparkFun Optical Tracking Odometry Sensor [SEN-24904]](docs/assets/img/otos-readme-banner.jpg)
 
 [*SparkFun Optical Tracking Odometry Sensor [SEN-24904]*](https://www.sparkfun.com/products/24904)
 
