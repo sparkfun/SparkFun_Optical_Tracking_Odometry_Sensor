@@ -1,0 +1,1839 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A guide for getting started with the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)">
+      
+      
+        <meta name="author" content="SparkFun Electronics">
+      
+      
+        <link rel="canonical" href="https://sparkfun.github.io/SparkFun_Optical_Tracking_Odometry_Sensor/github/contribute/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/sfe_logo_sq.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5+insiders-4.53.15">
+    
+    
+      
+        <title>Contribute: Make an Augmentation! - SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f15084e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.307 5.476c-.756.134-1.975-.615-2.59-1.362-.755-.922-.66-1.647-.071-2.29.883-.978 2.396-.6 2.396-.6s-2.772-2.432-5.658-.44c-2.571 1.77-1.833 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.443-.184-2.034-1.343-1.687-2.054.298-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044c-1.259.474-2.297 1.515-2.214 4.12V24s1.301-1.604 2.83-3.236c1.714-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.371-3.645 3.141-4.563.67-9.68-1.43-10.343 0 0 .34 1.438-.745 1.638"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');--md-admonition-icon--github:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>');--md-admonition-icon--arduino:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>');--md-admonition-icon--python:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>');--md-admonition-icon--code:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zm96-34c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z"/></svg>');--md-admonition-icon--terminal:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53m1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5"/></svg>');--md-admonition-icon--serial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h176l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h256c17.7 0 32-14.3 32-32s-14.3-32-32-32h-69.3L336 416h176c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm448 64v288H64V64z"/></svg>');--md-admonition-icon--hot:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C11.33 7.26 11 4.85 11.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C3.78 10 2.87 12.3 3 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27M21 13h-2V7h2zm0 4h-2v-2h2z"/></svg>');--md-admonition-icon--first-tech:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.318 20.734c.608.18 1.239.274 1.873.278.834 0 1.472-.189 2.02-.585.609-.432 1.001-1.098 1.001-1.702a1.33 1.33 0 0 0-.49-1.035c-.245-.198-.5-.352-1.02-.595l-.422-.198c-.137-.072-.206-.144-.206-.225 0-.216.275-.378.647-.378.28 0 .612.081 1.247.289l.438-1.626a5.3 5.3 0 0 0-1.4-.194c-1.746 0-3.09.954-3.09 2.188 0 .649.432 1.108 1.51 1.612.51.234.599.297.599.46 0 .242-.265.396-.696.396-.383 0-.873-.117-1.54-.36h-.001Zm-4.526-5.818.138-.018c.686-.08 1.54-.135 2.01-.135.785 0 1.393.09 1.854.28.589.242.942.774.942 1.413 0 .55-.187 1.072-.54 1.477-.304.35-.578.522-1.147.693l-.138.045c.06.045.079.063.108.09.167.19.667 1.162 1.09 2.125h-2.355a33 33 0 0 0-.795-2.053l-.47 2.053h-2.08Zm-2.697-.036h2.138L6.84 20.886H4.702Zm-4.702 0h4.139l-.39 1.594H3.158l-.196.837h2.07l-.36 1.477H2.628l-.49 2.098H0Zm17.419 0H24l-.363 1.739h-1.54l-1.02 4.267H18.94l1.02-4.267h-1.67zm-8.441 2.864c.687 0 1.168-.406 1.168-.982 0-.306-.226-.46-.667-.46a1.5 1.5 0 0 0-.334.037l-.324 1.387c.07.009.079.018.157.018m10.89-9.72L16 2.996 14.232 4.84c-.73-.283-1.88-.51-2.753-.51-1.271 0-2.581.434-3.496 1L5.516 2.992v-.003h-.002l-.002-.001v.002l-.882.092-1.904 10.427.886.092v-.003l4.019-1.758.019.018c.956.843 2.39 1.38 3.996 1.38 1.113 0 2.144-.259 2.991-.699l1.615 1.551 5.01-5.216v-.849ZM3.651 13.38 5.486 3.166l2.618 2.48.82.777.626.594 1.488 1.418v.647l.632.607-1.975.9a3.6 3.6 0 0 1-1.138-.745l-.02-.021 1.516-.708-3.564-3.32-.07-.07-.086.46-.842 4.387-.13.682.223-.096.001-.005 1.145-.491c.18.377.436.728.755 1.042zm12.601-.14-1.068-1.026a4.3 4.3 0 0 0 1.05-1l.01-.016L18.842 8.5l.077-.083.34-.353-3.173-3.046-.713.742-.787.82-.536.558-1.01 1.052-.087.092.295.282 1.367 1.333c-.3.283-.68.526-1.109.704l-.903-.865-.886-.851-.602-.571 1.432-1.492.72-.75.781-.814 1.953-2.034 5.143 4.922zm-1.728-1.652a6 6 0 0 1-.604.263c-.72.266-1.497.4-2.307.4-1.15 0-2.238-.272-3.147-.79a4.5 4.5 0 0 1-1.254-1.03 3.6 3.6 0 0 1-.332-.472 3 3 0 0 1-.419-1.491c0-.55.158-1.08.47-1.577l.836.846a2.1 2.1 0 0 0-.025 1.08q.086.35.291.676.163.259.39.485c.415.415.978.74 1.628.943a5.2 5.2 0 0 0 1.562.232c.438 0 .87-.052 1.287-.155.236-.06.465-.134.678-.223.493-.205.926-.49 1.253-.826a2.44 2.44 0 0 0 .652-1.131q.06-.25.06-.493c0-.466-.175-.993-.46-1.396l.71-.741c.61.634.97 1.48.97 2.28q0 .221-.038.456c-.11.671-.466 1.31-1.03 1.848-.33.316-.724.59-1.17.816zm-2.534-1.59.853.82a5.2 5.2 0 0 1-2.923-.14l1.892-.85zm4.925-1.083q.036-.229.037-.447c0-.853-.387-1.752-1.035-2.422l.169-.176 2.628 2.524-2.176 2.266c.23-.538.38-1.2.38-1.676zm-10.6.04.004.018-.004.063c0 .251.154.848.216 1.086l-.817.35.78-4.06.32.316a3.13 3.13 0 0 0-.54 1.74c0 .158.013.317.04.487zm8.415.827-1.24-1.209 1.05-1.094c.374.311.65.684.797 1.093q-.013.1-.037.201-.133.546-.57 1.009m-6.509-.348-.029-.04a2.1 2.1 0 0 1-.267-.62q-.007-.034-.013-.068a2.2 2.2 0 0 1 .283-.61l.994.982zm4.317-2.83-1.53 1.594-1.343-1.274c.626-.266 1.3-.4 1.98-.396q.463.001.893.076m-1.101-2.075c.83 0 1.938.213 2.643.47l-.032.033-.782.814-.002.003a5.1 5.1 0 0 0-1.618-.257c-1.01 0-1.927.28-2.609.737l-.01-.01-.82-.777-.073-.069c.896-.541 2.06-.944 3.303-.944m1.881 16.205c.608.18 1.239.274 1.873.278.834 0 1.472-.189 2.02-.585.609-.432 1.001-1.098 1.001-1.702a1.33 1.33 0 0 0-.49-1.035c-.245-.198-.5-.352-1.02-.595l-.422-.198c-.137-.072-.206-.144-.206-.225 0-.216.275-.378.647-.378.28 0 .612.081 1.247.289l.438-1.626a5.3 5.3 0 0 0-1.4-.194c-1.746 0-3.09.954-3.09 2.188 0 .649.432 1.108 1.51 1.612.51.234.599.297.599.46 0 .242-.265.396-.696.396-.383 0-.873-.117-1.54-.36h-.001Zm-4.526-5.818.138-.018c.686-.08 1.54-.135 2.01-.135.785 0 1.393.09 1.854.28.589.242.942.774.942 1.413 0 .55-.187 1.072-.54 1.477-.304.35-.578.522-1.147.693l-.138.045c.06.045.079.063.108.09.167.19.667 1.162 1.09 2.125h-2.355a33 33 0 0 0-.795-2.053l-.47 2.053h-2.08Zm-2.697-.036h2.138L6.84 20.886H4.702Zm-4.702 0h4.139l-.39 1.594H3.158l-.196.837h2.07l-.36 1.477H2.628l-.49 2.098H0Zm17.419 0H24l-.363 1.739h-1.54l-1.02 4.267H18.94l1.02-4.267h-1.67zm-8.441 2.864c.687 0 1.168-.406 1.168-.982 0-.306-.226-.46-.667-.46a1.5 1.5 0 0 0-.334.037l-.324 1.387c.07.009.079.018.157.018m10.89-9.72L16 2.996 14.232 4.84c-.73-.283-1.88-.51-2.753-.51-1.271 0-2.581.434-3.496 1L5.516 2.992v-.003h-.002l-.002-.001v.002l-.882.092-1.904 10.427.886.092v-.003l4.019-1.758.019.018c.956.843 2.39 1.38 3.996 1.38 1.113 0 2.144-.259 2.991-.699l1.615 1.551 5.01-5.216v-.849ZM3.651 13.38 5.486 3.166l2.618 2.48.82.777.626.594 1.488 1.418v.647l.632.607-1.975.9a3.6 3.6 0 0 1-1.138-.745l-.02-.021 1.516-.708-3.564-3.32-.07-.07-.086.46-.842 4.387-.13.682.223-.096.001-.005 1.145-.491c.18.377.436.728.755 1.042zm12.601-.14-1.068-1.026a4.3 4.3 0 0 0 1.05-1l.01-.016L18.842 8.5l.077-.083.34-.353-3.173-3.046-.713.742-.787.82-.536.558-1.01 1.052-.087.092.295.282 1.367 1.333c-.3.283-.68.526-1.109.704l-.903-.865-.886-.851-.602-.571 1.432-1.492.72-.75.781-.814 1.953-2.034 5.143 4.922zm-1.728-1.652a6 6 0 0 1-.604.263c-.72.266-1.497.4-2.307.4-1.15 0-2.238-.272-3.147-.79a4.5 4.5 0 0 1-1.254-1.03 3.6 3.6 0 0 1-.332-.472 3 3 0 0 1-.419-1.491c0-.55.158-1.08.47-1.577l.836.846a2.1 2.1 0 0 0-.025 1.08q.086.35.291.676.163.259.39.485c.415.415.978.74 1.628.943a5.2 5.2 0 0 0 1.562.232c.438 0 .87-.052 1.287-.155.236-.06.465-.134.678-.223.493-.205.926-.49 1.253-.826a2.44 2.44 0 0 0 .652-1.131q.06-.25.06-.493c0-.466-.175-.993-.46-1.396l.71-.741c.61.634.97 1.48.97 2.28q0 .221-.038.456c-.11.671-.466 1.31-1.03 1.848-.33.316-.724.59-1.17.816zm-2.534-1.59.853.82a5.2 5.2 0 0 1-2.923-.14l1.892-.85zm4.925-1.083q.036-.229.037-.447c0-.853-.387-1.752-1.035-2.422l.169-.176 2.628 2.524-2.176 2.266c.23-.538.38-1.2.38-1.676zm-10.6.04.004.018-.004.063c0 .251.154.848.216 1.086l-.817.35.78-4.06.32.316a3.13 3.13 0 0 0-.54 1.74c0 .158.013.317.04.487zm8.415.827-1.24-1.209 1.05-1.094c.374.311.65.684.797 1.093q-.013.1-.037.201-.133.546-.57 1.009m-6.509-.348-.029-.04a2.1 2.1 0 0 1-.267-.62q-.007-.034-.013-.068a2.2 2.2 0 0 1 .283-.61l.994.982zm4.317-2.83-1.53 1.594-1.343-1.274c.626-.266 1.3-.4 1.98-.396q.463.001.893.076m-1.101-2.075c.83 0 1.938.213 2.643.47l-.032.033-.782.814-.002.003a5.1 5.1 0 0 0-1.618-.257c-1.01 0-1.927.28-2.609.737l-.01-.01-.82-.777-.073-.069c.896-.541 2.06-.944 3.303-.944"/></svg>');--md-admonition-icon--link:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/timeago.css">
+    
+      <link rel="stylesheet" href="../../stylesheet/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contribute-make-an-augmentation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.sparkfun.com" title="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide" class="md-header__button md-logo" aria-label="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Contribute: Make an Augmentation!
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Navigation tabs -->
+<nav
+  class="md-tabs"
+  aria-label="Tabs"
+  data-md-component="tabs"
+>
+  <div class="md-tabs__inner md-grid">
+
+    <!-- Adds tab on right side of header -->
+    
+    <ul class="md-tabs__list" style="float: right;">
+      <li class="md-tabs__item">
+        <a href="/SparkFun_Optical_Tracking_Odometry_Sensor/hard_copy/" class="md-tabs__link">
+          Hard Copies 🖨️
+        <!-- &nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg> -->
+        </a>
+      </li>
+    </ul>
+    
+
+    <!-- Original tabbed sections -->
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../introduction/" class="md-tabs__link">
+          
+  
+  Hookup Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/" class="md-tabs__link">
+          
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Determine base classes -->
+
+
+  
+
+
+
+<!-- Navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <!-- <label class="md-nav__title" for="__drawer">
+    <a
+      href="https://www.sparkfun.com"
+      title="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide"
+      class="md-nav__button md-logo"
+      aria-label="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide"
+      data-md-component="logo"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+
+    </a>
+    SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide
+  </label> -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="https://www.sparkfun.com"
+      title="sparkfun.com"
+      class="md-nav__button md-logo"
+      aria-label="SparkFun"
+      data-md-component="logo"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+
+    </a>
+    SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Navigation list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Hookup Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hookup Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware_overview/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Assembly
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hardware Assembly
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware_assembly/" class="md-nav__link">
+        
+  
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="xrp.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="32.375"
+     inkscape:cx="13.019305"
+     inkscape:cy="11.984556"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="217"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">FIRST</title>
+  <g
+     id="g2"
+     transform="matrix(0.04275947,0,0,-0.05667001,0.1199708,15.140272)">
+    <g
+       id="g154"
+       transform="translate(242.5809,129.2916)">
+      <path
+         d="m 0,0 v -18.524 h 51.69 c 2.589,0 4.773,0.889 6.553,2.67 1.86,1.86 2.75,4.043 2.75,6.552 C 60.993,-4.125 56.867,0 51.69,0 Z m 62.369,31.791 c 22.406,0.243 41.417,-18.605 41.092,-41.093 0,-8.171 -2.184,-15.612 -6.552,-22.246 C 92.622,-38.1 86.879,-43.115 79.76,-46.432 l 23.701,-30.497 H 58.324 L 37.857,-50.396 H 0 v -26.533 h -42.388 v 108.72 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path156" />
+    </g>
+    <g
+       id="g158"
+       transform="translate(453.2892,110.6866)">
+      <path
+         d="m 0,0 c 2.508,0 4.692,0.889 6.471,2.67 1.861,1.86 2.751,4.045 2.751,6.552 0,2.589 -0.89,4.772 -2.751,6.553 C 4.692,17.635 2.508,18.524 0,18.524 H -51.771 V 0 Z M 10.597,50.315 C 33.004,50.558 52.014,31.71 51.69,9.222 52.014,-13.186 33.004,-32.195 10.597,-31.872 h -62.368 v -26.533 h -42.387 v 108.72 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path160" />
+    </g>
+    <g
+       id="g162"
+       transform="translate(110.8238,129.2917)">
+      <path
+         d="M 0,0 -30.495,31.71 H -83.561 L -26.533,-22.65 0,-45.219 30.497,-77.01 h 52.984 l -57.028,54.36 z"
+         style="fill:#d1182c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path164" />
+    </g>
+    <g
+       id="g166"
+       transform="translate(194.305,161.0016)">
+      <path
+         d="m 0,0 h -52.984 l -30.497,-31.71 26.453,-22.65 z"
+         style="fill:#006eff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path168" />
+    </g>
+    <g
+       id="g170"
+       transform="translate(27.2629,52.282)">
+      <path
+         d="M 0,0 H 53.066 L 83.561,31.791 57.028,54.36 Z"
+         style="fill:#006eff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path172" />
+    </g>
+  </g>
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    XRP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hardware_assembly_FTC/" class="md-nav__link">
+        
+  
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="first.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="32.375"
+     inkscape:cx="11.351351"
+     inkscape:cy="11.984556"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="217"
+     inkscape:window-y="195"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">FIRST</title>
+  <g
+     transform="matrix(0.14963471,0,0,-0.14963471,2.6370656,13.949983)"
+     id="g10">
+    <g
+       transform="scale(0.1)"
+       id="g12">
+      <path
+         id="path14"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,505.742 c 21.801,0 42.973,-1.992 63.184,-5.679 l 48.078,50.093 c -33.621,11.645 -71.367,18.172 -111.262,18.172 -67.836,0 -129.418,-18.91 -175.086,-49.707 l 41.899,-39.687 c 38.742,16.972 84.328,26.808 133.187,26.808" />
+      <path
+         id="path16"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,568.328 c 39.895,0 77.641,-6.527 111.262,-18.172 l 52.273,54.422 c -48.777,19.231 -104.414,30.152 -163.535,30.152 -88.129,0 -168.539,-24.253 -229.91,-64.156 l 54.824,-51.953 c 45.668,30.797 107.25,49.707 175.086,49.707" />
+      <path
+         id="path18"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 344.824,355.391 c 4.395,17.968 12.512,35 23.707,50.75 l -21.058,21.304 c -4.172,-13.09 -6.481,-26.722 -6.481,-40.757 0,-10.668 1.332,-21.114 3.832,-31.297" />
+      <path
+         id="path20"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 189.215,237.637 -8.84,-45.832 87.969,37.871 c -5.551,11.679 -6.641,26.906 -9.848,39.289 l -69.281,-31.328" />
+      <path
+         id="path22"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 127.313,736.086 0,38.9063 60.2148,34.0039 186.277,741.316 l -58.964,-5.23" />
+      <path
+         id="path24"
+         style="fill:#ed1c24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 555.438,334.891 v 56.382 l -92.473,87.661 -41.879,39.687 -54.848,51.953 L 186.07,741.328 59.9609,34.0039 326.797,151.309 c -26.567,23.464 -45.395,48.484 -59.387,77.968 l -86.859,-37.257 8.711,45.597 56.285,293.356 4.703,24.621 46.469,-46.789 59.801,-60.215 25.664,-25.891 105.546,-90.922 -102.453,-46.953 c 26.614,-26.57 58.129,-49.988 100.625,-63.215 l 127.828,57.395 -58.292,55.887" />
+      <path
+         id="path26"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 846.816,355.391 c 2.481,10.183 3.848,20.629 3.848,31.297 0,31.484 -11.516,61.21 -31.328,87.019 l -30.352,-31.422 c 29.153,-24.254 49.856,-54.14 57.832,-86.894" />
+      <path
+         id="path28"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 903.867,57.0039 -71.926,69.0981 c -11.503,-7.848 -23.796,-15.137 -36.668,-21.825 L 903.867,0 1238.75,348.797 1238.38,405.277 903.867,57.0039" />
+      <path
+         id="path30"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.844,291.258 -59.239,56.887 -45.328,43.277 -0.16,-56.531 63.731,-61.211 60.918,-58.512 c 15.476,3.863 30.285,8.719 44.207,14.508 l -64.129,61.582" />
+      <path
+         id="path32"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 892.695,606.688 -47.675,-49.633 -52.579,-54.793 -35.859,-37.313 -67.93,-70.738 28.457,-27.316 72.278,75.242 30.222,31.476 55.371,57.645 17.715,18.465 184.145,-176.524 28.48,29.574 -212.625,203.915" />
+      <path
+         id="path34"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 874.98,531.258 -55.371,-57.645 c 19.817,-25.812 31.055,-55.441 31.055,-86.925 0,-10.668 -1.367,-21.114 -3.848,-31.297 -6.464,-26.496 -20.988,-51.036 -41.711,-72.278 -21.199,-21.734 -48.906,-40.039 -81.132,-53.437 -13.922,-5.789 -28.731,-10.645 -44.207,-14.508 -26.27,-6.516 -54.524,-10.109 -83.938,-10.109 -36.238,0 -70.66,5.39 -101.859,15.109 -42.504,13.25 -78.949,34.488 -105.582,61.082 -9.715,9.688 -18.106,20.117 -25.039,31.121 -8.528,13.535 -14.832,27.942 -18.524,43.02 -2.5,10.183 -3.832,20.629 -3.832,31.297 0,14.035 2.309,27.667 6.481,40.757 l -63.586,64.371 c -23.289,-34.535 -36.43,-73.449 -36.43,-114.66 0,-10.597 0.981,-21.043 2.664,-31.297 4.074,-24.921 13.008,-48.691 26,-70.879 6.516,-11.152 14.082,-21.894 22.606,-32.16 22.371,-26.98 51.214,-50.691 85.027,-69.91 58.707,-33.39 132.223,-53.312 212.074,-53.312 55.871,0 108.606,9.738 155.383,27.011 14.199,5.227 27.812,11.164 40.84,17.735 30.156,15.273 56.914,33.918 79.238,55.246 37.473,35.789 62.5,79.051 70.242,126.269 1.692,10.254 2.649,20.7 2.649,31.297 0,57.793 -25.735,111.149 -69.2,154.102" />
+      <path
+         id="path36"
+         style="fill:#1c63b7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.543,290.84 63.914,-61.387 c 32.188,13.426 60.129,31.492 81.367,53.242 l -87.636,84.149 -28.458,27.301 67.571,70.371 35.816,37.324 52.602,54.797 47.683,49.629 L 1104.52,402.617 1076.05,372.938 902.266,192.004 C 883.965,166.914 860.223,144.648 832.148,125.43 L 903.563,56.5508 1238.45,405.313 889.68,740.191 759.055,604.156 706.777,549.723 658.672,499.629 555.277,391.422 659.543,290.84" />
+      <path
+         id="path38"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 364.797,310.633 c 0,0 1.668,-2.754 1.859,-3.055 5.117,-8.137 12.145,-15.574 18.797,-23.008 l 104.184,48.145 -239.422,222.957 -6.527,-34.484 187.835,-185.973 -66.726,-24.582" />
+      <path
+         id="path40"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 944.18,377.156 c 0,-10.597 -0.957,-21.043 -2.649,-31.297 -7.742,-47.218 -32.769,-90.48 -70.242,-126.269 -22.324,-21.328 -49.082,-39.973 -79.238,-55.246 -13.028,-6.571 -26.641,-12.508 -40.84,-17.735 -46.777,-17.273 -99.512,-27.011 -155.383,-27.011 -79.851,0 -153.367,19.922 -212.074,53.312 -33.813,19.219 -62.656,42.93 -85.027,69.91 -8.524,10.266 -16.09,21.008 -22.606,32.16 -12.992,22.188 -21.926,45.958 -26,70.879 -1.683,10.254 -2.664,20.7 -2.664,31.297 0,3.34 0.258,6.629 0.418,9.914 -0.031,0.176 -0.098,0.434 -0.113,0.598 -1.699,-10.27 -0.305,-62.531 -0.305,-73.117 0,-16.809 2.246,-33.203 6.398,-49.113 3.243,-12.422 7.688,-24.481 13.235,-36.161 13.988,-29.484 34.969,-56.504 61.547,-79.992 63.941,-56.3866 159.894,-92.2811 267.191,-92.2811 74.453,0 143.391,17.3203 200.012,46.7261 12.859,6.688 25.098,13.985 36.582,21.836 28.074,19.207 51.844,41.77 70.144,66.856 26.536,36.308 41.614,77.918 41.614,122.129 0,9.316 0.8,53.515 -0.098,71.058 -0.156,2.407 0.098,-5.406 0.098,-8.453" />
+      <path
+         id="path42"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 942.988,19.9414 h -6.64 v 2.3945 h 16.125 V 19.9414 H 945.82 V 0.554688 h -2.832 V 19.9414" />
+      <path
+         id="path44"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 972.617,10.1289 c -0.144,3.0234 -0.344,6.6875 -0.304,9.3906 h -0.106 c -0.742,-2.5468 -1.652,-5.2617 -2.742,-8.25 l -3.86,-10.585906 h -2.121 L 959.949,11.0547 c -1.031,3.0859 -1.902,5.8867 -2.519,8.4648 h -0.067 c -0.066,-2.7031 -0.226,-6.3672 -0.422,-9.61716 l -0.562,-9.347652 h -2.688 l 1.524,21.781212 h 3.574 l 3.723,-10.539 c 0.906,-2.68752 1.648,-5.07034 2.207,-7.32424 h 0.086 c 0.554,2.1875 1.336,4.57812 2.293,7.32424 l 3.879,10.539 h 3.593 l 1.36,-21.781212 h -2.746 l -0.567,9.574212" />
+    </g>
+  </g>
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FTC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software_setup-Arduino/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software_setup-Python/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../software_setup-FTC/" class="md-nav__link">
+        
+  
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="first.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="32.375"
+     inkscape:cx="11.351351"
+     inkscape:cy="11.984556"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="217"
+     inkscape:window-y="195"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">FIRST</title>
+  <g
+     transform="matrix(0.14963471,0,0,-0.14963471,2.6370656,13.949983)"
+     id="g10">
+    <g
+       transform="scale(0.1)"
+       id="g12">
+      <path
+         id="path14"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,505.742 c 21.801,0 42.973,-1.992 63.184,-5.679 l 48.078,50.093 c -33.621,11.645 -71.367,18.172 -111.262,18.172 -67.836,0 -129.418,-18.91 -175.086,-49.707 l 41.899,-39.687 c 38.742,16.972 84.328,26.808 133.187,26.808" />
+      <path
+         id="path16"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,568.328 c 39.895,0 77.641,-6.527 111.262,-18.172 l 52.273,54.422 c -48.777,19.231 -104.414,30.152 -163.535,30.152 -88.129,0 -168.539,-24.253 -229.91,-64.156 l 54.824,-51.953 c 45.668,30.797 107.25,49.707 175.086,49.707" />
+      <path
+         id="path18"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 344.824,355.391 c 4.395,17.968 12.512,35 23.707,50.75 l -21.058,21.304 c -4.172,-13.09 -6.481,-26.722 -6.481,-40.757 0,-10.668 1.332,-21.114 3.832,-31.297" />
+      <path
+         id="path20"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 189.215,237.637 -8.84,-45.832 87.969,37.871 c -5.551,11.679 -6.641,26.906 -9.848,39.289 l -69.281,-31.328" />
+      <path
+         id="path22"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 127.313,736.086 0,38.9063 60.2148,34.0039 186.277,741.316 l -58.964,-5.23" />
+      <path
+         id="path24"
+         style="fill:#ed1c24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 555.438,334.891 v 56.382 l -92.473,87.661 -41.879,39.687 -54.848,51.953 L 186.07,741.328 59.9609,34.0039 326.797,151.309 c -26.567,23.464 -45.395,48.484 -59.387,77.968 l -86.859,-37.257 8.711,45.597 56.285,293.356 4.703,24.621 46.469,-46.789 59.801,-60.215 25.664,-25.891 105.546,-90.922 -102.453,-46.953 c 26.614,-26.57 58.129,-49.988 100.625,-63.215 l 127.828,57.395 -58.292,55.887" />
+      <path
+         id="path26"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 846.816,355.391 c 2.481,10.183 3.848,20.629 3.848,31.297 0,31.484 -11.516,61.21 -31.328,87.019 l -30.352,-31.422 c 29.153,-24.254 49.856,-54.14 57.832,-86.894" />
+      <path
+         id="path28"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 903.867,57.0039 -71.926,69.0981 c -11.503,-7.848 -23.796,-15.137 -36.668,-21.825 L 903.867,0 1238.75,348.797 1238.38,405.277 903.867,57.0039" />
+      <path
+         id="path30"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.844,291.258 -59.239,56.887 -45.328,43.277 -0.16,-56.531 63.731,-61.211 60.918,-58.512 c 15.476,3.863 30.285,8.719 44.207,14.508 l -64.129,61.582" />
+      <path
+         id="path32"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 892.695,606.688 -47.675,-49.633 -52.579,-54.793 -35.859,-37.313 -67.93,-70.738 28.457,-27.316 72.278,75.242 30.222,31.476 55.371,57.645 17.715,18.465 184.145,-176.524 28.48,29.574 -212.625,203.915" />
+      <path
+         id="path34"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 874.98,531.258 -55.371,-57.645 c 19.817,-25.812 31.055,-55.441 31.055,-86.925 0,-10.668 -1.367,-21.114 -3.848,-31.297 -6.464,-26.496 -20.988,-51.036 -41.711,-72.278 -21.199,-21.734 -48.906,-40.039 -81.132,-53.437 -13.922,-5.789 -28.731,-10.645 -44.207,-14.508 -26.27,-6.516 -54.524,-10.109 -83.938,-10.109 -36.238,0 -70.66,5.39 -101.859,15.109 -42.504,13.25 -78.949,34.488 -105.582,61.082 -9.715,9.688 -18.106,20.117 -25.039,31.121 -8.528,13.535 -14.832,27.942 -18.524,43.02 -2.5,10.183 -3.832,20.629 -3.832,31.297 0,14.035 2.309,27.667 6.481,40.757 l -63.586,64.371 c -23.289,-34.535 -36.43,-73.449 -36.43,-114.66 0,-10.597 0.981,-21.043 2.664,-31.297 4.074,-24.921 13.008,-48.691 26,-70.879 6.516,-11.152 14.082,-21.894 22.606,-32.16 22.371,-26.98 51.214,-50.691 85.027,-69.91 58.707,-33.39 132.223,-53.312 212.074,-53.312 55.871,0 108.606,9.738 155.383,27.011 14.199,5.227 27.812,11.164 40.84,17.735 30.156,15.273 56.914,33.918 79.238,55.246 37.473,35.789 62.5,79.051 70.242,126.269 1.692,10.254 2.649,20.7 2.649,31.297 0,57.793 -25.735,111.149 -69.2,154.102" />
+      <path
+         id="path36"
+         style="fill:#1c63b7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.543,290.84 63.914,-61.387 c 32.188,13.426 60.129,31.492 81.367,53.242 l -87.636,84.149 -28.458,27.301 67.571,70.371 35.816,37.324 52.602,54.797 47.683,49.629 L 1104.52,402.617 1076.05,372.938 902.266,192.004 C 883.965,166.914 860.223,144.648 832.148,125.43 L 903.563,56.5508 1238.45,405.313 889.68,740.191 759.055,604.156 706.777,549.723 658.672,499.629 555.277,391.422 659.543,290.84" />
+      <path
+         id="path38"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 364.797,310.633 c 0,0 1.668,-2.754 1.859,-3.055 5.117,-8.137 12.145,-15.574 18.797,-23.008 l 104.184,48.145 -239.422,222.957 -6.527,-34.484 187.835,-185.973 -66.726,-24.582" />
+      <path
+         id="path40"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 944.18,377.156 c 0,-10.597 -0.957,-21.043 -2.649,-31.297 -7.742,-47.218 -32.769,-90.48 -70.242,-126.269 -22.324,-21.328 -49.082,-39.973 -79.238,-55.246 -13.028,-6.571 -26.641,-12.508 -40.84,-17.735 -46.777,-17.273 -99.512,-27.011 -155.383,-27.011 -79.851,0 -153.367,19.922 -212.074,53.312 -33.813,19.219 -62.656,42.93 -85.027,69.91 -8.524,10.266 -16.09,21.008 -22.606,32.16 -12.992,22.188 -21.926,45.958 -26,70.879 -1.683,10.254 -2.664,20.7 -2.664,31.297 0,3.34 0.258,6.629 0.418,9.914 -0.031,0.176 -0.098,0.434 -0.113,0.598 -1.699,-10.27 -0.305,-62.531 -0.305,-73.117 0,-16.809 2.246,-33.203 6.398,-49.113 3.243,-12.422 7.688,-24.481 13.235,-36.161 13.988,-29.484 34.969,-56.504 61.547,-79.992 63.941,-56.3866 159.894,-92.2811 267.191,-92.2811 74.453,0 143.391,17.3203 200.012,46.7261 12.859,6.688 25.098,13.985 36.582,21.836 28.074,19.207 51.844,41.77 70.144,66.856 26.536,36.308 41.614,77.918 41.614,122.129 0,9.316 0.8,53.515 -0.098,71.058 -0.156,2.407 0.098,-5.406 0.098,-8.453" />
+      <path
+         id="path42"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 942.988,19.9414 h -6.64 v 2.3945 h 16.125 V 19.9414 H 945.82 V 0.554688 h -2.832 V 19.9414" />
+      <path
+         id="path44"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 972.617,10.1289 c -0.144,3.0234 -0.344,6.6875 -0.304,9.3906 h -0.106 c -0.742,-2.5468 -1.652,-5.2617 -2.742,-8.25 l -3.86,-10.585906 h -2.121 L 959.949,11.0547 c -1.031,3.0859 -1.902,5.8867 -2.519,8.4648 h -0.067 c -0.066,-2.7031 -0.226,-6.3672 -0.422,-9.61716 l -0.562,-9.347652 h -2.688 l 1.524,21.781212 h 3.574 l 3.723,-10.539 c 0.906,-2.68752 1.648,-5.07034 2.207,-7.32424 h 0.086 c 0.554,2.1875 1.336,4.57812 2.293,7.32424 l 3.879,10.539 h 3.593 l 1.36,-21.781212 h -2.746 l -0.567,9.574212" />
+    </g>
+  </g>
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FIRST Tech Challenge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Examples
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../examples_xrp/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1a87.98 87.98 0 0 0-40.4 74v1.4c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7v-3.6c0-70.7-57.3-128-128-128h-32C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32m80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../file_issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Submit Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+
+    <!-- Add Hard Copies to NAV menu -->
+    <li class="md-nav__item">
+      <a href="/SparkFun_Optical_Tracking_Odometry_Sensor/hard_copy/" class="md-nav__link">
+      <span class="md-ellipsis">
+        Hard Copies 🖨️
+        <!-- Hard Copies&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg> -->
+      </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#improve-our-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &nbsp;Improve our Documentation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" Improve our Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#submit-a-correction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Submit a Correction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#improve-our-hardware-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        &nbsp;Improve our Hardware Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label=" Improve our Hardware Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#submit-a-design-enhancement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Submit a Design Enhancement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributors&nbsp;
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+
+<!-- Adds file-eye icon to view hookup guide as a single page -->
+
+    <a href="/SparkFun_Optical_Tracking_Odometry_Sensor/single_page" title="View as Single-Page" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+
+
+
+                  
+
+
+  
+    <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/blob/main/docs/github/contribute.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 12h8v2H8zm2 8H6V4h7v5h5v3.1l2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4zm-2-2h4.1l.9-.9V16H8zm12.2-5c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="contribute-make-an-augmentation">Contribute: Make an Augmentation!<a class="headerlink" href="#contribute-make-an-augmentation" title="Permanent link"></a></h1>
+<p>Spot an improvement opportunity? Feel free to contribute to our open-source design and documentation. <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/pulls" alt="Pull Requests"><img src="https://img.shields.io/github/issues-pr/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor.svg" /></a></p>
+<h2 id="improve-our-documentation"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4v18h16v2H4c-1.1 0-2-.9-2-2V4zm11 3h5.5L15 1.5zM8 0h8l6 6v12c0 1.11-.89 2-2 2H8a2 2 0 0 1-2-2V2c0-1.11.89-2 2-2m9 16v-2H8v2zm3-4v-2H8v2z"/></svg></span>&nbsp;Improve our Documentation<a class="headerlink" href="#improve-our-documentation" title="Permanent link"></a></h2>
+<p>All of this documentation can be modified by you! Please help us make it better.</p>
+<ul>
+<li>These pages are contained in the <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/tree/main/docs"><code>docs</code> folder</a> of the <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor">SparkFun Optical Tracking Odometry Sensor repository</a>.</li>
+</ul>
+<!-- ### :material-source-pull:&nbsp;Submit a Correction -->
+<h3 id="submit-a-correction">Submit a Correction<a class="headerlink" href="#submit-a-correction" title="Permanent link"></a></h3>
+<ol>
+<li>With a GitHub account, <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/fork">fork this repository</a>.</li>
+<li>Add your corrections or improvements to the markdown file.</li>
+<li>File a pull request with your changes, and enjoy making the <del>words</del> <del>worlds</del> world a better place.<ul>
+<li>Once received, the documentation specialist will automatically be notified.</li>
+<li>We will review your suggested improvements to make sure they are correct and fit within our documentation standards.</li>
+</ul>
+</li>
+</ol>
+<h2 id="improve-our-hardware-design"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg></span>&nbsp;Improve our Hardware Design<a class="headerlink" href="#improve-our-hardware-design" title="Permanent link"></a></h2>
+<p>All of our designs are open-source! Please help us make it better.</p>
+<ul>
+<li>Our board design files are contained in the <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/tree/main/Hardware"><code>Hardware</code> folder</a> of the <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor">SparkFun Optical Tracking Odometry Sensor repository</a>.</li>
+</ul>
+<!-- ### :material-source-pull:&nbsp;Submit a Design Enhancement -->
+<h3 id="submit-a-design-enhancement">Submit a Design Enhancement<a class="headerlink" href="#submit-a-design-enhancement" title="Permanent link"></a></h3>
+<ol>
+<li>With a GitHub account, <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/fork">fork this repository</a>.</li>
+<li>Add your design augmentation(s)</li>
+<li>File a pull request with your changes, and enjoy making the <del>words</del> <del>worlds</del> world a better place.<ol>
+<li>Once received, the engineer in charge of the original design will automatically be notified.</li>
+<li>We will review your suggested improvement(s) to verify that they are within our board design standards and meet our product design requirements.</li>
+<li>
+<p>If approved, we will flag these changes for our next board revision. Congrats! 🍻</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Even if your suggestion is accepted, these changes may not be immediately available for purchase. We may have to cycle through our current product inventory first.</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="contributors">Contributors&nbsp;<img alt="👏" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f44f.svg" title=":clap:" /><a class="headerlink" href="#contributors" title="Permanent link"></a></h2>
+<p>Let's provide some recognition to the contributors for this project!</p>
+<p><img alt="GitHub Contributors Image" src="https://contrib.rocks/image?repo=sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor" />
+<br>
+<a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/pulls" alt="Pull Requests"><img src="https://img.shields.io/github/contributors/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor.svg" /></a></p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-20T14:46:11+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-20</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-20T14:46:11+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-20</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:kirk.benell@sparkfun.com">Kirk Benell</a>
+    </nav>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/SparkFun-Documentation-Team" class="md-author" title="@SparkFun-Documentation-Team">
+          
+          <img src="https://avatars.githubusercontent.com/u/112656947?v=4&size=72" alt="SparkFun-Documentation-Team">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;</a><br> <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.sparkfun.com/products/<SKU Number>" target="_blank" rel="noopener" title="www.sparkfun.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/sparkfun" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/sparkfun" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.github.com/sparkfun" target="_blank" rel="noopener" title="www.github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/SparkFun" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/sparkfun" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate", "content.code.select", "content.action.edit", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path"], "search": "../../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.5a789024.min.js"></script>
+      
+        <script src="../../js/timeago.min.js"></script>
+      
+        <script src="../../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../../javascript/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

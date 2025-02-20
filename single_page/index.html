@@ -1,0 +1,2648 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A guide for getting started with the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)">
+      
+      
+        <meta name="author" content="SparkFun Electronics">
+      
+      
+        <link rel="canonical" href="https://sparkfun.github.io/SparkFun_Optical_Tracking_Odometry_Sensor/single_page/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/img/sfe_logo_sq.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5+insiders-4.53.15">
+    
+    
+      
+        <title>Single page - SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.f15084e1.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.307 5.476c-.756.134-1.975-.615-2.59-1.362-.755-.922-.66-1.647-.071-2.29.883-.978 2.396-.6 2.396-.6s-2.772-2.432-5.658-.44c-2.571 1.77-1.833 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.443-.184-2.034-1.343-1.687-2.054.298-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044c-1.259.474-2.297 1.515-2.214 4.12V24s1.301-1.604 2.83-3.236c1.714-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.371-3.645 3.141-4.563.67-9.68-1.43-10.343 0 0 .34 1.438-.745 1.638"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');--md-admonition-icon--github:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>');--md-admonition-icon--arduino:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>');--md-admonition-icon--python:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>');--md-admonition-icon--code:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zm96-34c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z"/></svg>');--md-admonition-icon--terminal:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53m1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5"/></svg>');--md-admonition-icon--serial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h176l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h256c17.7 0 32-14.3 32-32s-14.3-32-32-32h-69.3L336 416h176c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm448 64v288H64V64z"/></svg>');--md-admonition-icon--hot:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C11.33 7.26 11 4.85 11.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C3.78 10 2.87 12.3 3 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27M21 13h-2V7h2zm0 4h-2v-2h2z"/></svg>');--md-admonition-icon--first-tech:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.318 20.734c.608.18 1.239.274 1.873.278.834 0 1.472-.189 2.02-.585.609-.432 1.001-1.098 1.001-1.702a1.33 1.33 0 0 0-.49-1.035c-.245-.198-.5-.352-1.02-.595l-.422-.198c-.137-.072-.206-.144-.206-.225 0-.216.275-.378.647-.378.28 0 .612.081 1.247.289l.438-1.626a5.3 5.3 0 0 0-1.4-.194c-1.746 0-3.09.954-3.09 2.188 0 .649.432 1.108 1.51 1.612.51.234.599.297.599.46 0 .242-.265.396-.696.396-.383 0-.873-.117-1.54-.36h-.001Zm-4.526-5.818.138-.018c.686-.08 1.54-.135 2.01-.135.785 0 1.393.09 1.854.28.589.242.942.774.942 1.413 0 .55-.187 1.072-.54 1.477-.304.35-.578.522-1.147.693l-.138.045c.06.045.079.063.108.09.167.19.667 1.162 1.09 2.125h-2.355a33 33 0 0 0-.795-2.053l-.47 2.053h-2.08Zm-2.697-.036h2.138L6.84 20.886H4.702Zm-4.702 0h4.139l-.39 1.594H3.158l-.196.837h2.07l-.36 1.477H2.628l-.49 2.098H0Zm17.419 0H24l-.363 1.739h-1.54l-1.02 4.267H18.94l1.02-4.267h-1.67zm-8.441 2.864c.687 0 1.168-.406 1.168-.982 0-.306-.226-.46-.667-.46a1.5 1.5 0 0 0-.334.037l-.324 1.387c.07.009.079.018.157.018m10.89-9.72L16 2.996 14.232 4.84c-.73-.283-1.88-.51-2.753-.51-1.271 0-2.581.434-3.496 1L5.516 2.992v-.003h-.002l-.002-.001v.002l-.882.092-1.904 10.427.886.092v-.003l4.019-1.758.019.018c.956.843 2.39 1.38 3.996 1.38 1.113 0 2.144-.259 2.991-.699l1.615 1.551 5.01-5.216v-.849ZM3.651 13.38 5.486 3.166l2.618 2.48.82.777.626.594 1.488 1.418v.647l.632.607-1.975.9a3.6 3.6 0 0 1-1.138-.745l-.02-.021 1.516-.708-3.564-3.32-.07-.07-.086.46-.842 4.387-.13.682.223-.096.001-.005 1.145-.491c.18.377.436.728.755 1.042zm12.601-.14-1.068-1.026a4.3 4.3 0 0 0 1.05-1l.01-.016L18.842 8.5l.077-.083.34-.353-3.173-3.046-.713.742-.787.82-.536.558-1.01 1.052-.087.092.295.282 1.367 1.333c-.3.283-.68.526-1.109.704l-.903-.865-.886-.851-.602-.571 1.432-1.492.72-.75.781-.814 1.953-2.034 5.143 4.922zm-1.728-1.652a6 6 0 0 1-.604.263c-.72.266-1.497.4-2.307.4-1.15 0-2.238-.272-3.147-.79a4.5 4.5 0 0 1-1.254-1.03 3.6 3.6 0 0 1-.332-.472 3 3 0 0 1-.419-1.491c0-.55.158-1.08.47-1.577l.836.846a2.1 2.1 0 0 0-.025 1.08q.086.35.291.676.163.259.39.485c.415.415.978.74 1.628.943a5.2 5.2 0 0 0 1.562.232c.438 0 .87-.052 1.287-.155.236-.06.465-.134.678-.223.493-.205.926-.49 1.253-.826a2.44 2.44 0 0 0 .652-1.131q.06-.25.06-.493c0-.466-.175-.993-.46-1.396l.71-.741c.61.634.97 1.48.97 2.28q0 .221-.038.456c-.11.671-.466 1.31-1.03 1.848-.33.316-.724.59-1.17.816zm-2.534-1.59.853.82a5.2 5.2 0 0 1-2.923-.14l1.892-.85zm4.925-1.083q.036-.229.037-.447c0-.853-.387-1.752-1.035-2.422l.169-.176 2.628 2.524-2.176 2.266c.23-.538.38-1.2.38-1.676zm-10.6.04.004.018-.004.063c0 .251.154.848.216 1.086l-.817.35.78-4.06.32.316a3.13 3.13 0 0 0-.54 1.74c0 .158.013.317.04.487zm8.415.827-1.24-1.209 1.05-1.094c.374.311.65.684.797 1.093q-.013.1-.037.201-.133.546-.57 1.009m-6.509-.348-.029-.04a2.1 2.1 0 0 1-.267-.62q-.007-.034-.013-.068a2.2 2.2 0 0 1 .283-.61l.994.982zm4.317-2.83-1.53 1.594-1.343-1.274c.626-.266 1.3-.4 1.98-.396q.463.001.893.076m-1.101-2.075c.83 0 1.938.213 2.643.47l-.032.033-.782.814-.002.003a5.1 5.1 0 0 0-1.618-.257c-1.01 0-1.927.28-2.609.737l-.01-.01-.82-.777-.073-.069c.896-.541 2.06-.944 3.303-.944m1.881 16.205c.608.18 1.239.274 1.873.278.834 0 1.472-.189 2.02-.585.609-.432 1.001-1.098 1.001-1.702a1.33 1.33 0 0 0-.49-1.035c-.245-.198-.5-.352-1.02-.595l-.422-.198c-.137-.072-.206-.144-.206-.225 0-.216.275-.378.647-.378.28 0 .612.081 1.247.289l.438-1.626a5.3 5.3 0 0 0-1.4-.194c-1.746 0-3.09.954-3.09 2.188 0 .649.432 1.108 1.51 1.612.51.234.599.297.599.46 0 .242-.265.396-.696.396-.383 0-.873-.117-1.54-.36h-.001Zm-4.526-5.818.138-.018c.686-.08 1.54-.135 2.01-.135.785 0 1.393.09 1.854.28.589.242.942.774.942 1.413 0 .55-.187 1.072-.54 1.477-.304.35-.578.522-1.147.693l-.138.045c.06.045.079.063.108.09.167.19.667 1.162 1.09 2.125h-2.355a33 33 0 0 0-.795-2.053l-.47 2.053h-2.08Zm-2.697-.036h2.138L6.84 20.886H4.702Zm-4.702 0h4.139l-.39 1.594H3.158l-.196.837h2.07l-.36 1.477H2.628l-.49 2.098H0Zm17.419 0H24l-.363 1.739h-1.54l-1.02 4.267H18.94l1.02-4.267h-1.67zm-8.441 2.864c.687 0 1.168-.406 1.168-.982 0-.306-.226-.46-.667-.46a1.5 1.5 0 0 0-.334.037l-.324 1.387c.07.009.079.018.157.018m10.89-9.72L16 2.996 14.232 4.84c-.73-.283-1.88-.51-2.753-.51-1.271 0-2.581.434-3.496 1L5.516 2.992v-.003h-.002l-.002-.001v.002l-.882.092-1.904 10.427.886.092v-.003l4.019-1.758.019.018c.956.843 2.39 1.38 3.996 1.38 1.113 0 2.144-.259 2.991-.699l1.615 1.551 5.01-5.216v-.849ZM3.651 13.38 5.486 3.166l2.618 2.48.82.777.626.594 1.488 1.418v.647l.632.607-1.975.9a3.6 3.6 0 0 1-1.138-.745l-.02-.021 1.516-.708-3.564-3.32-.07-.07-.086.46-.842 4.387-.13.682.223-.096.001-.005 1.145-.491c.18.377.436.728.755 1.042zm12.601-.14-1.068-1.026a4.3 4.3 0 0 0 1.05-1l.01-.016L18.842 8.5l.077-.083.34-.353-3.173-3.046-.713.742-.787.82-.536.558-1.01 1.052-.087.092.295.282 1.367 1.333c-.3.283-.68.526-1.109.704l-.903-.865-.886-.851-.602-.571 1.432-1.492.72-.75.781-.814 1.953-2.034 5.143 4.922zm-1.728-1.652a6 6 0 0 1-.604.263c-.72.266-1.497.4-2.307.4-1.15 0-2.238-.272-3.147-.79a4.5 4.5 0 0 1-1.254-1.03 3.6 3.6 0 0 1-.332-.472 3 3 0 0 1-.419-1.491c0-.55.158-1.08.47-1.577l.836.846a2.1 2.1 0 0 0-.025 1.08q.086.35.291.676.163.259.39.485c.415.415.978.74 1.628.943a5.2 5.2 0 0 0 1.562.232c.438 0 .87-.052 1.287-.155.236-.06.465-.134.678-.223.493-.205.926-.49 1.253-.826a2.44 2.44 0 0 0 .652-1.131q.06-.25.06-.493c0-.466-.175-.993-.46-1.396l.71-.741c.61.634.97 1.48.97 2.28q0 .221-.038.456c-.11.671-.466 1.31-1.03 1.848-.33.316-.724.59-1.17.816zm-2.534-1.59.853.82a5.2 5.2 0 0 1-2.923-.14l1.892-.85zm4.925-1.083q.036-.229.037-.447c0-.853-.387-1.752-1.035-2.422l.169-.176 2.628 2.524-2.176 2.266c.23-.538.38-1.2.38-1.676zm-10.6.04.004.018-.004.063c0 .251.154.848.216 1.086l-.817.35.78-4.06.32.316a3.13 3.13 0 0 0-.54 1.74c0 .158.013.317.04.487zm8.415.827-1.24-1.209 1.05-1.094c.374.311.65.684.797 1.093q-.013.1-.037.201-.133.546-.57 1.009m-6.509-.348-.029-.04a2.1 2.1 0 0 1-.267-.62q-.007-.034-.013-.068a2.2 2.2 0 0 1 .283-.61l.994.982zm4.317-2.83-1.53 1.594-1.343-1.274c.626-.266 1.3-.4 1.98-.396q.463.001.893.076m-1.101-2.075c.83 0 1.938.213 2.643.47l-.032.033-.782.814-.002.003a5.1 5.1 0 0 0-1.618-.257c-1.01 0-1.927.28-2.609.737l-.01-.01-.82-.777-.073-.069c.896-.541 2.06-.944 3.303-.944"/></svg>');--md-admonition-icon--link:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/timeago.css">
+    
+      <link rel="stylesheet" href="../stylesheet/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#required-materials" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://www.sparkfun.com" title="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide" class="md-header__button md-logo" aria-label="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Single page
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Navigation tabs -->
+<nav
+  class="md-tabs"
+  aria-label="Tabs"
+  data-md-component="tabs"
+>
+  <div class="md-tabs__inner md-grid">
+
+    <!-- Adds tab on right side of header -->
+    
+    <ul class="md-tabs__list" style="float: right;">
+      <li class="md-tabs__item">
+        <a href="/SparkFun_Optical_Tracking_Odometry_Sensor/hard_copy/" class="md-tabs__link">
+          Hard Copies 🖨️
+        <!-- &nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg> -->
+        </a>
+      </li>
+    </ul>
+    
+
+    <!-- Original tabbed sections -->
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+  Hookup Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../troubleshooting/" class="md-tabs__link">
+          
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Determine base classes -->
+
+
+  
+
+
+
+<!-- Navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <!-- <label class="md-nav__title" for="__drawer">
+    <a
+      href="https://www.sparkfun.com"
+      title="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide"
+      class="md-nav__button md-logo"
+      aria-label="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide"
+      data-md-component="logo"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+
+    </a>
+    SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide
+  </label> -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="https://www.sparkfun.com"
+      title="sparkfun.com"
+      class="md-nav__button md-logo"
+      aria-label="SparkFun"
+      data-md-component="logo"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+
+    </a>
+    SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) Hookup Guide
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Navigation list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Hookup Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hookup Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_overview/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Assembly
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hardware Assembly
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_assembly/" class="md-nav__link">
+        
+  
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="xrp.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="32.375"
+     inkscape:cx="13.019305"
+     inkscape:cy="11.984556"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="217"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">FIRST</title>
+  <g
+     id="g2"
+     transform="matrix(0.04275947,0,0,-0.05667001,0.1199708,15.140272)">
+    <g
+       id="g154"
+       transform="translate(242.5809,129.2916)">
+      <path
+         d="m 0,0 v -18.524 h 51.69 c 2.589,0 4.773,0.889 6.553,2.67 1.86,1.86 2.75,4.043 2.75,6.552 C 60.993,-4.125 56.867,0 51.69,0 Z m 62.369,31.791 c 22.406,0.243 41.417,-18.605 41.092,-41.093 0,-8.171 -2.184,-15.612 -6.552,-22.246 C 92.622,-38.1 86.879,-43.115 79.76,-46.432 l 23.701,-30.497 H 58.324 L 37.857,-50.396 H 0 v -26.533 h -42.388 v 108.72 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path156" />
+    </g>
+    <g
+       id="g158"
+       transform="translate(453.2892,110.6866)">
+      <path
+         d="m 0,0 c 2.508,0 4.692,0.889 6.471,2.67 1.861,1.86 2.751,4.045 2.751,6.552 0,2.589 -0.89,4.772 -2.751,6.553 C 4.692,17.635 2.508,18.524 0,18.524 H -51.771 V 0 Z M 10.597,50.315 C 33.004,50.558 52.014,31.71 51.69,9.222 52.014,-13.186 33.004,-32.195 10.597,-31.872 h -62.368 v -26.533 h -42.387 v 108.72 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path160" />
+    </g>
+    <g
+       id="g162"
+       transform="translate(110.8238,129.2917)">
+      <path
+         d="M 0,0 -30.495,31.71 H -83.561 L -26.533,-22.65 0,-45.219 30.497,-77.01 h 52.984 l -57.028,54.36 z"
+         style="fill:#d1182c;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path164" />
+    </g>
+    <g
+       id="g166"
+       transform="translate(194.305,161.0016)">
+      <path
+         d="m 0,0 h -52.984 l -30.497,-31.71 26.453,-22.65 z"
+         style="fill:#006eff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path168" />
+    </g>
+    <g
+       id="g170"
+       transform="translate(27.2629,52.282)">
+      <path
+         d="M 0,0 H 53.066 L 83.561,31.791 57.028,54.36 Z"
+         style="fill:#006eff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path172" />
+    </g>
+  </g>
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    XRP
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_assembly_FTC/" class="md-nav__link">
+        
+  
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="first.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="32.375"
+     inkscape:cx="11.351351"
+     inkscape:cy="11.984556"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="217"
+     inkscape:window-y="195"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">FIRST</title>
+  <g
+     transform="matrix(0.14963471,0,0,-0.14963471,2.6370656,13.949983)"
+     id="g10">
+    <g
+       transform="scale(0.1)"
+       id="g12">
+      <path
+         id="path14"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,505.742 c 21.801,0 42.973,-1.992 63.184,-5.679 l 48.078,50.093 c -33.621,11.645 -71.367,18.172 -111.262,18.172 -67.836,0 -129.418,-18.91 -175.086,-49.707 l 41.899,-39.687 c 38.742,16.972 84.328,26.808 133.187,26.808" />
+      <path
+         id="path16"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,568.328 c 39.895,0 77.641,-6.527 111.262,-18.172 l 52.273,54.422 c -48.777,19.231 -104.414,30.152 -163.535,30.152 -88.129,0 -168.539,-24.253 -229.91,-64.156 l 54.824,-51.953 c 45.668,30.797 107.25,49.707 175.086,49.707" />
+      <path
+         id="path18"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 344.824,355.391 c 4.395,17.968 12.512,35 23.707,50.75 l -21.058,21.304 c -4.172,-13.09 -6.481,-26.722 -6.481,-40.757 0,-10.668 1.332,-21.114 3.832,-31.297" />
+      <path
+         id="path20"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 189.215,237.637 -8.84,-45.832 87.969,37.871 c -5.551,11.679 -6.641,26.906 -9.848,39.289 l -69.281,-31.328" />
+      <path
+         id="path22"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 127.313,736.086 0,38.9063 60.2148,34.0039 186.277,741.316 l -58.964,-5.23" />
+      <path
+         id="path24"
+         style="fill:#ed1c24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 555.438,334.891 v 56.382 l -92.473,87.661 -41.879,39.687 -54.848,51.953 L 186.07,741.328 59.9609,34.0039 326.797,151.309 c -26.567,23.464 -45.395,48.484 -59.387,77.968 l -86.859,-37.257 8.711,45.597 56.285,293.356 4.703,24.621 46.469,-46.789 59.801,-60.215 25.664,-25.891 105.546,-90.922 -102.453,-46.953 c 26.614,-26.57 58.129,-49.988 100.625,-63.215 l 127.828,57.395 -58.292,55.887" />
+      <path
+         id="path26"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 846.816,355.391 c 2.481,10.183 3.848,20.629 3.848,31.297 0,31.484 -11.516,61.21 -31.328,87.019 l -30.352,-31.422 c 29.153,-24.254 49.856,-54.14 57.832,-86.894" />
+      <path
+         id="path28"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 903.867,57.0039 -71.926,69.0981 c -11.503,-7.848 -23.796,-15.137 -36.668,-21.825 L 903.867,0 1238.75,348.797 1238.38,405.277 903.867,57.0039" />
+      <path
+         id="path30"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.844,291.258 -59.239,56.887 -45.328,43.277 -0.16,-56.531 63.731,-61.211 60.918,-58.512 c 15.476,3.863 30.285,8.719 44.207,14.508 l -64.129,61.582" />
+      <path
+         id="path32"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 892.695,606.688 -47.675,-49.633 -52.579,-54.793 -35.859,-37.313 -67.93,-70.738 28.457,-27.316 72.278,75.242 30.222,31.476 55.371,57.645 17.715,18.465 184.145,-176.524 28.48,29.574 -212.625,203.915" />
+      <path
+         id="path34"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 874.98,531.258 -55.371,-57.645 c 19.817,-25.812 31.055,-55.441 31.055,-86.925 0,-10.668 -1.367,-21.114 -3.848,-31.297 -6.464,-26.496 -20.988,-51.036 -41.711,-72.278 -21.199,-21.734 -48.906,-40.039 -81.132,-53.437 -13.922,-5.789 -28.731,-10.645 -44.207,-14.508 -26.27,-6.516 -54.524,-10.109 -83.938,-10.109 -36.238,0 -70.66,5.39 -101.859,15.109 -42.504,13.25 -78.949,34.488 -105.582,61.082 -9.715,9.688 -18.106,20.117 -25.039,31.121 -8.528,13.535 -14.832,27.942 -18.524,43.02 -2.5,10.183 -3.832,20.629 -3.832,31.297 0,14.035 2.309,27.667 6.481,40.757 l -63.586,64.371 c -23.289,-34.535 -36.43,-73.449 -36.43,-114.66 0,-10.597 0.981,-21.043 2.664,-31.297 4.074,-24.921 13.008,-48.691 26,-70.879 6.516,-11.152 14.082,-21.894 22.606,-32.16 22.371,-26.98 51.214,-50.691 85.027,-69.91 58.707,-33.39 132.223,-53.312 212.074,-53.312 55.871,0 108.606,9.738 155.383,27.011 14.199,5.227 27.812,11.164 40.84,17.735 30.156,15.273 56.914,33.918 79.238,55.246 37.473,35.789 62.5,79.051 70.242,126.269 1.692,10.254 2.649,20.7 2.649,31.297 0,57.793 -25.735,111.149 -69.2,154.102" />
+      <path
+         id="path36"
+         style="fill:#1c63b7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.543,290.84 63.914,-61.387 c 32.188,13.426 60.129,31.492 81.367,53.242 l -87.636,84.149 -28.458,27.301 67.571,70.371 35.816,37.324 52.602,54.797 47.683,49.629 L 1104.52,402.617 1076.05,372.938 902.266,192.004 C 883.965,166.914 860.223,144.648 832.148,125.43 L 903.563,56.5508 1238.45,405.313 889.68,740.191 759.055,604.156 706.777,549.723 658.672,499.629 555.277,391.422 659.543,290.84" />
+      <path
+         id="path38"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 364.797,310.633 c 0,0 1.668,-2.754 1.859,-3.055 5.117,-8.137 12.145,-15.574 18.797,-23.008 l 104.184,48.145 -239.422,222.957 -6.527,-34.484 187.835,-185.973 -66.726,-24.582" />
+      <path
+         id="path40"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 944.18,377.156 c 0,-10.597 -0.957,-21.043 -2.649,-31.297 -7.742,-47.218 -32.769,-90.48 -70.242,-126.269 -22.324,-21.328 -49.082,-39.973 -79.238,-55.246 -13.028,-6.571 -26.641,-12.508 -40.84,-17.735 -46.777,-17.273 -99.512,-27.011 -155.383,-27.011 -79.851,0 -153.367,19.922 -212.074,53.312 -33.813,19.219 -62.656,42.93 -85.027,69.91 -8.524,10.266 -16.09,21.008 -22.606,32.16 -12.992,22.188 -21.926,45.958 -26,70.879 -1.683,10.254 -2.664,20.7 -2.664,31.297 0,3.34 0.258,6.629 0.418,9.914 -0.031,0.176 -0.098,0.434 -0.113,0.598 -1.699,-10.27 -0.305,-62.531 -0.305,-73.117 0,-16.809 2.246,-33.203 6.398,-49.113 3.243,-12.422 7.688,-24.481 13.235,-36.161 13.988,-29.484 34.969,-56.504 61.547,-79.992 63.941,-56.3866 159.894,-92.2811 267.191,-92.2811 74.453,0 143.391,17.3203 200.012,46.7261 12.859,6.688 25.098,13.985 36.582,21.836 28.074,19.207 51.844,41.77 70.144,66.856 26.536,36.308 41.614,77.918 41.614,122.129 0,9.316 0.8,53.515 -0.098,71.058 -0.156,2.407 0.098,-5.406 0.098,-8.453" />
+      <path
+         id="path42"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 942.988,19.9414 h -6.64 v 2.3945 h 16.125 V 19.9414 H 945.82 V 0.554688 h -2.832 V 19.9414" />
+      <path
+         id="path44"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 972.617,10.1289 c -0.144,3.0234 -0.344,6.6875 -0.304,9.3906 h -0.106 c -0.742,-2.5468 -1.652,-5.2617 -2.742,-8.25 l -3.86,-10.585906 h -2.121 L 959.949,11.0547 c -1.031,3.0859 -1.902,5.8867 -2.519,8.4648 h -0.067 c -0.066,-2.7031 -0.226,-6.3672 -0.422,-9.61716 l -0.562,-9.347652 h -2.688 l 1.524,21.781212 h 3.574 l 3.723,-10.539 c 0.906,-2.68752 1.648,-5.07034 2.207,-7.32424 h 0.086 c 0.554,2.1875 1.336,4.57812 2.293,7.32424 l 3.879,10.539 h 3.593 l 1.36,-21.781212 h -2.746 l -0.567,9.574212" />
+    </g>
+  </g>
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FTC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_setup-Arduino/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_setup-Python/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_setup-FTC/" class="md-nav__link">
+        
+  
+    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="first.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="32.375"
+     inkscape:cx="11.351351"
+     inkscape:cy="11.984556"
+     inkscape:window-width="1450"
+     inkscape:window-height="1020"
+     inkscape:window-x="217"
+     inkscape:window-y="195"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">FIRST</title>
+  <g
+     transform="matrix(0.14963471,0,0,-0.14963471,2.6370656,13.949983)"
+     id="g10">
+    <g
+       transform="scale(0.1)"
+       id="g12">
+      <path
+         id="path14"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,505.742 c 21.801,0 42.973,-1.992 63.184,-5.679 l 48.078,50.093 c -33.621,11.645 -71.367,18.172 -111.262,18.172 -67.836,0 -129.418,-18.91 -175.086,-49.707 l 41.899,-39.687 c 38.742,16.972 84.328,26.808 133.187,26.808" />
+      <path
+         id="path16"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 595.828,568.328 c 39.895,0 77.641,-6.527 111.262,-18.172 l 52.273,54.422 c -48.777,19.231 -104.414,30.152 -163.535,30.152 -88.129,0 -168.539,-24.253 -229.91,-64.156 l 54.824,-51.953 c 45.668,30.797 107.25,49.707 175.086,49.707" />
+      <path
+         id="path18"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 344.824,355.391 c 4.395,17.968 12.512,35 23.707,50.75 l -21.058,21.304 c -4.172,-13.09 -6.481,-26.722 -6.481,-40.757 0,-10.668 1.332,-21.114 3.832,-31.297" />
+      <path
+         id="path20"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 189.215,237.637 -8.84,-45.832 87.969,37.871 c -5.551,11.679 -6.641,26.906 -9.848,39.289 l -69.281,-31.328" />
+      <path
+         id="path22"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="M 127.313,736.086 0,38.9063 60.2148,34.0039 186.277,741.316 l -58.964,-5.23" />
+      <path
+         id="path24"
+         style="fill:#ed1c24;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 555.438,334.891 v 56.382 l -92.473,87.661 -41.879,39.687 -54.848,51.953 L 186.07,741.328 59.9609,34.0039 326.797,151.309 c -26.567,23.464 -45.395,48.484 -59.387,77.968 l -86.859,-37.257 8.711,45.597 56.285,293.356 4.703,24.621 46.469,-46.789 59.801,-60.215 25.664,-25.891 105.546,-90.922 -102.453,-46.953 c 26.614,-26.57 58.129,-49.988 100.625,-63.215 l 127.828,57.395 -58.292,55.887" />
+      <path
+         id="path26"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 846.816,355.391 c 2.481,10.183 3.848,20.629 3.848,31.297 0,31.484 -11.516,61.21 -31.328,87.019 l -30.352,-31.422 c 29.153,-24.254 49.856,-54.14 57.832,-86.894" />
+      <path
+         id="path28"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 903.867,57.0039 -71.926,69.0981 c -11.503,-7.848 -23.796,-15.137 -36.668,-21.825 L 903.867,0 1238.75,348.797 1238.38,405.277 903.867,57.0039" />
+      <path
+         id="path30"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.844,291.258 -59.239,56.887 -45.328,43.277 -0.16,-56.531 63.731,-61.211 60.918,-58.512 c 15.476,3.863 30.285,8.719 44.207,14.508 l -64.129,61.582" />
+      <path
+         id="path32"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 892.695,606.688 -47.675,-49.633 -52.579,-54.793 -35.859,-37.313 -67.93,-70.738 28.457,-27.316 72.278,75.242 30.222,31.476 55.371,57.645 17.715,18.465 184.145,-176.524 28.48,29.574 -212.625,203.915" />
+      <path
+         id="path34"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 874.98,531.258 -55.371,-57.645 c 19.817,-25.812 31.055,-55.441 31.055,-86.925 0,-10.668 -1.367,-21.114 -3.848,-31.297 -6.464,-26.496 -20.988,-51.036 -41.711,-72.278 -21.199,-21.734 -48.906,-40.039 -81.132,-53.437 -13.922,-5.789 -28.731,-10.645 -44.207,-14.508 -26.27,-6.516 -54.524,-10.109 -83.938,-10.109 -36.238,0 -70.66,5.39 -101.859,15.109 -42.504,13.25 -78.949,34.488 -105.582,61.082 -9.715,9.688 -18.106,20.117 -25.039,31.121 -8.528,13.535 -14.832,27.942 -18.524,43.02 -2.5,10.183 -3.832,20.629 -3.832,31.297 0,14.035 2.309,27.667 6.481,40.757 l -63.586,64.371 c -23.289,-34.535 -36.43,-73.449 -36.43,-114.66 0,-10.597 0.981,-21.043 2.664,-31.297 4.074,-24.921 13.008,-48.691 26,-70.879 6.516,-11.152 14.082,-21.894 22.606,-32.16 22.371,-26.98 51.214,-50.691 85.027,-69.91 58.707,-33.39 132.223,-53.312 212.074,-53.312 55.871,0 108.606,9.738 155.383,27.011 14.199,5.227 27.812,11.164 40.84,17.735 30.156,15.273 56.914,33.918 79.238,55.246 37.473,35.789 62.5,79.051 70.242,126.269 1.692,10.254 2.649,20.7 2.649,31.297 0,57.793 -25.735,111.149 -69.2,154.102" />
+      <path
+         id="path36"
+         style="fill:#1c63b7;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 659.543,290.84 63.914,-61.387 c 32.188,13.426 60.129,31.492 81.367,53.242 l -87.636,84.149 -28.458,27.301 67.571,70.371 35.816,37.324 52.602,54.797 47.683,49.629 L 1104.52,402.617 1076.05,372.938 902.266,192.004 C 883.965,166.914 860.223,144.648 832.148,125.43 L 903.563,56.5508 1238.45,405.313 889.68,740.191 759.055,604.156 706.777,549.723 658.672,499.629 555.277,391.422 659.543,290.84" />
+      <path
+         id="path38"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 364.797,310.633 c 0,0 1.668,-2.754 1.859,-3.055 5.117,-8.137 12.145,-15.574 18.797,-23.008 l 104.184,48.145 -239.422,222.957 -6.527,-34.484 187.835,-185.973 -66.726,-24.582" />
+      <path
+         id="path40"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 944.18,377.156 c 0,-10.597 -0.957,-21.043 -2.649,-31.297 -7.742,-47.218 -32.769,-90.48 -70.242,-126.269 -22.324,-21.328 -49.082,-39.973 -79.238,-55.246 -13.028,-6.571 -26.641,-12.508 -40.84,-17.735 -46.777,-17.273 -99.512,-27.011 -155.383,-27.011 -79.851,0 -153.367,19.922 -212.074,53.312 -33.813,19.219 -62.656,42.93 -85.027,69.91 -8.524,10.266 -16.09,21.008 -22.606,32.16 -12.992,22.188 -21.926,45.958 -26,70.879 -1.683,10.254 -2.664,20.7 -2.664,31.297 0,3.34 0.258,6.629 0.418,9.914 -0.031,0.176 -0.098,0.434 -0.113,0.598 -1.699,-10.27 -0.305,-62.531 -0.305,-73.117 0,-16.809 2.246,-33.203 6.398,-49.113 3.243,-12.422 7.688,-24.481 13.235,-36.161 13.988,-29.484 34.969,-56.504 61.547,-79.992 63.941,-56.3866 159.894,-92.2811 267.191,-92.2811 74.453,0 143.391,17.3203 200.012,46.7261 12.859,6.688 25.098,13.985 36.582,21.836 28.074,19.207 51.844,41.77 70.144,66.856 26.536,36.308 41.614,77.918 41.614,122.129 0,9.316 0.8,53.515 -0.098,71.058 -0.156,2.407 0.098,-5.406 0.098,-8.453" />
+      <path
+         id="path42"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 942.988,19.9414 h -6.64 v 2.3945 h 16.125 V 19.9414 H 945.82 V 0.554688 h -2.832 V 19.9414" />
+      <path
+         id="path44"
+         style="fill:#959596;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         d="m 972.617,10.1289 c -0.144,3.0234 -0.344,6.6875 -0.304,9.3906 h -0.106 c -0.742,-2.5468 -1.652,-5.2617 -2.742,-8.25 l -3.86,-10.585906 h -2.121 L 959.949,11.0547 c -1.031,3.0859 -1.902,5.8867 -2.519,8.4648 h -0.067 c -0.066,-2.7031 -0.226,-6.3672 -0.422,-9.61716 l -0.562,-9.347652 h -2.688 l 1.524,21.781212 h 3.574 l 3.723,-10.539 c 0.906,-2.68752 1.648,-5.07034 2.207,-7.32424 h 0.086 c 0.554,2.1875 1.336,4.57812 2.293,7.32424 l 3.879,10.539 h 3.593 l 1.36,-21.781212 h -2.746 l -0.567,9.574212" />
+    </g>
+  </g>
+</svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    FIRST Tech Challenge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Examples
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Examples
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples_xrp/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Python Examples
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1a87.98 87.98 0 0 0-40.4 74v1.4c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7v-3.6c0-70.7-57.3-128-128-128h-32C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32m80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file_issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Submit Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Contribute
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+
+    <!-- Add Hard Copies to NAV menu -->
+    <li class="md-nav__item">
+      <a href="/SparkFun_Optical_Tracking_Odometry_Sensor/hard_copy/" class="md-nav__link">
+      <span class="md-ellipsis">
+        Hard Copies 🖨️
+        <!-- Hard Copies&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg> -->
+      </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#required-materials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Required Materials
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#suggested-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Suggested Reading
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hardware Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#optical-tracking-sensor-paa5160" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optical Tracking Sensor - PAA5160
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-dof-imu-lsm6dso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6-DoF IMU - LSM6DSO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#microcontroller-stm32c0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microcontroller - STM32C0
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qwiic-connectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Qwiic Connectors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GPIO
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugging-test-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debugging Test Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jumpers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jumpers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Jumpers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#power-jumper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Jumper
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#i2c-jumper" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        I2C Jumper
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#board-dimensions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Board Dimensions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware Assembly
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hardware-assembly-ftc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware Assembly - FTC
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-setup-arduino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Setup - Arduino
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-setup-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Setup - Python
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Setup - Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#linuxraspberry-pi-variants" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux/Raspberry Pi Variants
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xrpmicrocontrollers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        XRP/MicroControllers
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="XRP/MicroControllers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-qwiic_i2c_py" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Qwiic_I2C_Py
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#install-qwiic_otos_py" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Install Qwiic_OTOS_Py
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Visualization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#software-setup-first-tech-challenge-java" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software Setup - FIRST Tech Challenge Java
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software Setup - FIRST Tech Challenge Java">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#update-the-ftc-robot-controller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Update the FTC Robot Controller
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardware-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hardware Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Troubleshooting Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Troubleshooting Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#calibration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Calibration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources:
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+  
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+
+<!-- Adds file-eye icon to view hookup guide as a single page -->
+
+    <a href="/SparkFun_Optical_Tracking_Odometry_Sensor/single_page" title="View as Single-Page" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+    </a>
+
+
+
+                  
+  
+
+
+
+  
+    <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/blob/main/docs/single_page.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 12h8v2H8zm2 8H6V4h7v5h5v3.1l2-2V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4zm-2-2h4.1l.9-.9V16H8zm12.2-5c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+<div class="grid cards desc">
+<ul>
+<li>
+<p><a href="https://www.sparkfun.com/products/24904">
+    <strong>SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)</strong><br>
+    <strong>SKU:</strong> SEN-24904</p>
+<hr />
+<p><figure markdown>
+<img alt="Product Thumbnail" src="https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature_1.jpg" />
+</figure></a></p>
+</li>
+<li>
+<p>The SparkFun Qwiic Optical Tracking Odometry Sensor empowers you to elevate your robot's navigation capabilities with exceptional precision and streamlined integration. This compact, all-in-one sensor leverages the power of the PAA5160E1 chip from PixArt Imaging Inc., delivering accurate dual-axis motion data across various hard floor surfaces. But that's not all! This sensor boasts a powerful built-in 6-axis Inertial Measurement Unit (IMU) and an onboard microcontroller that performs real-time sensor fusion and tracking algorithms.</p>
+<p><center>
+<a class="md-button md-button--primary" href="https://www.sparkfun.com/products/24904">Purchase from SparkFun <span class="twemoji heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 24C0 10.7 10.7 0 24 0h45.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5l-51.6-271c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24m128 440a48 48 0 1 1 96 0 48 48 0 1 1-96 0m336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96M252 160c0 11 9 20 20 20h44v44c0 11 9 20 20 20s20-9 20-20v-44h44c11 0 20-9 20-20s-9-20-20-20h-44V96c0-11-9-20-20-20s-20 9-20 20v44h-44c-11 0-20 9-20 20"/></svg></span></a>
+</center></p>
+</li>
+</ul>
+</div>
+<div style="text-align: center">
+  <table>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WcCNC8wExUc?si=TiFzZ-B61BXpmXQT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<h2 id="required-materials">Required Materials<a class="headerlink" href="#required-materials" title="Permanent link"></a></h2>
+<p>To follow along with this tutorial, you will need the following materials. You may not need everything though depending on what you have. Add it to your cart, read through the guide, and adjust the cart as necessary.</p>
+<table style="border-style:none">
+    <tr>
+        <td>
+            <a href="https://www.sparkfun.com/products/24904">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/2/5/2/0/9/SEN-24904-Optical-Tracking-Odometry-Sensor-Feature_1.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)"></center>
+                <h3 class="title">SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic)</h3>
+            </a>
+            SEN-24904
+        </td>
+        <td>
+            <a href="https://www.sparkfun.com/products/25596">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/2/6/1/5/1/CAB-25596-Flexible-Qwiic-to-STEMMA-Cable-Feature.jpg" style="width:140px; height:140px; object-fit:contain;" alt="Flexible Qwiic to STEMMA Cable - 500mm" height="140"></center>
+                <h3 class="title">Flexible Qwiic to STEMMA Cable - 500mm</h3>
+            </a>
+            CAB-25596
+        </td>
+        <td>
+            <a href="https://www.sparkfun.com/products/14427">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/1/2/4/5/3/14427-Qwiic_Cable_-_100mm-01.jpg" style="width:140px; height:140px; object-fit:contain;" alt="Qwiic Cable - 100mm" >
+                </center>
+                <h3 class="title">Qwiic Cable - 100mmc</h3>
+            </a>
+           PRT-14427
+        </td>        <td>
+            <a href="https://www.sparkfun.com/products/10215">
+                <center><img src="https://cdn.sparkfun.com/r/455-455/assets/parts/4/5/5/8/10215-01.jpg" style="width:140px; height:140px; object-fit:contain;" alt="USB micro-B Cable - 6 Foot" >
+                </center>
+                <h3 class="title">USB micro-B Cable - 6 Foot</h3>
+            </a>
+            CAB-10215
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="https://www.sparkfun.com/products/22230">
+                <center><img src="https://cdn.sparkfun.com/assets/parts/2/2/1/9/1/XRP_Robot-02.jpg" style="width:140px; height:140px; object-fit:contain;" alt="Experiential Robotics Platform (XRP) Kit - Beta" >
+                </center>
+                <h3 class="title">Experiential Robotics Platform (XRP) Kit - Beta</h3>
+            </a>
+            KIT-22230
+        </td>
+        <td>
+            <a href="https://www.sparkfun.com/products/15123">
+                <center><img src="https://cdn.sparkfun.com//assets/parts/1/3/4/9/2/15123-SparkFun_RedBoard_Qwiic-01a.jpg" style="width:140px; height:140px; object-fit:contain;" alt="SparkFun RedBoard Qwiic" >
+                </center>
+                <h3 class="title">SparkFun RedBoard Qwiic</h3>
+            </a>
+            DEV-15123
+        </td>
+    </tr>
+</table>
+
+<h2 id="suggested-reading">Suggested Reading<a class="headerlink" href="#suggested-reading" title="Permanent link"></a></h2>
+<p>Below are a few tutorials that may help users familiarize themselves with various aspects of the board.</p>
+<div align="center" class="grid cards hide col-4">
+<ul>
+<li>
+<p><a href="https://learn.sparkfun.com/tutorials/82">
+    <figure markdown>
+    <img alt="I2C" src="https://cdn.sparkfun.com/assets/learn_tutorials/8/2/I2C-Block-Diagram.jpg" />
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/82"><strong>I2C</strong>
+    </a></p>
+</li>
+<li>
+<p><a href="https://learn.sparkfun.com/tutorials/terminal-basics">
+    <figure markdown>
+    <img alt="SPI" src="https://cdn.sparkfun.com/assets/learn_tutorials/1/1/2/terminalThumb.jpg" />
+    </figure>
+    </a>
+    <a href="https://learn.sparkfun.com/tutorials/terminal-basics"><strong>Serial Terminal Basics</strong>
+    </a></p>
+</li>
+</ul>
+</div>
+<p><center></p>
+<div align="center">
+    <div style="top:5px;left:5px;background-color:Gray;position:relative">
+        <div style="top:-5px;left:-5px;background-color:#ffffff;position:relative;border:1px solid black;">
+            <a href="https://www.sparkfun.com/qwiic"><img src="https://cdn.sparkfun.com/assets/custom_pages/2/7/2/qwiic-logo.png" alt="Qwiic Connect System" title="Qwiic Connect System"></a>
+        </div>
+    </div>
+</div>
+<p></center></p>
+<p>The SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) takes advantage of the <a href="https://www.sparkfun.com/qwiic">Qwiic connect system</a>. We recommend familiarizing yourself with the <strong>Logic Levels</strong> and <strong>I<sup>2</sup>C</strong> tutorials.  Click on the banner above to learn more about <a href="https://www.sparkfun.com/qwiic">Qwiic products</a>.</p>
+<p><center>
+    <iframe width="600" height="327" src="https://www.youtube.com/embed/x0RDEHqFIF8" title="SparkFun's Qwiic Connect System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center></p>
+<h1 id="hardware-overview">Hardware Overview<a class="headerlink" href="#hardware-overview" title="Permanent link"></a></h1>
+<h2 id="optical-tracking-sensor-paa5160">Optical Tracking Sensor - PAA5160<a class="headerlink" href="#optical-tracking-sensor-paa5160" title="Permanent link"></a></h2>
+<p>The PAA5160E1-Q from PixArt Imaging has a tracking speed of 2.5m/s and a typical tracking error rate of 3~5% within a working range of 10mm to 27mm. With an 850nm Class 1 laser, a resolution of 20,000 DPI, and a frame rate of 20,000 fps, it is ideal for surfaces like concrete, epoxy, laminated wood, or glossy/semi-glossy flooring. That said, dark or diffuse surfaces are more challenging, so these specs may vary based on the surfaces that are being used. More information can be found in the <a href="../assets/documentation/PAA5160_Datasheet_General.pdf" target="_blank">datasheet</a>.</p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg" title="Click to enlarge"><img alt="Optical Tracking Sensor - PAA5160" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_PAA5160E1-Q.jpg" width="400" /></a></p>
+<figcaption>
+<p>Optical Tracking Sensor - PAA5160</p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The laser on this module is a Class 1, 850nm laser. Please use appropriate caution. 
+<figure markdown>
+<a href="../assets/img/laserbeams.gif" title="Click to enlarge"><img alt="Dr. Evil using air quotes to say &quot;freaking laser beams&quot;" src="../assets/img/laserbeams.gif" width="400" /></a>
+<figcaption markdown><em>Lasers...</em></figcaption>
+</figure></p>
+</div>
+<h2 id="6-dof-imu-lsm6dso">6-DoF IMU - LSM6DSO<a class="headerlink" href="#6-dof-imu-lsm6dso" title="Permanent link"></a></h2>
+<p>The LSM6DSO from STMicroelectronics has a 3-axis digital accelerometer and 3-axis digital gyroscope featuring a full-scale acceleration range of ±2/±4/±8/±16 g and an angular rate range of ±125/±250/±500/±1000/±2000 dps. For more information, refer to the <a href="../assets/documentation/lsm6dso.pdf" target="_blank">datasheet</a>. </p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_LSM6DS0.jpg" title="Click to enlarge"><img alt="LSM6DSO 6-DOF IMU Accelerometer" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_LSM6DS0.jpg" width="400" /></a></p>
+<figcaption>
+<p>LSM6DSO 6-DOF IMU Accelerometer</p>
+</figcaption>
+</figure>
+<h2 id="microcontroller-stm32c0">Microcontroller - STM32C0<a class="headerlink" href="#microcontroller-stm32c0" title="Permanent link"></a></h2>
+<p>The STM32C011F4U6 microcontroller has a high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency. It incorporates a memory protection unit (MPU), high-speed embedded memory (6 Kbytes of SRAM and up to 32 Kbytes of flash program memory with read and write protection), DMA, an extensive range of system functions, enhanced I/Os, and peripherals. The device offers standard communication interfaces (one I<sup>2</sup>C, one SPI / one I2S, and two USARTs), one 12-bit ADC (2.5 MSps) with up to 15 channels, a low-power RTC, an advanced control PWM timer, four general-purpose 16-bit timers, two watchdog timers, and a SysTick timer. For more information, refer to the <a href="../assets/documentation/stm32c011d6-3082107.pdf" target="_blank">datasheet</a>.</p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg" title="Click to enlarge"><img alt="STM32 Processor" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_STM32.jpg" width="400" /></a></p>
+<figcaption>
+<p>STM32 Processor</p>
+</figcaption>
+</figure>
+<h2 id="power">Power<a class="headerlink" href="#power" title="Permanent link"></a></h2>
+<p>The LED indicator lights when power is provided to the board. </p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_PowerLED.jpg" title="Click to enlarge"><img alt="Power LED" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_PowerLED.jpg" width="400" /></a></p>
+<figcaption>
+<p>Power LED</p>
+</figcaption>
+</figure>
+<h2 id="qwiic-connectors">Qwiic Connectors<a class="headerlink" href="#qwiic-connectors" title="Permanent link"></a></h2>
+<p>The Qwiic Connectors on the SparkFun Optical Tracking Odometry Sensor - PAA5160E1 (Qwiic) provide power and I<sup>2</sup>C connectivity simultaneously. The I<sup>2</sup>C address is 0x17.</p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_QwiicConnex.jpg" title="Click to enlarge"><img alt="Qwiic Connectors" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_QwiicConnex.jpg" width="400" /></a></p>
+<figcaption>
+<p>Qwiic Connectors</p>
+</figcaption>
+</figure>
+<h2 id="gpio">GPIO<a class="headerlink" href="#gpio" title="Permanent link"></a></h2>
+<p>The PTH pins on the side of the board allow you to provide power, access the I<sup>2</sup>C Data and Clock lines, and there are two pins available for UART/generic programming purposes. In normal operation, IO9 acts as a "data ready" interrupt; this pin could be used to synchronize measurements if needed. Outside of normal operation, IO9 and IO10 provide a UART interface that can be used for firmware updates, see instructions <a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/tree/main/Firmware">here</a>. </p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_GPIO.jpg" title="Click to enlarge"><img alt="GPIO pins are highlighted" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_GPIO.jpg" width="400" /></a></p>
+<figcaption>
+<p>GPIO</p>
+</figcaption>
+</figure>
+<h2 id="debugging-test-points">Debugging Test Points<a class="headerlink" href="#debugging-test-points" title="Permanent link"></a></h2>
+<p>We've broken out test points for serial wire debugging if you wish to access flash memory or directly program the board. They are located here: </p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_DbgTestPoints.jpg" title="Click to enlarge"><img alt="Debugging Test Points" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_DbgTestPoints.jpg" width="400" /></a></p>
+<figcaption>
+<p>Debugging Test Points</p>
+</figcaption>
+</figure>
+<h2 id="jumpers">Jumpers<a class="headerlink" href="#jumpers" title="Permanent link"></a></h2>
+<details class="note">
+<summary>Never modified a jumper before?</summary>
+<p>Check out our <a href="https://learn.sparkfun.com/tutorials/664">Jumper Pads and PCB Traces tutorial</a> for a quick introduction!
+<p align="center">
+    <a href="https://learn.sparkfun.com/tutorials/664">
+    <img src="https://cdn.sparkfun.com/c/264-148/assets/learn_tutorials/6/6/4/PCB_TraceCutLumenati.jpg" alt="Tutorial's thumbnail"><br>
+    How to Work with Jumper Pads and PCB Traces</a>
+</p></p>
+</details>
+<h3 id="power-jumper">Power Jumper<a class="headerlink" href="#power-jumper" title="Permanent link"></a></h3>
+<p>If you are concerned about power consumption, need to run dark, or just really don't like LEDs, cut the jumper highlighted below to disconnect power from the LED on the front of the board. </p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_LEDJumper.jpg" title="Click to enlarge"><img alt="Power Jumper" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_LEDJumper.jpg" width="400" /></a></p>
+<figcaption>
+<p>Power Jumper</p>
+</figcaption>
+</figure>
+<h3 id="i2c-jumper">I<sup>2</sup>C Jumper<a class="headerlink" href="#i2c-jumper" title="Permanent link"></a></h3>
+<p>If you choose to use one or more Qwiic breakouts in your project, it is important to note that this board comes equipped with pull-up resistors on the clock and data pins. If you are daisy-chaining multiple Qwiic devices, you will want to cut this jumper; if multiple sensors are connected to the bus with the pull-up resistors enabled, the parallel equivalent resistance will create too strong of a pull-up for the bus to operate correctly. As a general rule of thumb, disable all but one pair of pull-up resistors if multiple devices are connected to the bus. To disable the pull up resistors, use an X-acto knife to cut the joints between the jumper pads highlighted below.</p>
+<figure>
+<p><a href="../assets/img/24904-Optical-Tracking-Odometry-Sensor_I2CJumper.jpg" title="Click to enlarge"><img alt="I2C Jumper" src="../assets/img/24904-Optical-Tracking-Odometry-Sensor_I2CJumper.jpg" width="400" /></a></p>
+<figcaption>
+<p>I<sup>2</sup>C Jumper</p>
+</figcaption>
+</figure>
+<h2 id="board-dimensions">Board Dimensions<a class="headerlink" href="#board-dimensions" title="Permanent link"></a></h2>
+<p>The board dimensions are illustrated in the drawing below; the listed measurements are in inches.</p>
+<figure>
+<p><a href="../assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png" title="Click to enlarge"><img alt="Board measures 1&quot; by 1&quot;" src="../assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png" width="600" /></a></p>
+<figcaption>
+<p>SparkFun Optical Tracking Odometry Sensor Board Dimensions</p>
+</figcaption>
+</figure>
+<details class="tip">
+<summary>Need more measurements?</summary>
+<p>For more information about the board's dimensions, users can download the <a href="../assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_EagleFiles.zip">Eagle files</a>. These files can be opened in Eagle and additional measurements can be made with the dimensions tool.</p>
+<details class="info">
+<summary><span class="twemoji heart"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.75 14A1.75 1.75 0 0 1 1 12.25v-2.5a.75.75 0 0 1 1.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-2.5a.75.75 0 0 1 1.5 0v2.5A1.75 1.75 0 0 1 13.25 14Z"/><path d="M7.25 7.689V2a.75.75 0 0 1 1.5 0v5.689l1.97-1.969a.749.749 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 6.78a.749.749 0 1 1 1.06-1.06z"/></svg></span> Eagle - Free Download!</summary>
+<p>Eagle is a <a href="" title="computer-aided design">CAD</a> program for electronics that is free to use for hobbyists and students. However, it does require an account registration to utilize the software.</p>
+<p><center>
+<a class="md-button md-button--primary" href="https://www.autodesk.com/products/eagle/free-download" title="Go to downloads page" width="250px">Download from<br><span class="twemoji autodesk"><svg role="img" viewbox=" 0 0 335 34.397" xmlns="http://www.w3.org/2000/svg"><title>Autodesk primary logo</title><path d="M 0.253,33.578 29.488,15.376 H 44.66 c 0.468,0 0.896,0.37 0.896,0.897 0,0.428 -0.195,0.604 -0.428,0.74 l -14.355,8.614 c -0.935,0.565 -1.266,1.676 -1.266,2.514 l -0.019,5.437 h 18.25 V 2.026 c 0,-0.604 -0.468,-1.13 -1.169,-1.13 H 29.157 L 0,19.02 v 14.558 z m 239.72,10e-4 h 26.294 V 26.504 H 248.309 V 20.58 h 14.452 V 13.486 H 248.309 V 7.971 h 17.958 V 0.896 H 239.973 Z M 74.752,0.896 62.228,33.579 h 8.609 l 2.181,-6.12 h 13.985 l 2.142,6.12 h 8.901 L 85.367,0.896 Z m 0.74,19.606 4.577,-12.804 4.499,12.804 z M 133.766,7.971 h 10.537 v 25.608 h 8.317 V 7.971 h 10.498 V 0.896 h -29.352 z m -12.114,13.018 c 0,4.249 -2.61,5.964 -7.07,5.964 -4.324,0 -7.148,-1.793 -7.148,-5.964 V 0.779 h -8.336 v 21.165 c 0,9.432 8.414,12.375 15.464,12.375 7.012,0 15.387,-2.943 15.387,-12.375 V 0.779 h -8.336 v 20.21 z M 335,0.896 h -9.914 l -11.88,13.272 V 0.896 h -8.337 l 0.039,32.683 h 8.298 V 21.165 l 11.257,12.414 H 335 L 319.808,17.442 Z m -114.621,0 h -15.27 v 32.683 h 15.27 c 11.706,0 14.939,-4.366 14.939,-16.585 0,-11.479 -3.097,-16.098 -14.939,-16.098 z m -0.331,25.608 h -6.622 V 7.971 h 6.622 c 5.22,0 6.778,1.422 6.778,9.023 0,6.938 -1.753,9.51 -6.778,9.51 z m 71.402,-12.16 -7.596,-0.858 c -4.441,-0.487 -5.551,-1.598 -5.551,-3.099 0,-1.676 2.279,-3.176 6.739,-3.176 4.285,0 6.525,1.598 6.934,3.995 h 8.161 C 299.727,4.287 293.943,0 285.49,0 c -10.05,0 -15.094,3.995 -15.094,11.07 0,5.749 3.35,8.458 10.283,9.198 l 7.713,0.819 c 2.941,0.331 4.285,1.461 4.285,2.942 0,1.676 -1.967,3.177 -6.7,3.177 -5.473,0 -7.674,-1.384 -8.044,-4.171 h -8.005 c 0.37,7.523 5.259,11.362 15.757,11.362 9.582,0 14.938,-4.209 14.938,-10.543 0,-5.515 -3.174,-8.828 -9.173,-9.51 z M 182.497,0 c -11.881,0 -18.035,7.308 -18.035,17.15 0,9.881 6.154,17.228 18.035,17.228 11.92,0 18.075,-7.347 18.075,-17.228 C 200.591,7.308 194.417,0 182.497,0 Z m 0,27.031 c -6.155,0 -9.543,-3.762 -9.543,-9.881 0,-6.003 3.388,-9.803 9.543,-9.803 6.213,0 9.544,3.8 9.544,9.803 0.019,6.139 -3.331,9.881 -9.544,9.881 z"/></svg></span></a>
+</center></p>
+</details>
+<details class="info">
+<summary><img alt="📏" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f4cf.svg" title=":straight_ruler:" /> Dimensions Tool</summary>
+<p>This video from Autodesk demonstrates how to utilize the dimensions tool in Eagle, to include additional measurements:</p>
+<p><center>
+<div class="video">
+<iframe src="https://www.youtube.com/embed/dZLNd1FtNB8" title="EAGLE Dimension Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</center></p>
+</details>
+</details>
+<h1 id="hardware-assembly">Hardware Assembly<a class="headerlink" href="#hardware-assembly" title="Permanent link"></a></h1>
+<p>The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor in order to get accurate data. If you don't already have a mount, there are a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. </p>
+<p>The height that the sensor needs to be mounted will be dependent on the surface being read. If you have a shiny or glossy surface, you should be able to mount the sensor anywhere in the range of 10mm to 27mm, measured from the front face of the optical sensor. If you have a darker or more diffuse surface, you may need to mount the sensor at the low-end of that range. You'll need to test to determine what height works for your surface.</p>
+<p>You can access the XRP mount on Printables:  </p>
+<p><center>
+    <a class="md-button md-button--primary" href="https://www.printables.com/model/872179-odometry-clip-for-xrp" target="_blank">XRP Mount on Printables</a>
+</center></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Accurate readings require that the sensor is mounted correctly; attempting to move the sensor by hand may work, but tracking accuracy will suffer.</p>
+</div>
+<p>The image below shows the 3D mounted clip with the Optical Tracking Sensor attached to an XRP: </p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-9-Highlighted.jpg" title="Click to enlarge"><img alt="Optical Tracking Sensor Mounted to the Underside of the XRP" src="../assets/img/SEN-24904-Action-9-Highlighted.jpg" width="600" /></a></p>
+<figcaption>
+<p>Optical Tracking Sensor Mounted to the XRP</p>
+</figcaption>
+</figure>
+<p>Here is the underside of the XRP with the Optical Tracking Sensor attached via the mounting clip: </p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-12-Highlighted.jpg" title="Click to enlarge"><img alt="Optical Tracking Sensor Mounted to the Underside of the XRP" src="../assets/img/SEN-24904-Action-12-Highlighted.jpg" width="600" /></a></p>
+<figcaption>
+<p>Optical Tracking Sensor Mounted to the XRP</p>
+</figcaption>
+</figure>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Reminder - make sure you peel off the yellow kapton tape! </p>
+</div>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-4.jpg" title="Click to enlarge"><img alt="Peel off the Kapton tape!" src="../assets/img/SEN-24904-Action-4.jpg" width="600" /></a></p>
+<figcaption>
+<p>Peel off the Kapton tape before use</p>
+</figcaption>
+</figure>
+<h1 id="hardware-assembly-ftc">Hardware Assembly - FTC<a class="headerlink" href="#hardware-assembly-ftc" title="Permanent link"></a></h1>
+<!--
+[![FIRST Tech Logo](assets/img/FIRSTTech_IconVert_RGB.jpg){ align="center" width="200"}](assets/img/FIRSTTech_IconVert_RGB.jpg "Click to enlarge")
+-->
+
+<p>The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a robot chassis and oriented flat to the floor in order to get accurate data. If you don't already have a mount, there are a few 3D printing models you can use. That said, you may need to design your own mount for this board, depending on your use case. </p>
+<p>Note here that we are using the foam surface typical of FIRST Tech Challenge competitions and the sensor is mounted at 10mm from the surface.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Accurate readings require that the sensor is mounted correctly; attempting to move the sensor by hand may work, but tracking accuracy will suffer.</p>
+</div>
+<p>The FTC mounts are available on Onshape: </p>
+<p><center>
+    <a class="md-button md-button--primary" href="https://cad.onshape.com/documents/1253798610182bf3a147f431/w/11cc45e6a7c8080b22bb8377/e/d4827c4f09d804607ba1824b" target="_blank">FTC mounts on Onshape</a>
+</center></p>
+<p>In addition, instructions for the FTC mounts are available here:</p>
+<p><center>
+    <a class="md-button md-button--primary" href="https://docs.google.com/document/d/14oHPdummdtDlF2BijsM5kqbD6MTwzaQFkbJ2jo99SUI/edit" target="_blank">Instructions for FTC mounts</a>
+</center></p>
+<p>The image below shows the 3D mounted clip with the Optical Tracking Sensor attached to an FTC Bot: </p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-23-Highlighted.jpg" title="Click to enlarge"><img alt="Optical Tracking Sensor Mounted to the Underside of the FTC Bot" src="../assets/img/SEN-24904-Action-23-Highlighted.jpg" width="600" /></a></p>
+<figcaption>
+<p>Optical Tracking Sensor Mounted to the FTC Bot</p>
+</figcaption>
+</figure>
+<div class="admonition first-tech">
+<p class="admonition-title">FIRST Tech Challenge</p>
+<p><a href="../assets/img/FIRSTTech_IconVert_RGB.jpg" title="Click to enlarge"><img align="left" alt="FIRST Tech Logo" src="../assets/img/FIRSTTech_IconVert_RGB.jpg" width="100" /></a></p>
+<p>FIRST Tech Challenge: Note here that for the foam competition files, the sensor really needs to be mounted at exactly 10mm from the surface with a tolerance of +/ 1mm. Beyond that, the tracking is less accurate; beyond +/- 3mm, and it can't track the foam surface at all.</p>
+</div>
+<p>Here is the underside of the FTC Bot with the Optical Tracking Sensor attached via the mounting clip: </p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-21-Highlighted.jpg" title="Click to enlarge"><img alt="Optical Tracking Sensor Mounted to the Underside of the FTC Bot" src="../assets/img/SEN-24904-Action-21-Highlighted.jpg" width="600" /></a></p>
+<figcaption>
+<p>Optical Tracking Sensor Mounted to the FTC Bot</p>
+</figcaption>
+</figure>
+<p>Using the <a href="https://www.sparkfun.com/products/25596">Flexible Qwiic to STEMMA Cable - 500mm</a>, you'll need to attach the sensor via one of the I<sup>2</sup>C connectors on the Control Hub like so:</p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-24-Highlighted.jpg" title="Click to enlarge"><img alt="I2C connection location" src="../assets/img/SEN-24904-Action-24-Highlighted.jpg" width="600" /></a></p>
+<figcaption>
+<p>I<sup>2</sup>C connection location</p>
+</figcaption>
+</figure>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Reminder - make sure you peel off the yellow kapton tape! </p>
+</div>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-4.jpg" title="Click to enlarge"><img alt="Peel off the Kapton tape!" src="../assets/img/SEN-24904-Action-4.jpg" width="600" /></a></p>
+<figcaption>
+<p>Peel off the Kapton tape before use</p>
+</figcaption>
+</figure>
+<h1 id="software-setup-arduino">Software Setup - Arduino<a class="headerlink" href="#software-setup-arduino" title="Permanent link"></a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If this is your first time using Arduino, please review our tutorial on <a href="https://learn.sparkfun.com/tutorials/installing-arduino-ide">installing the Arduino IDE</a>. If you have not previously installed an Arduino library, please check out our <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">installation guide</a>.</p>
+</div>
+<p>We've written a library to get you started with the SparkFun Optical Tracking Odometry Sensor. You can obtain this library through the Arduino Library Manager by searching for "Odometry" and installing the latest version from SparkFun. If you prefer downloading libraries manually, you can grab them from the <a href="https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library">GitHub Repository</a>.</p>
+<p><center>
+    <a class="md-button md-button--primary" href="https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library/archive/refs/heads/main.zip">SparkFun Optical Tracking Odometry Sensor Arduino Library GitHub</a>
+</center></p>
+<p>In addition to the library provided here, we have written a Python script that allows you to visualize the XRP in real time. Download via the button below. </p>
+<p><center>
+    <a class="md-button md-button--primary" download="SparkFun_OTOS_XRP_Visualization.zip" href="../assets/SparkFun_OTOS_XRP_Visualization.zip">XRP Visualization Script</a>
+</center></p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-GIF-1.gif" title="Click to enlarge"><img alt="Visualization Script in Action" src="../assets/img/SEN-24904-Action-GIF-1.gif" width="600" /></a></p>
+<figcaption>
+<p>Visualization Script in Action</p>
+</figcaption>
+</figure>
+<h1 id="software-setup-python">Software Setup - Python<a class="headerlink" href="#software-setup-python" title="Permanent link"></a></h1>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If this is your first time working with Python, there are quite a few useful tutorials on getting started. The <a href="https://learn.sparkfun.com/tutorials/python-programming-tutorial-getting-started-with-the-raspberry-pi/programming-in-python">Python Programming Section</a> of our Getting Started with the Raspberry Pi Tutorial has some good basic information and resources for getting started with Python. </p>
+</div>
+<h2 id="linuxraspberry-pi-variants">Linux/Raspberry Pi Variants<a class="headerlink" href="#linuxraspberry-pi-variants" title="Permanent link"></a></h2>
+<p>We've written a python package to get you started with the SparkFun Optical Tracking Odometry Sensor. It's been included in the SparkFun Qwiic Python package, which aggregates all Python Qwiic drivers/modules to provide a single entity for Qwiic within a Python environment. The <a href="https://github.com/sparkfun/Qwiic_Py">Qwiic_Py GitHub Library ReadMe</a> has more information on the Qwiic Python package. </p>
+<p>If you already have your Qwiic Python package installed, you can update it with the following command: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip install --upgrade sparkfun-qwiic
+</code></pre></div>
+<p>If you don't have the Qwiic Python package installed already, you can install it with the following command: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip install sparkfun-qwiic
+</code></pre></div>
+<p>If you prefer to install just this package, use the following command: </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip install sparkfun-qwiic-otos
+</code></pre></div>
+<p>If you prefer downloading the code to build and install the package manually, you can grab them from the <a href="https://github.com/sparkfun/Qwiic_Py">GitHub Repository</a>.</p>
+<p><center>
+    <a class="md-button md-button--primary" href="https://github.com/sparkfun/Qwiic_OTOS_Py/archive/refs/heads/master.zip">SparkFun Optical Tracking Odometry Sensor Python Package GitHub</a>
+</center></p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you are working with a Raspberry Pi and are using the new Bookworm distribution of the Raspberry Pi OS, refer to <a href="https://www.raspberrypi.com/documentation/computers/os.html#python-on-raspberry-pi">these instructions</a> to setup a virtual environment.  </p>
+<p>Make sure to include the --system-site-packages flag:python3 -m venv <name of virtual environment> --system-site-packages </p>
+<p>Then it is possible to install the packages using pip. </p>
+</div>
+<h2 id="xrpmicrocontrollers">XRP/MicroControllers<a class="headerlink" href="#xrpmicrocontrollers" title="Permanent link"></a></h2>
+<p>If you are working with the XRP or other microcontroller, pip will not work for you. Instead, you'll need to install the Qwiic_I2C_Py driver as well as the Qwiic_OTOS driver. </p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>These instructions are written for the XRP using the <a href="https://xrpcode.wpi.edu/">XRPCode IDE</a>. However the setup process is very similar for MicroPython and CircuitPython on any other board, so you should be able to follow along with these instructions using your IDE of choice!</p>
+</div>
+<h3 id="install-qwiic_i2c_py">Install Qwiic_I2C_Py<a class="headerlink" href="#install-qwiic_i2c_py" title="Permanent link"></a></h3>
+<p>Qwiic_I2C_Py is a generic I2C driver we have created to work on various platforms (such as MicroPython). Our Qwiic Python device drivers take advantage of Qwiic_I2C_Py to function correctly on any of the supported platforms, so it is a required dependency to use our OTOS Python driver.</p>
+<p>Fist, go to the <a href="https://github.com/sparkfun/Qwiic_I2C_Py">Qwiic_I2C_Py repository</a> and download it as a .zip file. Once downloaded, extract the <code>qwiic_i2c</code> folder within.</p>
+<p>Connect your XRP to your computer over USB, navigate to the <a href="https://xrpcode.wpi.edu/">XRPCode IDE</a>, and connect to your XRP. For usage information, see the <a href="https://xrpusersguide.readthedocs.io/en/latest/course/XRPCode.html">XRPCode User Guide</a>.</p>
+<p>Create a new folder within the <code>lib</code> directory (right-click on the folder), and name it <code>qwiic_i2c</code>.</p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/new_folder.png" title="Click to enlarge"><img alt="Create a new folder in the lib directory" src="../assets/img/xrp_software_setup/new_folder.png" width="400" /></a></p>
+<figcaption>
+<p>Create a new folder in the <code>lib</code> directory</p>
+</figcaption>
+</figure>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/new_folder_name.png" title="Click to enlarge"><img alt="Name the folder qwiic_i2c" src="../assets/img/xrp_software_setup/new_folder_name.png" width="400" /></a></p>
+<figcaption>
+<p>Name the folder <code>qwiic_i2c</code></p>
+</figcaption>
+</figure>
+<p>Upload the files from the previously extracted <code>qwiic_i2c</code> folder into the new folder you just created on the XRP. From the <strong>File</strong> menu, choose the Upload to XRP option: </p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/upload.png" title="Click to enlarge"><img alt="Choose the &quot;Upload to XRP&quot; option" src="../assets/img/xrp_software_setup/upload.png" width="400" /></a></p>
+<figcaption>
+<p>Choose the "Upload to XRP" option</p>
+</figcaption>
+</figure>
+<p>Then select the extracted files: </p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/select_qwiic_i2c_files.png" title="Click to enlarge"><img alt="Select the extracted I2C Files" src="../assets/img/xrp_software_setup/select_qwiic_i2c_files.png" width="400" /></a></p>
+<figcaption>
+<p>Select the extracted I2C Files</p>
+</figcaption>
+</figure>
+<p>Then choose the newly created <code>qwiic_i2c</code> folder on the XRP:</p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/select_qwiic_i2c_upload_directory.png" title="Click to enlarge"><img alt="Choose the newly created qwiic_i2c folder" src="../assets/img/xrp_software_setup/select_qwiic_i2c_upload_directory.png" width="400" /></a></p>
+<figcaption>
+<p>Choose the newly created <code>qwiic_i2c</code> folder</p>
+</figcaption>
+</figure>
+<p>Uploading...</p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/update_in_progress.png" title="Click to enlarge"><img alt="Update in Progress" src="../assets/img/xrp_software_setup/update_in_progress.png" width="400" /></a></p>
+<figcaption>
+<p>Update in Progress</p>
+</figcaption>
+</figure>
+<p>You can test to confirm correct installation by typing <code>import qwiic_i2c</code> followed by <code>qwiic_i2c.get_i2c_driver().scan()</code> in the Shell. If no errors are printed, then the Qwiic_I2C_Py driver has been installed correctly!</p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/qwiic_i2c_test.png" title="Click to enlarge"><img alt="Testing install" src="../assets/img/xrp_software_setup/qwiic_i2c_test.png" width="400" /></a></p>
+<figcaption>
+<p>Testing the install</p>
+</figcaption>
+</figure>
+<h3 id="install-qwiic_otos_py">Install Qwiic_OTOS_Py<a class="headerlink" href="#install-qwiic_otos_py" title="Permanent link"></a></h3>
+<p>Fist, go to the <a href="https://github.com/sparkfun/Qwiic_OTOS_Py">Qwiic_OTOS_Py repository</a> and download just the <code>qwiic_otos.py</code> file.</p>
+<p>Connect your XRP to your computer over USB, navigate to the <a href="https://xrpcode.wpi.edu/">XRPCode editor</a>, and connect to your XRP. For usage information, see the <a href="https://xrpusersguide.readthedocs.io/en/latest/course/XRPCode.html">XRPCode User Guide</a>.</p>
+<p>Upload the <code>qwiic_otos.py</code> file into the <code>lib</code> folder on the XRP. From the <strong>File</strong> menu, choose the Upload to XRP option: </p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/upload.png" title="Click to enlarge"><img alt="Select the &quot;Upload to XRP&quot; option from the file menu" src="../assets/img/xrp_software_setup/upload.png" width="400" /></a></p>
+<figcaption>
+<p>Select the "Upload to XRP" Option from the File Menu</p>
+</figcaption>
+</figure>
+<p>Select the qwiic_otos.py file: </p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/select_otos_file.png" title="Click to enlarge"><img alt="Select the qwiic_otos.py file" src="../assets/img/xrp_software_setup/select_otos_file.png" width="400" /></a></p>
+<figcaption>
+<p>Select the qwiic_otos.py file</p>
+</figcaption>
+</figure>
+<p>Then select the lib folder on the XRP:</p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/select_qwiic_otos_upload_directory.png" title="Click to enlarge"><img alt="Select the lib folder on the XRP" src="../assets/img/xrp_software_setup/select_qwiic_otos_upload_directory.png" width="400" /></a></p>
+<figcaption>
+<p>Select the lib folder on the XRP</p>
+</figcaption>
+</figure>
+<p>Updating... </p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/update_in_progress.png" title="Click to enlarge"><img alt="Updating" src="../assets/img/xrp_software_setup/update_in_progress.png" width="400" /></a></p>
+<figcaption>
+<p>Updating</p>
+</figcaption>
+</figure>
+<p>You can test to confirm correct installation by typing <code>import qwiic_otos</code> followed by <code>qwiic_otos.QwiicOTOS().is_connected()</code> in the Shell. If no errors are printed, then the Qwiic_OTOS_Py driver has been installed correctly!</p>
+<p>Testing the install:</p>
+<figure>
+<p><a href="../assets/img/xrp_software_setup/qwiic_otos_test.png" title="Click to enlarge"><img alt="Testing the install" src="../assets/img/xrp_software_setup/qwiic_otos_test.png" width="400" /></a></p>
+<figcaption>
+<p>Testing the install</p>
+</figcaption>
+</figure>
+<h2 id="visualization">Visualization<a class="headerlink" href="#visualization" title="Permanent link"></a></h2>
+<p>In addition to the package provided here, we have written a Python script that allows you to visualize the XRP in real time. Download via the button below. </p>
+<p><center>
+    <a class="md-button md-button--primary" download="SparkFun_OTOS_XRP_Visualization.zip" href="../assets/SparkFun_OTOS_XRP_Visualization.zip">XRP Visualization Script</a>
+</center></p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-GIF-1.gif" title="Click to enlarge"><img alt="Visualization Script in Action" src="../assets/img/SEN-24904-Action-GIF-1.gif" width="600" /></a></p>
+<figcaption>
+<p>Visualization Script in Action</p>
+</figcaption>
+</figure>
+<h1 id="software-setup-first-tech-challenge-java">Software Setup - FIRST Tech Challenge Java<a class="headerlink" href="#software-setup-first-tech-challenge-java" title="Permanent link"></a></h1>
+<h2 id="update-the-ftc-robot-controller">Update the FTC Robot Controller<a class="headerlink" href="#update-the-ftc-robot-controller" title="Permanent link"></a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Version v9.2 of the <a href="https://github.com/sparkfun/SparkFun_Qwiic_OTOS_FTC_Java_Library">FTC SDK</a> added <a href="https://github.com/sparkfun/SparkFun_Qwiic_OTOS_FTC_Java_Library">our Java driver</a>, so it is no longer necessary to manually install those files. Make sure you have at least v9.2 installed on your Control Hub before continuing!</p>
+</div>
+<h2 id="hardware-configuration">Hardware Configuration<a class="headerlink" href="#hardware-configuration" title="Permanent link"></a></h2>
+<p>You can edit your robot's hardware configuration from the Driver Station. Select the I<sup>2</sup>C port that the OTOS is connected to, then tap the "Add" button. From the dropdown, you should see "SparkFun OTOS" like so:</p>
+<figure>
+<p><a href="../assets/img/hardware_config.png" title="Click to enlarge"><img alt="Hardware Configuration" src="../assets/img/hardware_config.png" width="600" /></a></p>
+<figcaption>
+<p>Hardware Configuration</p>
+</figcaption>
+</figure>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you don't see "SparkFun OTOS" in the dropdown, make sure you have updated your Control Hub to use at least version v9.2 of the FTC SDK. </p>
+</div>
+<p>Then enter a name for the sensor. The sample OpMode assumes it is named <code>sensor_otos</code>, so that is recommended.</p>
+<p>Once done, save your hardware configuration, then you're ready to run the sample OpMode!</p>
+<h1 id="troubleshooting-tips">Troubleshooting Tips<a class="headerlink" href="#troubleshooting-tips" title="Permanent link"></a></h1>
+<p>A few things we've noticed: </p>
+<h2 id="calibration">Calibration<a class="headerlink" href="#calibration" title="Permanent link"></a></h2>
+<p>Got the spins? If the IMU isn't calibrated correctly, the gyroscope will think the robot is constantly rotating and you may see something like below. If you find this, try re-calibrating your bot. </p>
+<figure>
+<p><a href="../assets/img/SEN-24904-Action-GIF-2.gif" title="Click to enlarge"><img alt="You spin me right round baby right round" src="../assets/img/SEN-24904-Action-GIF-2.gif" width="600" /></a></p>
+<figcaption>
+<p>Example of Calibration Error</p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+    <strong> Not working as expected and need help? </strong> <br /><br /></p>
+<p>If you need technical assistance and more information on a product that is not working as you expected, we recommend heading on over to the <a href="https://www.sparkfun.com/technical_assistance">SparkFun Technical Assistance</a> page for some initial troubleshooting. <br /><br /></p>
+<p><div style="text-align: center"><a href="https://www.sparkfun.com/technical_assistance" target="sfe_technical_assistance" class="md-button">SparkFun Technical Assistance Page</a></div></p>
+<p>If you don't find what you need there, the <a href="https://forum.sparkfun.com/index.php">SparkFun Forums</a> are a great place to find and ask for help. If this is your first visit, you'll need to <a href="https://forum.sparkfun.com/ucp.php?mode=register">create a Forum Account</a> to search product forums and post questions.<br /><br /></p>
+<p><div style="text-align: center"><a href="https://forum.sparkfun.com/ucp.php?mode=register" class="md-button">Create New Forum Account</a>&nbsp;&nbsp;&nbsp;<a href="https://forum.sparkfun.com/index.php" class="md-button md-button--primary">Log Into SparkFun Forums</a></div></p>
+</div>
+<h1 id="resources">Resources:<a class="headerlink" href="#resources" title="Permanent link"></a></h1>
+<!-- This section should include all the relevant documentation and product files (Eagle files, schematic, datasheet(s), landing pages, etc. and any relevant tutorials to go beyond the Hookup Guide.) -->
+
+<p>For more resources related to the SparkFun SparkFun Optical Tracking Odometry Sensor, check out the links listed here: </p>
+<ul>
+<li><a href="https://www.sparkfun.com/products/24904" target="_blank">Product Page</a></li>
+<li><a href="../assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_Schematic.pdf" target="_blank">Schematic (PDF)</a></li>
+<li><a href="../assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_EagleFiles.zip" target="_blank">Eagle Files (ZIP)</a></li>
+<li><a href="../assets/board_files/24904_SparkFun_Optical_Tracking_Odometry_Sensor_BoardOutline.png" target="_blank">Board Dimensions(PNG)</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor" target="_blank">Hardware GitHub Repository</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_Optical_Tracking_Odometry_Sensor/blob/main/Firmware/OTOS_Register_Map.pdf">Optical Tracking Odometry Sensor Register Map (PDF)</a></li>
+</ul>
+<p>Libraries/Packages: </p>
+<ul>
+<li><a href="https://github.com/sparkfun/SparkFun_Qwiic_OTOS_Arduino_Library" target="_blank">Arduino Library GitHub Repository</a></li>
+<li><a href="https://github.com/sparkfun/Qwiic_OTOS_Py/archive/refs/heads/master.zip" target="_blank">SparkFun Optical Tracking Odometry Sensor Python Package GitHub</a></li>
+<li><a href="https://github.com/sparkfun/SparkFun_Qwiic_OTOS_FTC_Java_Library/archive/refs/heads/main.zip" target="_blank">SparkFun Optical Tracking Odometry Sensor Java Library GitHub</a></li>
+</ul>
+<p>Visualization Python Script: </p>
+<ul>
+<li><a href="assets\SparkFun_OTOS_XRP_Visualization.zip" target="_blank">XRP Visualization Script</a></li>
+</ul>
+<p>XRP Resources:</p>
+<ul>
+<li><a href="https://www.printables.com/model/872179-odometry-clip-for-xrp" target="_blank">XRP 3D Printed Mount on Printables</a></li>
+<li><a href="https://www.sparkfun.com/xrp" target="_blank">XRP Info Page</a></li>
+</ul>
+<p>First Tech Challenge Resources: </p>
+<ul>
+<li><a href="https://cad.onshape.com/documents/1253798610182bf3a147f431/w/11cc45e6a7c8080b22bb8377/e/d4827c4f09d804607ba1824b" target="_blank">FTC mounts on Onshape</a>  </li>
+<li><a href="https://docs.google.com/document/d/14oHPdummdtDlF2BijsM5kqbD6MTwzaQFkbJ2jo99SUI/edit" target="_blank">Instructions for FTC mounts</a></li>
+</ul>
+<p>Datasheets: </p>
+<ul>
+<li><a href="../assets/documentation/PAA5160_Datasheet_General.pdf" target="_blank">Optical Tracking Sensor - PAA5160 Datasheet</a></li>
+<li><a href="../assets/documentation/lsm6dso.pdf" target="_blank">6-DoF IMU - LSM6DSO Datasheet</a></li>
+<li><a href="../assets/documentation/stm32c011d6-3082107.pdf">Microcontroller - STM32C0 Datasheet</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-20T14:46:11+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-20</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-20T14:46:11+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-20</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:kirk.benell@sparkfun.com">Kirk Benell</a>
+    </nav>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/SparkFun-Documentation-Team" class="md-author" title="@SparkFun-Documentation-Team">
+          
+          <img src="https://avatars.githubusercontent.com/u/112656947?v=4&size=72" alt="SparkFun-Documentation-Team">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+
+  
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;</a><br> <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.sparkfun.com/products/<SKU Number>" target="_blank" rel="noopener" title="www.sparkfun.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="15.955" height="24" viewbox="0 0 16 24"><path d="M13.03 3.838s.34 1.438-.745 1.638c-.756.134-1.976-.615-2.59-1.362-.756-.922-.66-1.647-.072-2.29.884-.978 2.397-.6 2.397-.6S9.248-1.209 6.362.783c-2.571 1.77-1.834 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.444-.184-2.035-1.343-1.688-2.054.299-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044C.96 8.27-.078 9.312.005 11.917V24s1.3-1.604 2.83-3.236c1.713-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.37-3.645 3.142-4.563.681-9.661-1.43-10.343" style="fill:#e0311d;fill-opacity:1;stroke-width:.66479"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/sparkfun" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/sparkfun" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.github.com/sparkfun" target="_blank" rel="noopener" title="www.github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/SparkFun" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/sparkfun" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.code.select", "content.action.edit", "navigation.footer", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a789024.min.js"></script>
+      
+        <script src="../js/timeago.min.js"></script>
+      
+        <script src="../js/timeago_mkdocs_material.js"></script>
+      
+        <script src="../javascript/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
