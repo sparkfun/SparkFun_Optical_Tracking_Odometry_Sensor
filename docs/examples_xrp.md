@@ -203,14 +203,19 @@ Then click the run button in the top right corner:
 <figcaption markdown>Run Button</figcaption>
 </figure>	
 
-
-If the sensor is mounted 5 inches to the left (negative X) and 10 inches forward (positive Y) of the center of the robot, and mounted 90 degrees clockwise (negative rotation) from the robot's orientation, the offset would be {-5, 10, -90}. These can be any value, even the angle can be tweaked slightly to compensate for imperfect mounting (eg. 1.3 degrees).
+The offset values depend on the [axes conventions](https://en.wikipedia.org/wiki/Axes_conventions) that you choose for your robot. Below are 2 animations showing ENU (East-North-Up) and NWU (North-West-Up) axes conventions with the XRP, and the required offset values for the indicated location of the OTOS for each. In this case, the sensor is mounted 2 inches to the right ("East"), 4 inches forward ("North"), and with the x-axis to the right ("East").
 
 <figure markdown>
-[![The X, Y, and Angular Offset of the Optical Tracking Sensor](assets/img/SEN-24904-XRP-XY-Offset.jpg){ width="600" }](assets/img/SEN-24904-XRP-XY-Offset.jpg "Click to enlarge")
-<figcaption markdown>The X, Y, and Angular Offset of the Optical Tracking Sensor</figcaption>
+[![OTOS offsets with ENU axes conventions](assets/img/SEN-24904-XRP-Offset-ENU.gif){ width="600" }](assets/img/SEN-24904-XRP-Offset-ENU.gif "Click to enlarge")
+<figcaption markdown>OTOS offsets with ENU axes conventions</figcaption>
 </figure>
 
+<figure markdown>
+[![OTOS offsets with NWU axes conventions](assets/img/SEN-24904-XRP-Offset-NWU.gif){ width="600" }](assets/img/SEN-24904-XRP-Offset-NWU.gif "Click to enlarge")
+<figcaption markdown>OTOS offsets with NWU axes conventions</figcaption>
+</figure>
+
+With the ENU convention, the OTOS axes are aligned with the robot axes, so the offset angle is zero. With the NWU convention, the OTOS axes are rotated -90 degrees (right-hand rule about the "up" z-axis) relative to the robot axes. So the offset values would be `{2, 4, 0}` for ENU and `{4, -2, -90}` for NWU. These can be any value, even the angle can be tweaked slightly to compensate for imperfect mounting (eg. 1.3 degrees).
 
 These four examples cover the basics - there are more examples to explore in the GitHub Repo! 
 
