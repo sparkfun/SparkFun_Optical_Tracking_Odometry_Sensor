@@ -15,20 +15,7 @@ The SparkFun Optical Tracking Odometry Sensor needs to be rigidly mounted to a r
 	Accurate readings require that the sensor is mounted correctly; attempting to move the sensor by hand may work, but tracking accuracy will suffer.
 	
 	
-
-
-The FTC mounts are available on Onshape: 
-
-<center>
-	[FTC mounts on Onshape](https://cad.onshape.com/documents/1253798610182bf3a147f431/w/11cc45e6a7c8080b22bb8377/e/d4827c4f09d804607ba1824b){ .md-button .md-button--primary target="_blank" }
-</center>
-
-In addition, instructions for the FTC mounts are available here:
-
-<center>
-	[Instructions for FTC mounts]( https://docs.google.com/document/d/14oHPdummdtDlF2BijsM5kqbD6MTwzaQFkbJ2jo99SUI/edit){ .md-button .md-button--primary target="_blank" }
-</center>
-
+The FTC mounts are available on [Onshape](https://cad.onshape.com/documents/1253798610182bf3a147f431/w/11cc45e6a7c8080b22bb8377/e/d4827c4f09d804607ba1824b) with instructions for them [here](https://docs.google.com/document/d/14oHPdummdtDlF2BijsM5kqbD6MTwzaQFkbJ2jo99SUI/edit).
 
 
 The image below shows the 3D mounted clip with the Optical Tracking Sensor attached to an FTC Bot: 
